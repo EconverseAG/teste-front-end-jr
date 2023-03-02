@@ -1,0 +1,237 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+#Check {
+    position: absolute;
+    left: 20.47%;
+    right: 77.97%;
+    top: 4.17%;
+    bottom: 81.94%;
+    padding-top: 6px;
+
+}
+
+#Truck {
+    position: absolute;
+    left: 42.11%;
+    right: 56.33%;
+    top: 4.17%;
+    bottom: 81.94%;
+    padding-top: 6px;
+}
+
+#Card {
+    position: absolute;
+    left: 67.27%;
+    right: 31.17%;
+    top: 4.17%;
+    bottom: 81.94%;
+    padding-top: 6px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 144px;
+    width: 1280px;
+    left: 86px;
+    top: 0px;
+    border-radius: [object Object]px;
+}
+
+#head1 {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 77.78%;
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0
+}
+
+#head2 {
+    display: flex;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 11.22%;
+    bottom: 28.78%;
+}
+
+#logo {
+    position: absolute;
+    left: 4.42%;
+    right: 84.77%;
+    top: 27.08%;
+    bottom: 37.75%;
+}
+
+#head3{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 72.22%;
+    bottom: 0%;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 16px 0px #3930131F;
+    border: 1px solid #F0F0F0;
+    justify-content: space-around;
+    padding-top: 8px;
+    padding-bottom: 10px;
+}
+
+#check-text {
+    position: absolute;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    display: flex;
+    align-content: flex-start;
+    padding-top: 2px;
+    color: #9F9F9F;
+    height: 18px;
+    width: 129px;
+    left: 291px;
+    top: 7px;
+    border-radius: 0%;
+}
+
+#emphasis1 {
+    color: #F71963 ;
+    padding-left: 4px;
+}
+
+#truck-text {
+    position: absolute;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    display: flex;
+    align-content: flex-start;
+    padding-top: 2px;
+    color: #9F9F9F;
+    height: 18px;
+    width: 174px;
+    left: 568px;
+    top: 7px;
+    border-radius: 0%;
+}
+
+#emphasis2 {
+    color: #F71963 ;
+    padding-right: 4px;
+}
+
+#card-text {
+    position: absolute;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    display: flex;
+    align-content: flex-start;
+    padding-top: 2px;
+    color: #9F9F9F;
+    height: 18px;
+    width: 136px;
+    left: 890px;
+    top: 7px;
+    border-radius: 0%;
+}
+
+#search {
+    height: 48px;
+    width: 657px;
+    left: 290px;
+    top: 44px;
+    border-radius: 10px;
+    right: 26.02%;
+    top: 30.56%;
+    bottom: 36.11%;
+    position: absolute;
+    color: #9F9F9F;
+    background-color: #F6F5F2;
+    padding-left: 24px;
+    border: none;
+}
+
+#glass {
+    position: absolute;
+    left: 70.55%;
+    right: 27.27%;
+    top: 37.5%;
+    bottom: 43.06%;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+#group {
+    position: absolute;
+    height: 23.99994468688965px;
+    width: 24px;
+    left: 77.62%;
+    right: 17.5%;
+    top: 39.58%;
+    bottom: 43.75%;
+    border-radius: 0px;
+}
+
+#hearth {
+    position: absolute;
+    left: 83.12%;
+    right: 14.38%;
+    top: 36.81%;
+    bottom: 40.97%;
+}
+
+#user {
+    position: absolute;
+    left: 88.12%;
+    right: 9.38%;
+    top: 36.11%;
+    bottom: 41.67%;
+}
+
+#cart {
+    position: absolute;
+    left: 93.12%;
+    right: 4.38%;
+    top: 36.11%;
+    bottom: 41.67%;
+}
+
+#menu-text {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0em;
+    display: flex;
+    padding-top: 2px;
+    color: #9F9F9F;
+}
+
+#emphasis3 {
+    color: #f71963;
+}
+
+#crown {
+    height: 20px;
+    width: 20px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+    padding-right: 12px;
+}
