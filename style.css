@@ -113,10 +113,6 @@ header {
     padding-bottom: 14.36px;
 }
 
-#search {
-    
-}
-
 #divBusca{
     background-color: #F6F5F2;
     width: 657px;
@@ -128,21 +124,26 @@ header {
     padding-left: 24px;
     border-radius: 10px;
     border: none;
-  }
+}
   
-  #txtBusca{
+#txtBusca{
     float:left;
     background-color:transparent;
+    outline: none;
     padding-left:5px;
-    font-style:italic;
-    font-size:18px;
+    font-style:normal;
+    font-size: 12px;
     border:none;
-    height:32px;
-    width:260px;
-  }
+    height:48px;
+    width:657px;
+    border-radius: 10px;
+}
 
-#glass {
-    
+#btnBusca {
+    width: 28px;
+    height: 28px;
+    padding-top: 10px;
+    padding-right: 15px;
 }
 
 #group {
@@ -225,4 +226,68 @@ header {
     width: 128px;
     height: 128px;
     border: #FFFFFF;
+    margin-bottom: 22px;
+}
+
+#tec-text {
+    font-size: 16px;
+    color: #F71963;
+}
+
+#tec-box {
+    width: 150px;
+    height: 128px;
+    text-align: center;
+}
+
+#categorys {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 34px;
+    margin-left: 86px;
+    margin-bottom: 90px;
+    margin-right: 77px;
+}
+
+#category-button {
+    background-color: #F4F4F4;
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.22);
+    border-radius: 10px;
+    width: 128px;
+    height: 128px;
+    border: #F4F4F4;
+    margin-bottom: 22px;
+}
+
+#category-text {
+    color: #4E4E4E;
+}
+
+#category-box {
+    width: 150px;
+    height: 128px;
+    text-align: center;
+}
+
+#product {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 200px;
+    justify-content: center;
+}
+
+#product-title {
+    color: #F71963;
+    font-size: 30px;
+}
+
+#line {
+    width: 360px;
+    height: 0px;
+    border: 1px solid #DEDEDE;
+    margin-right: 34px;
+    margin-left: 34px;
+    margin-top: 18px;
 }
