@@ -131,12 +131,18 @@ header {
     background-color:transparent;
     outline: none;
     padding-left:5px;
-    font-style:normal;
-    font-size: 12px;
     border:none;
     height:48px;
     width:657px;
     border-radius: 10px;
+    color: #9F9F9F;
+    line-height: 21px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
 }
 
 #btnBusca {
@@ -230,7 +236,11 @@ header {
 }
 
 #tec-text {
+    font-family: Poppins;
     font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
     color: #F71963;
 }
 
@@ -262,6 +272,11 @@ header {
 
 #category-text {
     color: #4E4E4E;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
 }
 
 #category-box {
@@ -270,12 +285,13 @@ header {
     text-align: center;
 }
 
-#product {
+#product-box {
     text-align: center;
     display: flex;
     flex-direction: row;
-    margin-bottom: 200px;
     justify-content: center;
+    margin-bottom: 2px;
+    font-weight: bold;
 }
 
 #product-title {
@@ -290,4 +306,40 @@ header {
     margin-right: 34px;
     margin-left: 34px;
     margin-top: 18px;
+}
+
+#product-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    height: 40px;
+    
+    padding-left: 86px;
+    padding-right: 90px;
+}
+
+#product-button {
+    background: #FFFFFF;
+    border: 1px solid #BDBDBD;
+    height: 40px;
+    width: 100%;
+    color: #3B3B3B;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+}
+
+#product-button-cel {
+    background: #FFFFFF;
+    border: 1px solid #BDBDBD;
+    height: 40px;
+    width: 100%;
+    color: #F71963;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
 }
