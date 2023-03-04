@@ -5,12 +5,11 @@
 }
 
 header {
-    position: relative;
     margin-left: 86px;
     margin-right: 74px;
 }
 
-#head1 {
+#head-top {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -32,14 +31,14 @@ header {
     padding-right: 120.25px;
 }
 
-#head2 {
+#head-middle {
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-around;
 }
 
-#head3 {
+#head-bottom {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -65,10 +64,17 @@ header {
     color: #9F9F9F;
 }
 
-#emphasis1 {
-    display: flex;
-    flex-direction: row;
+#emphasis {
+    color: #F71963;
+}
+
+#emphasis-left {
     padding-left: 4px;
+    color: #F71963;
+}
+
+#emphasis-right {
+    padding-right: 4px;
     color: #F71963;
 }
 
@@ -99,13 +105,6 @@ header {
     width: 100%;
     padding-top: 2.5px;
     color: #9F9F9F;
-}
-
-#emphasis2 {
-    display: flex;
-    flex-direction: row;
-    padding-right: 4px;
-    color: #F71963;
 }
 
 #logo {
@@ -179,6 +178,15 @@ header {
     width: 20px;
     height: 20px;
     padding-right: 12px;
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 56px;
+    margin-right: 83px;
+    width: 100%;
 }
 
 #menu-text {
@@ -480,7 +488,7 @@ header {
     width: 589.7260131835938px;
     mix-blend-mode: normal;
     opacity: 0.8;
-    border-radius: 0px 0px 20px 20px;
+    border-radius: 10px;
 }
 
 #stuff-title {
@@ -529,25 +537,44 @@ header {
 }
 
 #marks{
-    margin-left: 109px ;
-    margin-right: 116px;
-    margin-bottom: 104px;
+    padding-left: 109px ;
+    padding-right: 60px;
+    padding-bottom: 104px;
 }
 
 #marks-menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
 }
+
+
 
 #marks-button {
     height: 211px;
     width: 211px;
     border-radius: 105px;
-    height: 211px;
     background: #FFFFFF;
     box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.13);
     border: none;
+}
+
+#scroll-marks {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    z-index: 100;
+    height: 56px;
+    width: 56px;
+    right: 74px;
+    top: 71px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 10px 0px #0000002E;
+    border: 1px solid #FFFFFF
 }
 
 #product-box-middle {
@@ -566,4 +593,61 @@ header {
     justify-content: center;
     font-weight: bold;
     margin-bottom: 169px;
+}
+
+footer{
+    background-color: #2A2A2A;
+}
+
+#top-footer {
+    display: flex;
+    flex-direction: row;
+}
+
+#top-footer-title {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 24px;
+    color: #fff;
+}
+
+#top-footer-list{
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+    font-style: normal;
+}
+
+#top-footer-list-item {
+    display: flex;
+    flex-direction: row;
+}
+
+#institutional {
+    margin-top: 59px;
+    margin-left: 93px;
+    margin-bottom: 42px;
+    margin-right: 93px;
+}
+
+#social-media{
+    display: flex;
+    flex-direction: row;
+    margin-top: 54px;
+}
+
+#instagram {
+    margin-right: 32.49px;
+    margin-left: 31.99px;
+}
+
+#useful-informations {
+    margin-top: 59px;
+    margin-right: 47px;
 }
