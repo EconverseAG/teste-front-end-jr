@@ -4,35 +4,120 @@
 @color-grey: #9F9F9F;
 @color-greyWhite: #F7F5F2;
 @header-height: 529px;
+@left: 86px;
+@right: 74px;
+@width: 1280px;
+@absolute: absolute;
+@six-px: 6px;
+@seven-px: 7px;
+@zero-px: 0px;
+@ten-px: 10px;
 
 .container-geral {
     height: @header-height;
 }
 
+.container-compras{
+    background-color: @color-backgoundWhite;
+    position: @absolute;
+    left: 86px;
+    right: 74px;
+    top: @zero-px;
+    height: 32px;
+    width: 1280px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: @six-px * 2;
+    line-height: @six-px * 3;
+}
+
+.vetor-shield {
+    position: @absolute;
+    height: 20px;
+    width: 20px;
+    left: 262px;
+    top: 9.75px;
+}
+
+.posiciona-frase-shield {
+    position: @absolute;
+    height: @six-px * 3;
+    width: 129px;
+    left: 291px;
+    right: 860px;
+    // top: @six-px; 
+    // bottom: @seven-px;
+}
+
+.vetor-frete {
+    position: @absolute;
+    height: 20px;
+    width: 20px;
+    left: 539px;
+    right: 721px;
+    top: 11px;
+    // bottom: @six-px;
+}
+
+.posiciona-frase-frete {
+    position: @absolute;
+    height: @six-px * 3;
+    width: 174px;
+    left: 568px;
+    right: 861px;
+    // top: @seven-px;
+    // bottom: @seven-px;
+}
+
+.vetor-cartao {
+    position: @absolute;
+    height: @ten-px * 2;
+    width: @ten-px * 2;
+    left: 861px;
+    right: 399px;
+    top: 10.38px;
+    // bottom: @six-px;
+}
+
+.posiciona-frase-cartao {
+    position: @absolute;
+    height: @six-px * 3;
+    width: 136px;
+    left: 890px;
+    // top: @seven-px;
+    // bottom: @seven-px;
+}
+
+.letras-rosa {
+    color: @color-pink;
+}
+
+.letras-cinza {
+    color: @color-grey;
+}
+
 .container-input-vetor {
     height: 72px;
-    width: 1280;
+    width: @width;
+    top: 32px;
+    left: @left;
+    right: @right;
     display: flex;
-    // align-items: center;
-    // justify-content: center;
-    position: absolute;
-    left: 3.05%;
-    right: 3.05%;
-    top: 22.22%;
-    bottom: 27.78%;
+    position: @absolute;
 }
 
 .vetor-vtex {
-    position: absolute;
+    position: @absolute;
     left: 53px;
     right: 1164.87px;
-    top: 7px;
+    top: @seven-px;
     bottom: 14.36px;
     color: @color-pink;
 }
 
 .vetor-v {
-    position: absolute;
+    position: @absolute;
     left: 9.48%;
     right: 89.05%;
     top: 37.77%;
@@ -41,7 +126,7 @@
 }
 
 .vetor-t {
-    position: absolute;
+    position: @absolute;
     left: 11.14%;
     right: 87.64%;
     top: 37.73%;
@@ -50,7 +135,7 @@
 }
 
 .vetor-e {
-    position: absolute;
+    position: @absolute;
     left: 12.54%;
     right: 86.43%;
     top: 37.55%;
@@ -59,7 +144,7 @@
 }
 
 .vetor-x {
-    position: absolute;
+    position: @absolute;
     left: 13.79%;
     right: 84.77%;
     top: 37.73%;
@@ -68,18 +153,19 @@
 }
 
 #input1{
-    position: absolute;
+    position: @absolute;
     left: 290px;
     right: 26.02%;
-    top: 12px;
-    bottom: 12px;
+    top: @six-px * 2;
+    bottom: @six-px * 2;
     background: @color-greyWhite;
     background-image: url("../Images/MagnifyingGlass.png");
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: 613px ;
     padding-left: 16.13px;
+    border-color: transparent;
     border-radius: 10px;
-    background-size: 18.38px;
+    background-size: 28px;
     height: 48px;
     width: 657px;
     font-family: 'Poppins';
@@ -91,7 +177,7 @@
 }
 
 .vetor-caixa {
-    position: absolute;
+    position: @absolute;
     left: 1008px;
     top: 25px;
     bottom: 23px;
@@ -100,7 +186,7 @@
 }
 
 .vetor-coracao {
-    position: absolute;
+    position: @absolute;
     left: 1067px;
     right: 187.5px;
     top: 26px;
@@ -108,7 +194,7 @@
 }
 
 .vetor-perfil {
-    position: absolute;
+    position: @absolute;
     left: 1132px;
     right: 124px;
     top: 24px;
@@ -116,8 +202,184 @@
 }
 
 .vetor-carrinho {
+    position: @absolute;
     left: 1192px;
-    right: 61px;
-    top: 23px;
-    bottom: 29px;
+    right: 60px;
+    top: @ten-px * 2;
+    bottom: @ten-px * 2;
+}
+
+.container-categorias {
+    display: flex;
+    align-items: center;
+    position: @absolute;
+    height: @ten-px * 4;
+    width: 1280px;
+    top: 104px;
+    bottom: 4480px;
+    left: @left;
+    right: @right;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: @six-px * 2;
+    line-height: 18px;
+    text-transform: uppercase;
+    color:@color-grey; 
+}
+
+
+.todas-categorias {
+    width: 121px;
+    height: 18px;
+    left: 56px;
+    right: 1106px;
+    top: @ten-px ;
+}
+
+.supermercado {
+    width: 98px;
+    left: 268px;
+    right: 914px;
+    top: @ten-px;
+}
+
+.livros {
+    width: 42px;
+    left: 457px;
+    right: 781px;
+    top: @ten-px;  
+}
+
+.moda {
+    width: 38px;
+    left: 590px;
+    right: 652px;
+    top: @ten-px;
+}
+
+.lancamentos {
+    width: 91px;
+    left: 719px;
+    right: 470px;
+    top: @ten-px;
+}
+
+.ofertas-do-dia {
+   width: 97px;
+   left: 901px;
+   right: 282px;
+   top: @ten-px;
+   color: @color-pink;
+}
+
+.container-assinatura {
+    display: flex;
+
+    img{
+        height: @ten-px * 2;
+        width: @ten-px * 2;
+        left: 1033px;
+        top: 13.16px;
+        right: 172.52px;
+        bottom: 14.2;
+    }
+
+    p{
+      width: 76px;
+        left: 1121px;
+        right: 83px;
+        top: @ten-px;
+    }
+}
+
+.container-descontos {
+    display: flex;
+    align-items: center;
+    position: @absolute;
+    height: 395px;
+    width: 1443px;
+    left: -3px;
+    top: 144px;
+    opacity: 0.8;
+}
+
+.imagem-desconto {
+    position: @absolute;
+    width: 1440px;
+    height: 390px;
+    left: @zero-px;
+}
+
+.container-imagem-descontos {
+    position: @absolute;
+    width: 1440px;
+    height: 390px;
+    left: @zero-px;
+}
+
+.container-imagem-descontos::after {
+    content: "";
+    position: @absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+  }
+
+
+.paragrafo-desconto {
+    position: @absolute;
+    width: 822px;
+    height: 128px;
+    left: 89px;
+    top: 52px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+    color: @color-backgoundWhite; 
+}
+
+.paragrafo-desconto-2 {
+    position: absolute;
+    width: 389px;
+    height: 54px;
+    left: 86px;
+    top: 196px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    color: @color-backgoundWhite;
+    text-shadow: grey 0.1em 0.1em 0.2em;
+}
+
+.botao-desconto {
+    position: absolute;
+    width: 109px;
+    height: 27px;
+    left: 142px;
+    top: 285px;
+    background-color: @color-pink;
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+#frase-botao {
+    position: absolute;
+    width: 227px;
+    height: 60px;
+    left: 87px;
+    top: 301px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: @color-backgoundWhite;
 }
