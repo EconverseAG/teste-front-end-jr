@@ -1,0 +1,19 @@
+{
+  "name": "teste-front-end-jr-econverse",
+  "version": "1.0.0",
+  "description": "Segue abaixo as instruções para a execução do teste.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gabriel-Avelino/teste-front-end-jr-econverse.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gabriel-Avelino/teste-front-end-jr-econverse/issues"
+  },
+  "homepage": "https://github.com/Gabriel-Avelino/teste-front-end-jr-econverse#readme"
+}
