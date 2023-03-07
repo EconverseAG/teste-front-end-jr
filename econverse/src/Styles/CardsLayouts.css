@@ -24,9 +24,6 @@
 .letras {
   font-family: 'Poppins';
   font-style: normal;
-  font-size: 16px;
-  line-height: 24px;
-  color: #9F9F9F;
 }
 .letra-rosa {
   color: #F71963;
@@ -255,12 +252,10 @@
   top: 880px;
   font-family: 'Poppins';
   font-style: normal;
-  font-size: 16px;
-  line-height: 24px;
-  color: #9F9F9F;
-  color: #3B3B3B;
   font-weight: 400;
   text-transform: uppercase;
+  font-size: 16px;
+  color: #3B3B3B;
 }
 .box-celular {
   left: 0px;
@@ -277,6 +272,8 @@
   width: 211.5px;
   top: 0px;
   border-radius: 0px;
+  font-weight: 700;
+  color: #F71963;
 }
 .box-acessorios {
   left: 210.5px;
@@ -357,4 +354,376 @@
   width: 211.5px;
   top: 0px;
   border-radius: 0px;
+}
+.container-carousel {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 62px;
+  width: 1266px;
+  height: 500px;
+  left: 86px;
+  top: 942px;
+}
+.box-carousel {
+  position: absolute;
+  height: 500px;
+  width: 270px;
+  left: 0px;
+  top: 0px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px #dbd9d9;
+  opacity: 1;
+  border-radius: 10px;
+}
+.image-carousel {
+  position: absolute;
+  height: 228px;
+  width: 247px;
+  left: 11px;
+  top: 32px;
+  border-radius: 0px;
+}
+.descricao-produto {
+  position: absolute;
+  color: #3F3F40;
+  height: 46px;
+  width: 245px;
+  left: 11px;
+  top: 269px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+  color: #3B3B3B;
+}
+.preco-antigo {
+  position: absolute;
+  height: 24px;
+  width: 67px;
+  left: 11px;
+  top: 327px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #808080;
+  text-decoration: line-through;
+}
+.preco-novo {
+  position: absolute;
+  height: 30px;
+  width: 86px;
+  left: 11px;
+  top: 353px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-size: 20px;
+  color: #3F3F40;
+  font-weight: 700;
+  line-height: 30px;
+}
+.parcelamento {
+  position: absolute;
+  height: 18px;
+  width: 166px;
+  left: 11px;
+  top: 385px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+.frete-gratis {
+  position: absolute;
+  height: 18px;
+  width: 68px;
+  left: 11px;
+  top: 420px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #F71963;
+}
+.botao-carousel {
+  position: absolute;
+  height: 44px;
+  width: 245px;
+  left: 11px;
+  top: 440px;
+  border-radius: 4px;
+  background-color: #F71963;
+  border: transparent;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+.container-geral-parceiros {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(2, 753px);
+  height: 503px;
+  top: 1458px;
+}
+.image-parceiros {
+  border-radius: 20px;
+  background-image: url("../Images/parceiros.png");
+  height: 350px;
+  width: 574px;
+  left: 82px;
+  top: 45px;
+}
+#image-config1 {
+  border-radius: 20px;
+  background-image: url("../Images/parceiros.png");
+  height: 350px;
+  width: 574px;
+  top: 45px;
+  position: absolute;
+  left: 82px;
+}
+#image-config2 {
+  border-radius: 20px;
+  background-image: url("../Images/parceiros.png");
+  height: 350px;
+  width: 574px;
+  left: 82px;
+  top: 45px;
+  position: absolute;
+  left: 761.27px;
+}
+.frase-parceiros {
+  position: absolute;
+  height: 60px;
+  width: 196px;
+  left: 40px;
+  top: 159px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: #FFFFFF;
+}
+.frase-lorem {
+  position: absolute;
+  width: 181px;
+  height: 48px;
+  left: 40px;
+  top: 227px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+.botao-parceiros {
+  position: absolute;
+  width: 131px;
+  height: 48px;
+  left: 40px;
+  top: 290px;
+  background: #F71963;
+  border-radius: 10px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: transparent;
+}
+.container-geral-produtos {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(2, 753px);
+  height: 503px;
+  top: 2546px;
+  left: 82px;
+}
+.image-produtos {
+  border-radius: 20px;
+  background-image: url("../Images/parceiros.png");
+  height: 284px;
+  width: 589.73px;
+  left: 82px;
+  top: 2546px;
+}
+.image-produtos::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 284px;
+  width: 589.73px;
+  border-radius: 20px;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 98%);
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.image-produtos2 {
+  border-radius: 20px;
+  background-image: url("../Images/parceiros.png");
+  height: 284px;
+  width: 589.73px;
+  left: 761px;
+  top: 2546px;
+}
+.image-produtos2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 761px;
+  height: 284px;
+  width: 589.73px;
+  border-radius: 20px;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 98%);
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.frase-produtos {
+  position: absolute;
+  height: 60px;
+  width: 196px;
+  top: 48px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: #FFFFFF;
+}
+#frase-produtos1 {
+  position: absolute;
+  height: 60px;
+  width: 196px;
+  top: 48px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: #FFFFFF;
+  left: 39px;
+}
+#frase-produtos2 {
+  position: absolute;
+  height: 60px;
+  width: 196px;
+  top: 48px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: #FFFFFF;
+  left: 800px;
+}
+.frase-lorem-produtos {
+  position: absolute;
+  width: 181px;
+  height: 48px;
+  top: 117px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+#frase-lorem-produtos1 {
+  position: absolute;
+  width: 181px;
+  height: 48px;
+  top: 117px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  left: 41.1px;
+}
+#frase-lorem-produtos2 {
+  position: absolute;
+  width: 181px;
+  height: 48px;
+  top: 117px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  left: 802.1px;
+}
+.botao-produtos {
+  position: absolute;
+  width: 131px;
+  height: 48px;
+  top: 197px;
+  background: #F71963;
+  border-radius: 10px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: transparent;
+}
+#botao-produtos1 {
+  position: absolute;
+  width: 131px;
+  height: 48px;
+  top: 197px;
+  background: #F71963;
+  border-radius: 10px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: transparent;
+  left: 41.14px;
+}
+#botao-produtos2 {
+  position: absolute;
+  width: 131px;
+  height: 48px;
+  top: 197px;
+  background: #F71963;
+  border-radius: 10px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: transparent;
+  left: 826.75px;
 }

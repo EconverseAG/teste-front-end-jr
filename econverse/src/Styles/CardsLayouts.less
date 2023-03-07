@@ -27,9 +27,6 @@
 .letras {
     font-family: 'Poppins';
     font-style: normal;
-    font-size: 16px;
-    line-height: 24px;
-    color: @color-grey;
 }
 
 .letra-rosa {
@@ -56,6 +53,9 @@
 
 .container-cards {
     .letras;
+    font-size: 16px;
+    line-height: 24px;
+    color: @color-grey;
     font-weight: 500;
     position: @absolute;
     display: flex;
@@ -235,14 +235,17 @@
     left: 86px;
     top: 880px;
     .letras;
-    color: #3B3B3B;
     font-weight: 400;
     text-transform: uppercase;
+    font-size: 16px;
+    color: #3B3B3B;
 }
 
 .box-celular {
     left: 0px;
     .box-frame;
+    font-weight: 700;
+    color: @color-pink;
 }
 
 .box-acessorios {
@@ -273,3 +276,326 @@
 
 // ---------------carousel produtos-------------
 
+.container-carousel {
+    position: @absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 62px;
+    width: 1266px;
+    height: 500px;
+    left: 86px;
+    top: 942px;
+}
+
+.box-carousel {
+    position: @absolute;
+    height: 500px;
+    width: 270px;
+    left: 0px;
+    top: 0px;
+    border-radius: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgb(219, 217, 217);
+    opacity: 1;
+    border-radius: 10px;
+}
+
+.image-carousel {
+    position: @absolute;
+    height: 228px;
+    width: 247px;
+    left: 11px;
+    top: 32px;
+    border-radius: 0px;
+}
+
+.descricao-produto {
+    position: @absolute;
+    position: absolute;
+    color: #3F3F40;
+    height: 46px;
+    width: 245px;
+    left: 11px;
+    top: 269px;
+    .letras;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+    color: #3B3B3B;
+}
+
+.preco-antigo {
+    position: @absolute;
+    height: 24px;
+    width: 67px;
+    left: 11px;
+    top: 327px;
+    .letras;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #808080;
+    text-decoration: line-through;
+}
+
+.preco-novo {
+    position: @absolute;
+    height: 30px;
+    width: 86px;
+    left: 11px;
+    top: 353px;
+    .letras;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #3F3F40;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.parcelamento {
+    position: @absolute;
+    height: @six-px * 3;
+    width: 166px;
+    left: 11px;
+    top: 385px;
+    .letras;
+    font-weight: 400;
+    font-size: @six-px * 2;
+    line-height: @six-px * 3;
+}
+
+.frete-gratis {
+    position: @absolute;
+    height: @six-px * 3;
+    width: 68px;
+    left: 11px;
+    top: 420px;
+    .letras;
+    font-weight: 400;
+    font-size: @six-px * 2;
+    line-height: @six-px * 3;
+    color: @color-pink;
+}
+
+.botao-carousel {
+    position: @absolute;
+    height: 44px;
+    width: 245px;
+    left: 11px;
+    top: 440px;
+    border-radius: 4px;
+    background-color: @color-pink;
+    border: transparent;
+    .letras;
+    font-weight: 700;
+    font-size: 14px;
+    color: @color-backgoundWhite;
+
+}
+
+// ------------Grid Parceiros-----------
+
+.container-geral-parceiros {
+    position: @absolute;
+    display: grid;
+    grid-template-columns: repeat(2, 753px);
+    height: 503px;
+    top: 1458px;
+}
+
+.image-parceiros {
+    border-radius: 20px;
+    background-image: url("../Images/parceiros.png");
+    height: 350px;
+    width: 574px;
+    left: 82px;
+    top: 45px;
+}
+
+#image-config1 {
+    .image-parceiros;
+    position: @absolute;
+    left: 82px;
+}
+
+#image-config2 {
+    .image-parceiros;
+    position: @absolute;
+    left: 761.27px;
+}
+
+.frase-parceiros {
+    position: @absolute;
+    height: @ten-px * 6;
+    width: 196px;
+    left: @ten-px * 4;
+    top: 159px;
+    .letras;
+    font-weight: 700;
+    font-size: @ten-px * 4;
+    line-height: @ten-px * 6;
+    color: @color-backgoundWhite;
+}
+
+.frase-lorem {
+    position: @absolute;
+    width: 181px;
+    height: 48px;
+    left: @ten-px * 4;
+    top: 227px;
+    .letras;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: @color-backgoundWhite;
+}
+
+.botao-parceiros {
+    position: @absolute;
+    width: 131px;
+    height: 48px;
+    left: @ten-px * 4;
+    top: 290px;
+    background: @color-pink;
+    border-radius: @ten-px;
+    .letras;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: @color-backgoundWhite;
+    border: transparent;
+}
+
+// -----------Grid Produtos-----------------
+
+.container-geral-produtos {
+    position: @absolute;
+    display: grid;
+    grid-template-columns: repeat(2, 753px);
+    height: 503px;
+    top: 2546px;
+    left: 82px;
+}
+
+.image-produtos {
+    border-radius: 20px;
+    background-image: url("../Images/parceiros.png");
+    height: 284px;
+    width: 589.73px;
+    left: 82px;
+    top: 2546px;
+}
+
+.image-produtos::after{
+    content: ""; 
+    position: @absolute;
+    top: 0;
+    left: 0;
+    height: 284px;
+    width: 589.73px;
+    border-radius: 20px;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 98%);
+    mix-blend-mode: normal;
+    opacity:0.5;
+}
+
+.image-produtos2 {
+    border-radius: 20px;
+    background-image: url("../Images/parceiros.png");
+    height: 284px;
+    width: 589.73px;
+    left: 761px;
+    top: 2546px;
+}
+
+.image-produtos2::after{
+    content: ""; 
+    position: @absolute;
+    top: 0;
+    left: 761px;
+    height: 284px;
+    width: 589.73px;
+    border-radius: 20px;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 98%);
+    mix-blend-mode: normal;
+    opacity:0.5;
+}
+
+.frase-produtos {
+    position: @absolute;
+    height: @ten-px * 6;
+    width: 196px;
+    top: 48px;
+    .letras;
+    font-weight: 700;
+    font-size: @ten-px * 4;
+    line-height: @ten-px * 6;
+    color: @color-backgoundWhite;
+}
+
+#frase-produtos1 {
+    .frase-produtos;
+    left: 39px;
+}
+
+#frase-produtos2 {
+    .frase-produtos;
+    left: 800px;
+}
+
+.frase-lorem-produtos {
+    position: @absolute;
+    width: 181px;
+    height: 48px;
+    top: 117px;
+    .letras;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: @color-backgoundWhite;
+}
+
+#frase-lorem-produtos1 {
+    .frase-lorem-produtos;
+    left: 41.1px;
+}
+
+#frase-lorem-produtos2 {
+    .frase-lorem-produtos;
+    left: 802.1px;
+}
+
+.botao-produtos {
+    position: @absolute;
+    width: 131px;
+    height: 48px;
+    top: 197px;
+    background: @color-pink;
+    border-radius: @ten-px;
+    .letras;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: @color-backgoundWhite;
+    border: transparent;
+}
+
+#botao-produtos1{
+    .botao-produtos;
+    left: 41.14px;
+}
+
+#botao-produtos2{
+    .botao-produtos;
+    left: 826.75px;
+}
