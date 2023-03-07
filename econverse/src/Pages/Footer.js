@@ -1,9 +1,65 @@
 import React from "react";
+import '../Styles/FooterLayout.css';
 
 export const Footer = () => {
-    return(
+    return (
         <div>
+            <div className="container-geral-sobre-nos">
+                <div className="container-institucional" >
+                    <span id="frase-sobre-nos">Sobre nós</span>
+                    <div className="container-sobre-nos">
+                        <span>conheça</span>
+                        <span>como comprar</span>
+                        <span>indicação e desconto</span>
+                    </div>
 
+                    <div className="container-redes-sociais">
+                        <image id="face" />
+                        <image id="instagram" />
+                        <image id="youtube" />
+                    </div>
+                </div>
+
+                <div className="container-geral-informacoes">
+                    <span id="frase-info">Informações úteis</span>
+                    <div className="container-info">
+                        <p>fale conosco</p>
+                        <p>dúvidas</p>
+                        <p>prazos de entrega</p>
+                        <p>formas de pagamento</p>
+                        <p>política de privacidade</p>
+                        <p>trocas e devoluções</p>
+                    </div>
+                </div>
+
+                <div className="container-pagamento">
+                    <span id="frase-pagamento">formas de pagamento</span>
+                    <div className="container-formas-pagamento">
+                        <span id="img-visa" />
+                        <span id="img-dinners" />
+                        <span id="img-pix" />
+                        <span id="img-sodexo" />
+                        <span id="img-elo" />
+                        <span id="img-ifood" />
+                        <span id="img-amex" />
+                        <span id="img-alelo" />
+                        <span id="img-ticket" />
+                    </div>
+                </div>
+
+                <div className="container-geral-cadastro">
+                    <div className="container-cadastro">
+                        <div id="box-frase1 ">
+                            <p id="frase1">cadastre-se e receba nossas </p><span id="frase2">novidades e promoções</span>
+                        </div>
+                        {/* <div className="container-frase3"> */}
+                            <p id="frase3"></p>
+                        {/* </div> */}
+                        <input />
+                        <button></button>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 };

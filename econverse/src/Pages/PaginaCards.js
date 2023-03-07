@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import '../Styles/CardsLayouts.css';
+import '../Styles/CardsLayout.css';
 import tecnologia from "../Images/tecnologia.svg";
 import supermercado from "../Images/supermercados.svg";
 import bebidas from "../Images/whiskey.svg";
@@ -9,6 +9,8 @@ import corrida from "../Images/corrida.svg";
 import saude from "../Images/saude.svg";
 import moda from "../Images/moda.svg";
 import chevronMarca from "../Images/chevron-marcas.svg";
+import { Header } from "./Header";
+import { Footer } from "./Footer";
 
 export const PaginaCards = () => {
 
@@ -42,6 +44,7 @@ export const PaginaCards = () => {
 
     return (
         <div>
+            <Header />
             <div className="container-cards">
                 <div className="card-tecnologia">
                     <img className="images-tamanho" src={tecnologia} alt="tecnologia" />
@@ -183,10 +186,10 @@ export const PaginaCards = () => {
                     <button id="botao-produtos2">confira</button>
                 </div>
 
-
+                {listaProdutos}
 
             </div>
-
+          
         </div >
     )
 };
