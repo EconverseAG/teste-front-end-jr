@@ -1,0 +1,275 @@
+@import url("./variaveis.less");
+
+// -----------Cards filtros-----------
+
+.borda-tecnologia {
+    position: @absolute;
+    background: @color-backgoundWhite;
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.22);
+    border-radius: 10px;
+    .tamanho-borda;
+}
+
+.borda-geral {
+    position: @absolute;
+    background: @color-offwhite;
+    box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.13);
+    border-radius: 10px;
+    .tamanho-borda;
+}
+
+.tamanho-borda {
+    width: 128px;
+    height: 128px;
+    top: 10px;
+}
+
+.letras {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: @color-grey;
+}
+
+.letra-rosa {
+    color: @color-pink;
+}
+
+.letra-cinza {
+    color: @color-grey;
+}
+
+.images-tamanho {
+    position: @absolute;
+    width: 61px;
+    height: 61px;
+    left: 34px;
+    right: 33px;
+    top: 34px;
+}
+
+.height-top {
+    height: 24px;
+    top: 150px;
+}
+
+.container-cards {
+    .letras;
+    font-weight: 500;
+    position: @absolute;
+    display: flex;
+    height: 174px;
+    width: 1277px;
+    top: 573px;
+    left: @left;
+    right: @right;
+}
+
+.card-tecnologia {
+    display: flex;
+    flex-direction: column;
+    position: @absolute;
+    height: 174px;
+    left: @zero-px;
+    .borda-tecnologia;
+}
+
+#frase-tecnologia {
+    position: @absolute;
+    .height-top;
+    width: 90px;
+    left: 19px;
+    .letra-rosa;
+}
+
+.card-supermercado {
+    position: @absolute;
+    left: 181px;
+    .borda-geral;
+}
+
+#frase-supermercado {
+    position: @absolute;
+    .letra-cinza;
+    .height-top;
+    width: 122px;
+    left: 184px;
+}
+
+.card-bebidas {
+    position: @absolute;
+    left: 368px;
+    top: 0px;
+    .borda-geral;
+}
+
+#frase-bebidas {
+    position: @absolute;
+    .letra-cinza;
+    .height-top;
+    width: 140px;
+    left: 398px;
+}
+
+.card-ferramentas {
+    position: @absolute;
+    left: 555px;
+    top: 0px;
+    .borda-geral;
+}
+
+#frase-ferramentas {
+    position: @absolute;
+    .letra-cinza;
+    .height-top;
+    width: 107px;
+    left: 566px;
+}
+
+.card-saude {
+    position: @absolute;
+    left: 754px;
+    .borda-geral;
+}
+
+#frase-saude {
+    position: @absolute;
+    .height-top;
+    width: 164px;
+    left: 796px;
+}
+
+.card-esporte {
+    position: @absolute;
+    left: 961px;
+    .borda-geral;
+}
+
+#frase-esporte {
+    position: @absolute;
+    .height-top;
+    width: 143px;
+    left: 953px;
+}
+
+.card-moda {
+    position: @absolute;
+    .borda-geral;
+    left: 1149px;
+}
+
+#frase-moda {
+    position: @absolute;
+    .height-top;
+    width: 46px;
+    left: 1190px;
+}
+
+// -----------------card Produtos Relacionados -------------
+
+.tamanho-linha {
+    height: @zero-px;
+    width: 360px;
+    top: 38px;
+    border: 1px solid #DEDEDE;
+}
+
+.container-relacionados {
+    position: @absolute;
+    height: 45px;
+    width: 1138px;
+    left: 151px;
+    top: 786px;
+}
+
+.frase-relacionados {
+    position: @absolute;
+    height: 45px;
+    width: 350px;
+    left: 394px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+    color: @color-pink;
+    top: @zero-px;
+}
+
+.linha1 {
+    position: @absolute;
+    .tamanho-linha;
+    left: @zero-px;
+}
+
+.linha2 {
+    position: @absolute;
+    .tamanho-linha;
+    left: 778px;
+}
+
+// -------------Frames produtos --------------
+
+.box-frame {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 58px;
+    gap: @ten-px;
+    height: @ten-px * 4;
+    background: @color-backgoundWhite;
+    border: 1px solid #BDBDBD;
+    width: 211.5px;
+    top: @zero-px;
+    border-radius: @zero-px;
+}
+
+.container-frames {
+    display: flex;
+    position: @absolute;
+    width: 1264px;
+    height: 37px;
+    left: 86px;
+    top: 880px;
+    .letras;
+    color: #3B3B3B;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.box-celular {
+    left: 0px;
+    .box-frame;
+}
+
+.box-acessorios {
+    left: 210.5px;
+    .box-frame;
+}
+
+.box-tablet {
+    left: 86px;
+    .box-frame;
+}
+
+.box-notebook {
+    left: 631.5px;
+    .box-frame;
+}
+
+.box-tvs {
+    left: 842px;
+    .box-frame;
+}
+
+.box-todos {
+    left: 1052.5px;
+    .box-frame;
+}
+
+
+// ---------------carousel produtos-------------
+

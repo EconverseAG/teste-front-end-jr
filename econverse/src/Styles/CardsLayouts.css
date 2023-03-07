@@ -1,0 +1,360 @@
+.borda-tecnologia {
+  position: absolute;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.22);
+  border-radius: 10px;
+  width: 128px;
+  height: 128px;
+  top: 10px;
+}
+.borda-geral {
+  position: absolute;
+  background: #F4F4F4;
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.13);
+  border-radius: 10px;
+  width: 128px;
+  height: 128px;
+  top: 10px;
+}
+.tamanho-borda {
+  width: 128px;
+  height: 128px;
+  top: 10px;
+}
+.letras {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #9F9F9F;
+}
+.letra-rosa {
+  color: #F71963;
+}
+.letra-cinza {
+  color: #9F9F9F;
+}
+.images-tamanho {
+  position: absolute;
+  width: 61px;
+  height: 61px;
+  left: 34px;
+  right: 33px;
+  top: 34px;
+}
+.height-top {
+  height: 24px;
+  top: 150px;
+}
+.container-cards {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #9F9F9F;
+  font-weight: 500;
+  position: absolute;
+  display: flex;
+  height: 174px;
+  width: 1277px;
+  top: 573px;
+  left: 86px;
+  right: 74px;
+}
+.card-tecnologia {
+  display: flex;
+  flex-direction: column;
+  height: 174px;
+  left: 0px;
+  position: absolute;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.22);
+  border-radius: 10px;
+  width: 128px;
+  height: 128px;
+  top: 10px;
+}
+#frase-tecnologia {
+  position: absolute;
+  height: 24px;
+  top: 150px;
+  width: 90px;
+  left: 19px;
+  color: #F71963;
+}
+.card-supermercado {
+  left: 181px;
+  position: absolute;
+  background: #F4F4F4;
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.13);
+  border-radius: 10px;
+  width: 128px;
+  height: 128px;
+  top: 10px;
+}
+#frase-supermercado {
+  position: absolute;
+  color: #9F9F9F;
+  height: 24px;
+  top: 150px;
+  width: 122px;
+  left: 184px;
+}
+.card-bebidas {
+  left: 368px;
+  top: 0px;
+  position: absolute;
+  background: #F4F4F4;
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.13);
+  border-radius: 10px;
+  width: 128px;
+  height: 128px;
+  top: 10px;
+}
+#frase-bebidas {
+  position: absolute;
+  color: #9F9F9F;
+  height: 24px;
+  top: 150px;
+  width: 140px;
+  left: 398px;
+}
+.card-ferramentas {
+  left: 555px;
+  top: 0px;
+  position: absolute;
+  background: #F4F4F4;
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.13);
+  border-radius: 10px;
+  width: 128px;
+  height: 128px;
+  top: 10px;
+}
+#frase-ferramentas {
+  position: absolute;
+  color: #9F9F9F;
+  height: 24px;
+  top: 150px;
+  width: 107px;
+  left: 566px;
+}
+.card-saude {
+  left: 754px;
+  position: absolute;
+  background: #F4F4F4;
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.13);
+  border-radius: 10px;
+  width: 128px;
+  height: 128px;
+  top: 10px;
+}
+#frase-saude {
+  position: absolute;
+  height: 24px;
+  top: 150px;
+  width: 164px;
+  left: 796px;
+}
+.card-esporte {
+  left: 961px;
+  position: absolute;
+  background: #F4F4F4;
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.13);
+  border-radius: 10px;
+  width: 128px;
+  height: 128px;
+  top: 10px;
+}
+#frase-esporte {
+  position: absolute;
+  height: 24px;
+  top: 150px;
+  width: 143px;
+  left: 953px;
+}
+.card-moda {
+  position: absolute;
+  background: #F4F4F4;
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.13);
+  border-radius: 10px;
+  width: 128px;
+  height: 128px;
+  top: 10px;
+  left: 1149px;
+}
+#frase-moda {
+  position: absolute;
+  height: 24px;
+  top: 150px;
+  width: 46px;
+  left: 1190px;
+}
+.tamanho-linha {
+  height: 0px;
+  width: 360px;
+  top: 38px;
+  border: 1px solid #DEDEDE;
+}
+.container-relacionados {
+  position: absolute;
+  height: 45px;
+  width: 1138px;
+  left: 151px;
+  top: 786px;
+}
+.frase-relacionados {
+  position: absolute;
+  height: 45px;
+  width: 350px;
+  left: 394px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+  color: #F71963;
+  top: 0px;
+}
+.linha1 {
+  position: absolute;
+  height: 0px;
+  width: 360px;
+  top: 38px;
+  border: 1px solid #DEDEDE;
+  left: 0px;
+}
+.linha2 {
+  position: absolute;
+  height: 0px;
+  width: 360px;
+  top: 38px;
+  border: 1px solid #DEDEDE;
+  left: 778px;
+}
+.box-frame {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 58px;
+  gap: 10px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #BDBDBD;
+  width: 211.5px;
+  top: 0px;
+  border-radius: 0px;
+}
+.container-frames {
+  display: flex;
+  position: absolute;
+  width: 1264px;
+  height: 37px;
+  left: 86px;
+  top: 880px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #9F9F9F;
+  color: #3B3B3B;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.box-celular {
+  left: 0px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 58px;
+  gap: 10px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #BDBDBD;
+  width: 211.5px;
+  top: 0px;
+  border-radius: 0px;
+}
+.box-acessorios {
+  left: 210.5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 58px;
+  gap: 10px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #BDBDBD;
+  width: 211.5px;
+  top: 0px;
+  border-radius: 0px;
+}
+.box-tablet {
+  left: 86px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 58px;
+  gap: 10px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #BDBDBD;
+  width: 211.5px;
+  top: 0px;
+  border-radius: 0px;
+}
+.box-notebook {
+  left: 631.5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 58px;
+  gap: 10px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #BDBDBD;
+  width: 211.5px;
+  top: 0px;
+  border-radius: 0px;
+}
+.box-tvs {
+  left: 842px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 58px;
+  gap: 10px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #BDBDBD;
+  width: 211.5px;
+  top: 0px;
+  border-radius: 0px;
+}
+.box-todos {
+  left: 1052.5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 58px;
+  gap: 10px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #BDBDBD;
+  width: 211.5px;
+  top: 0px;
+  border-radius: 0px;
+}
