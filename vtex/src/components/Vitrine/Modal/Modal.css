@@ -1,0 +1,97 @@
+*{
+    font-family: 'Lato', sans-serif;
+}
+
+#background-modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+#Modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 299.2572937011719px;
+    width: 768.9999389648438px;
+    border-radius: 0px;
+    border: 2px solid #707070;
+    background-color: #FFFFFF;
+}
+
+#close{   
+    width: 20.92645977638587px;
+    border: none;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    margin-left: 722px;
+    margin-top: 16.86px;
+}
+
+#close-image{   
+    width: 20.92645977638587px;
+    border: none;
+    background-color: #FFFFFF;
+}
+
+#content{
+    display:flex;
+    flex-direction: row;
+    padding-bottom: 50.58px;
+    padding-left: 56px;
+    padding-top: 26.13px;
+}
+
+#cellImg {
+    height: 192.19903564453125px;
+    width: 246.99998474121094px;
+}
+
+#cellText {
+    margin-left: 87px;
+}
+
+#cellTitle{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: #041E50;
+    margin-bottom: 21.07px;
+}
+
+#cellPrice{
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: #041E50;
+    margin-bottom: 17.7px;
+}
+
+#cellDescription{
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: #222222;
+    margin-bottom: 25.29px;
+}
+
+#details {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color:  #041E50;
+    cursor: pointer;
+}

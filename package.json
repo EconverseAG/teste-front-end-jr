@@ -15,5 +15,7 @@
   "bugs": {
     "url": "https://github.com/Gabriel-Avelino/teste-front-end-jr-econverse/issues"
   },
-  "homepage": "https://github.com/Gabriel-Avelino/teste-front-end-jr-econverse#readme"
+  "homepage": "https://github.com/Gabriel-Avelino/teste-front-end-jr-econverse#readme",
+  "dependencies": {
+  }
 }

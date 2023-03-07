@@ -10,11 +10,9 @@ import Payment from './components/img/formas_pagamento.png';
 import Group from './components/img/Group.png';
 import Heart from './components/img/Heart.png';
 import Instagram from './components/img/instagram.png';
-import leftArrow from './components/img/left-arrow.png';
 import Glass from './components/img/MagnifyingGlass.png';
 import Moda from './components/img/moda 1.png';
 import Tecnology from './components/img/tablet.png';
-import rightArrow from './components/img/right-arrow.png';
 import Check from './components/img/ShieldCheck.png';
 import Cart from './components/img/ShoppingCart.png';
 import Market from './components/img/supermercados 1.png';
@@ -24,12 +22,10 @@ import whiteLogo from './components/img/vtex-white-logo.png';
 import Logo from './components/img/vtex.png';
 import Bebidas from './components/img/whiskey.png';
 import Youtube from './components/img/youtube.png';
-import Modal from './components/Modal/Modal';
 import './style.css';
-import { useState } from 'react';
+import Vitrine from './components/Vitrine/Vitrine';
 
 function App() {
-  const [openModal, setOpenModal]= useState(false)
 
   return (
     <div className="App">
@@ -134,48 +130,7 @@ function App() {
                     <button id="product-button">TVS</button>
                     <button id="product-button">VER TODOS</button>
                 </div>
-                <div id="vitrine">
-                        <img id="arrow" src={leftArrow} alt=''/>
-                        <div id="left-item" onClick={()=> setOpenModal(true)}>
-                            <img alt=''/>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <button id="buy">COMPRAR</button>
-                        </div>
-                        <Modal isOpen={openModal} setModalOpen={()=>setOpenModal(!openModal)}/>
-
-                        <div id="middle-item">
-                            <img alt=''/>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <button id="buy">COMPRAR</button>
-                        </div>
-                        <div id="item">
-                            <img alt=''/>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <button id="buy">COMPRAR</button>
-                        </div>
-                        <div id="right-item">
-                            <img alt=''/>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <button id="buy">COMPRAR</button>
-                        </div>
-                        <img id="arrow" src={rightArrow} alt=''/>
-                </div>
+                <Vitrine/>
             </div>
             
             <div id="parceiros-box">
@@ -198,46 +153,7 @@ function App() {
                     <div id="line"></div>
                 </div>
                 <p id="view-more">Ver Todos</p>
-                <div id="vitrine">
-                        <img id="arrow" src={leftArrow} alt=''/>
-                        <div id="left-item">
-                            <img alt=''/>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <button id="buy">COMPRAR</button>
-                        </div>
-                        <div id="middle-item">
-                            <img alt=''/>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <button id="buy">COMPRAR</button>
-                        </div>
-                        <div id="item">
-                            <img alt=''/>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <button id="buy">COMPRAR</button>
-                        </div>
-                        <div id="right-item">
-                            <img alt=''/>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <button id="buy">COMPRAR</button>
-                        </div>
-                        <img id="arrow" src={rightArrow} alt=''/>
-                </div>
+                <Vitrine/>
             </div>
             
             <div id="stuff-box">
@@ -271,46 +187,7 @@ function App() {
                     <div id="line"></div>
                 </div>
                 <p id="view-more">Ver Todos</p>
-                <div id="vitrine">
-                        <img id="arrow" src={leftArrow} alt=''/>
-                        <div id="left-item">
-                            <img alt=''/>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <button id="buy">COMPRAR</button>
-                        </div>
-                        <div id="middle-item">
-                            <img alt=''/>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <button id="buy">COMPRAR</button>
-                        </div>
-                        <div id="item">
-                            <img alt=''/>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <button id="buy">COMPRAR</button>
-                        </div>
-                        <div id="right-item">
-                            <img alt=''/>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <button id="buy">COMPRAR</button>
-                        </div>
-                        <img id="arrow" src={rightArrow} alt=''/>
-                  </div>
+                <Vitrine/>
                 </div> 
         </main>
         <footer>
