@@ -20,14 +20,27 @@ Repositório criado para a realização do teste para a vaga de desenvolvedor Fr
 
 - Clone ou baixe o repositório na máquina;
 
+
+
 - Abra a pasta do repositório;
+
+
 
 - Abra a pasta './vtex';
 
+
+
 - Abra o prompt de comando;
+
+
 
 - Com o NPM instalado, digite 'npm run start';
 
 Obs: também é possível executar usando o Yarn, basta apenas usar o comando 'yarn run start'.
 
+
+
 - O ReactJS abrirá o site no server local.
+
+
+Muito Obrigado!
