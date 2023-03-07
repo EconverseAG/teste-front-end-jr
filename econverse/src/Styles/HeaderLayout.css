@@ -1,11 +1,20 @@
 .container-geral {
   height: 529px;
 }
+.letras-rosa {
+  color: #F71963;
+}
+.letras-cinza {
+  color: #9F9F9F;
+}
+.letras {
+  font-family: 'Poppins';
+  font-style: normal;
+}
 .container-compras {
   background-color: #FFFFFF;
   position: absolute;
   left: 86px;
-  right: 74px;
   top: 0px;
   height: 32px;
   width: 1280px;
@@ -27,14 +36,14 @@
   height: 18px;
   width: 129px;
   left: 291px;
-  right: 860px;
+  top: 12px;
+  display: flex;
 }
 .vetor-frete {
   position: absolute;
   height: 20px;
   width: 20px;
   left: 539px;
-  right: 721px;
   top: 11px;
 }
 .posiciona-frase-frete {
@@ -42,14 +51,12 @@
   height: 18px;
   width: 174px;
   left: 568px;
-  right: 861px;
 }
 .vetor-cartao {
   position: absolute;
   height: 20px;
   width: 20px;
   left: 861px;
-  right: 399px;
   top: 10.38px;
 }
 .posiciona-frase-cartao {
@@ -58,71 +65,28 @@
   width: 136px;
   left: 890px;
 }
-.letras-rosa {
-  color: #F71963;
-}
-.letras-cinza {
-  color: #9F9F9F;
-}
 .container-input-vetor {
   height: 72px;
   width: 1280px;
   top: 32px;
   left: 86px;
-  right: 74px;
   display: flex;
   position: absolute;
 }
 .vetor-vtex {
   position: absolute;
   left: 53px;
-  right: 1164.87px;
   top: 7px;
-  bottom: 14.36px;
-  color: #F71963;
-}
-.vetor-v {
-  position: absolute;
-  left: 9.48%;
-  right: 89.05%;
-  top: 37.77%;
-  bottom: 47.4%;
-  color: #F71963;
-}
-.vetor-t {
-  position: absolute;
-  left: 11.14%;
-  right: 87.64%;
-  top: 37.73%;
-  bottom: 47.57%;
-  color: #F71963;
-}
-.vetor-e {
-  position: absolute;
-  left: 12.54%;
-  right: 86.43%;
-  top: 37.55%;
-  bottom: 47.39%;
-  color: #F71963;
-}
-.vetor-x {
-  position: absolute;
-  left: 13.79%;
-  right: 84.77%;
-  top: 37.73%;
-  bottom: 47.57%;
   color: #F71963;
 }
 #input1 {
   position: absolute;
   left: 290px;
-  right: 26.02%;
   top: 12px;
-  bottom: 12px;
   background: #F7F5F2;
   background-image: url("../Images/MagnifyingGlass.png");
   background-repeat: no-repeat;
-  background-position: 613px ;
+  background-position: 613px;
   padding-left: 16.13px;
   border-color: transparent;
   border-radius: 10px;
@@ -140,41 +104,29 @@
   position: absolute;
   left: 1008px;
   top: 25px;
-  bottom: 23px;
-  border: 0.2px solid #9F9F9F;
-  transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 .vetor-coracao {
   position: absolute;
   left: 1067px;
-  right: 187.5px;
   top: 26px;
-  bottom: 24px;
 }
 .vetor-perfil {
   position: absolute;
   left: 1132px;
-  right: 124px;
   top: 24px;
-  bottom: 24px;
 }
 .vetor-carrinho {
   position: absolute;
   left: 1192px;
-  right: 60px;
   top: 20px;
   bottom: 20px;
 }
-.container-categorias {
-  display: flex;
-  align-items: center;
+.container-geral-categorias {
   position: absolute;
   height: 40px;
   width: 1280px;
   top: 104px;
-  bottom: 4480px;
   left: 86px;
-  right: 74px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
@@ -183,59 +135,71 @@
   text-transform: uppercase;
   color: #9F9F9F;
 }
+.container-categorias {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  height: 20px;
+  width: 1141px;
+  left: 56px;
+  top: 1px;
+}
 .todas-categorias {
-  width: 121px;
+  position: absolute;
+  width: 151px;
   height: 18px;
   left: 56px;
-  right: 1106px;
   top: 10px;
 }
 .supermercado {
+  position: absolute;
   width: 98px;
   left: 268px;
-  right: 914px;
+  height: 18px;
   top: 10px;
 }
 .livros {
+  position: absolute;
   width: 42px;
   left: 457px;
-  right: 781px;
   top: 10px;
 }
 .moda {
+  position: absolute;
   width: 38px;
   left: 590px;
-  right: 652px;
   top: 10px;
 }
 .lancamentos {
+  position: absolute;
   width: 91px;
   left: 719px;
-  right: 470px;
   top: 10px;
 }
 .ofertas-do-dia {
+  position: absolute;
   width: 97px;
   left: 901px;
-  right: 282px;
-  top: 10px;
   color: #F71963;
+  top: 10px;
 }
 .container-assinatura {
   display: flex;
-}
-.container-assinatura img {
+  position: absolute;
   height: 20px;
   width: 20px;
-  left: 1033px;
-  top: 13.16px;
-  right: 172.52px;
-  bottom: 14.2;
-}
-.container-assinatura p {
-  width: 76px;
   left: 1121px;
-  right: 83px;
+  top: 10px;
+  gap: 13.52px;
+}
+#coroa {
+  height: 12.63px;
+  width: 16.96px;
+  top: 3.2px;
+}
+#assinatura {
+  height: 18px;
+  width: 76px;
   top: 10px;
 }
 .container-descontos {
