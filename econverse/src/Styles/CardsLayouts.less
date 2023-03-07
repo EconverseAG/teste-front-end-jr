@@ -175,11 +175,15 @@
     border: 1px solid #DEDEDE;
 }
 
-.container-relacionados {
+.container-geral-relacionados {
     position: @absolute;
     height: 45px;
     width: 1138px;
     left: 151px;
+}
+
+.container-relacionados1 {
+    .container-geral-relacionados;
     top: 786px;
 }
 
@@ -188,8 +192,7 @@
     height: 45px;
     width: 350px;
     left: 394px;
-    font-family: 'Poppins';
-    font-style: normal;
+    .letras;
     font-weight: 700;
     font-size: 30px;
     line-height: 45px;
@@ -207,6 +210,198 @@
     position: @absolute;
     .tamanho-linha;
     left: 778px;
+}
+
+// Relacionados 2 
+
+.container-relacionados2 {
+    .container-geral-relacionados;
+    top: 1873px;
+}
+
+.linha3 {
+    position: @absolute;
+    .tamanho-linha;
+    left: @zero-px;
+}
+
+.linha4 {
+    position: @absolute;
+    .tamanho-linha;
+    left: 778px;
+}
+
+.frase-ver-todos {
+    position: @absolute;
+    height: 23px;
+    width: 74px;
+    left: 532px;
+    top: 78px;
+    .letras;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: #3F3F40;
+}
+
+// Relacionados 3
+
+.container-relacionados3 {
+    position: @absolute;
+    height: 72px;
+    width: 1138px;
+    left: 150px;
+    top: 3405px;
+}
+
+.linha5 {
+    position: @absolute;
+    .tamanho-linha;
+    left: @zero-px;
+}
+
+.linha6 {
+    position: @absolute;
+    .tamanho-linha;
+    left: 778px;
+}
+
+
+// -----------Navegue por Marcas --------
+
+.container-frase-marcas {
+    position: @absolute;
+    height: 331px;
+    width: 1250px;
+    left: 564px;
+    top: 2966px;
+    .letras;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+    color: @color-pink;
+}
+
+// ---------Carousel Marcas-------
+
+.container-marcas {
+    position: @absolute;
+    height: 331px;
+    width: 1250px;
+    left: 101px;
+    top: 3025px;
+}
+
+.container-borda {
+    position: absolute;
+    width: 211px;
+    height: 211px;
+    background: @color-backgoundWhite;
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.13);
+    border-radius: 100px;
+    top: 8px;
+}
+
+.container-logo {
+    height: 62.6640739440918px;
+    width: 172px;
+    left: 27px;
+    top: 82px;
+    background-image: url("../Images/logo.png");
+    background-repeat: no-repeat;
+    position: @absolute;
+}
+
+.container-v {
+    position: @absolute;
+    background-image: url("../Images/v.png");
+    background-repeat: no-repeat;
+    height: 23.38px;
+    width: 26.43px;
+    left: 99px;
+    top: 93.04px;
+}
+
+.container-t {
+    position: @absolute;
+    background-image: url("../Images/t.png");
+    background-repeat: no-repeat;
+    height: 26.19px;
+    width: 19.45px;
+    left: 126px;
+    top: 92.98px;
+}
+
+.container-e {
+    position: @absolute;
+    background-image: url("../Images/e.png");
+    background-repeat: no-repeat;
+    height: 26.9px;
+    width: 16.3px;
+    left: 148px;
+    top: 92.65px;
+}
+
+.container-x {
+    position: @absolute;
+    background-image: url("../Images/x.png");
+    background-repeat: no-repeat;
+    height: 26.2px;
+    width: 22.9px;
+    left: 168px;
+    top: 92.97px;
+}
+
+#marca1 {
+    .container-borda;
+    left: 8px;
+    top: 8px;
+}
+
+.logo1 {
+    .container-logo;
+    left: 27px;
+    top: 82px;
+}
+
+#marca2 {
+    .container-borda;
+    left: 259px;
+}
+
+#marca3 {
+    .container-borda;
+    left: 510px;
+}
+
+#marca4 {
+    .container-borda;
+    left: 761px;
+}
+
+#marca5 {
+    .container-borda;
+    left: 1012px;
+}
+
+.botao-chevron {
+    position: @absolute;
+    height: 56px;
+    width: 56px;
+    right: 41px;
+    top: 81px;
+    
+    border-radius: 100px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.18);
+}
+
+#chevron {
+    position: @absolute;
+    height: 23px;
+    width: 14px;
+    left: 22px;
+    top: 16px;
 }
 
 // -------------Frames produtos --------------
@@ -278,29 +473,25 @@
 
 .container-carousel {
     position: @absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    gap: 62px;
+    left: 10%;
+    // gap: 62px;
     width: 1266px;
     height: 500px;
-    left: 86px;
     top: 942px;
+
 }
 
 .box-carousel {
     position: @absolute;
     height: 500px;
     width: 270px;
-    left: 0px;
-    top: 0px;
     border-radius: 10px;
     background: #FFFFFF;
     box-shadow: 0px 2px 4px rgb(219, 217, 217);
     opacity: 1;
     border-radius: 10px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
 }
 
 .image-carousel {
@@ -394,7 +585,6 @@
     font-weight: 700;
     font-size: 14px;
     color: @color-backgoundWhite;
-
 }
 
 // ------------Grid Parceiros-----------
@@ -493,8 +683,8 @@
     top: 2546px;
 }
 
-.image-produtos::after{
-    content: ""; 
+.image-produtos::after {
+    content: "";
     position: @absolute;
     top: 0;
     left: 0;
@@ -503,7 +693,7 @@
     border-radius: 20px;
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 98%);
     mix-blend-mode: normal;
-    opacity:0.5;
+    opacity: 0.5;
 }
 
 .image-produtos2 {
@@ -515,8 +705,8 @@
     top: 2546px;
 }
 
-.image-produtos2::after{
-    content: ""; 
+.image-produtos2::after {
+    content: "";
     position: @absolute;
     top: 0;
     left: 761px;
@@ -525,7 +715,7 @@
     border-radius: 20px;
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 98%);
     mix-blend-mode: normal;
-    opacity:0.5;
+    opacity: 0.5;
 }
 
 .frase-produtos {
@@ -590,12 +780,12 @@
     border: transparent;
 }
 
-#botao-produtos1{
+#botao-produtos1 {
     .botao-produtos;
     left: 41.14px;
 }
 
-#botao-produtos2{
+#botao-produtos2 {
     .botao-produtos;
     left: 826.75px;
 }

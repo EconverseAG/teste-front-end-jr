@@ -8,8 +8,7 @@ import ferramentas from "../Images/ferramentas.svg";
 import corrida from "../Images/corrida.svg";
 import saude from "../Images/saude.svg";
 import moda from "../Images/moda.svg";
-import parceiros from "../Images/parceiros.png"
-
+import chevronMarca from "../Images/chevron-marcas.svg";
 
 export const PaginaCards = () => {
 
@@ -18,10 +17,13 @@ export const PaginaCards = () => {
 
     useEffect(() => {
         axios.get("https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json")
-            .then((response) => setData(response.data.products))
+            .then((response) => {
+                setData(response.data.products)
+            })
             .catch((error) => console.log(error))
     }, [])
 
+    console.log(data)
     const listaProdutos = data && data.map((item) => {
         return <div className="container-carousel" key={item.id}>
             <div className="box-carousel">
@@ -33,8 +35,8 @@ export const PaginaCards = () => {
                 <span className="preco-novo">R${item.price.toFixed(2)}</span>
                 <span className="parcelamento">ou 2x de R$ {item.price / 2} sem juros</span>
                 <span className="frete-gratis">Frete grátis</span>
+                <button className="botao-carousel">COMPRAR</button>
             </div>
-            <button className="botao-carousel">COMPRAR</button>
         </div>
     })
 
@@ -77,7 +79,7 @@ export const PaginaCards = () => {
                 <p id="frase-moda">Moda</p>
             </div>
 
-            <div className="container-relacionados">
+            <div className="container-relacionados1">
                 <hr className="linha1" />
                 <p className="frase-relacionados">Produtos relacionados</p>
                 <hr className="linha2" />
@@ -107,13 +109,67 @@ export const PaginaCards = () => {
                 </div>
             </div>
 
-            {/* <div className="container-relacionados2">
+            <div className="container-relacionados2">
                 <hr className="linha3" />
-                <p className="frase-relacionados2">Produtos relacionados</p>
+                <p className="frase-relacionados">Produtos relacionados</p>
                 <hr className="linha4" />
-            </div> */}  fazer css
+                <span className="frase-ver-todos">Ver todos</span>
+            </div>
 
-            {listaProdutos} 
+
+            {listaProdutos}
+
+            <span className="container-frase-marcas">Navegue por Marcas</span>
+
+            <div className="container-marcas">
+                <div id="marca1">
+                    <span className="logo1" />
+                    <span className="container-v" />
+                    <span className="container-t" />
+                    <span className="container-e" />
+                    <span className="container-x" />
+                </div>
+                <div id="marca2">
+                    <span className="logo1" />
+                    <span className="container-v" />
+                    <span className="container-t" />
+                    <span className="container-e" />
+                    <span className="container-x" />
+                </div>
+                <div id="marca3">
+                    <span className="logo1" />
+                    <span className="container-v" />
+                    <span className="container-t" />
+                    <span className="container-e" />
+                    <span className="container-x" />
+                </div>
+                <div id="marca4">
+                    <span className="logo1" />
+                    <span className="container-v" />
+                    <span className="container-t" />
+                    <span className="container-e" />
+                    <span className="container-x" />
+                </div>
+                <div id="marca5">
+                    <span className="logo1" />
+                    <span className="container-v" />
+                    <span className="container-t" />
+                    <span className="container-e" />
+                    <span className="container-x" />
+                </div>
+                <div className="botao-chevron">
+                    <image id="chevron" src={chevronMarca} />
+                </div>
+            </div>
+
+            <div className="container-relacionados3">
+                <hr className="linha5" />
+                <p className="frase-relacionados">Produtos relacionados</p>
+                <hr className="linha6" />
+                <span className="frase-ver-todos">Ver todos</span>
+            </div>
+
+            {listaProdutos}
 
             <div className="container-geral-produtos">
                 <div className="image-produtos" >
@@ -126,6 +182,9 @@ export const PaginaCards = () => {
                     <span id="frase-lorem-produtos2">Lorem ipsum dolor sit amet, consectetur</span>
                     <button id="botao-produtos2">confira</button>
                 </div>
+
+
+
             </div>
 
         </div >
