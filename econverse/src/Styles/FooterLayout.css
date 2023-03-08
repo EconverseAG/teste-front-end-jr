@@ -69,6 +69,7 @@
   width: 21.48px;
   left: 0px;
   top: 0px;
+  border: transparent;
   background-image: url("../Images/face.svg");
   background-repeat: no-repeat;
 }

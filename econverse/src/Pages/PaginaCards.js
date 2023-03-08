@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import axios from "axios";
 import '../Styles/CardsLayout.css';
 import tecnologia from "../Images/tecnologia.svg";
@@ -8,13 +8,14 @@ import ferramentas from "../Images/ferramentas.svg";
 import corrida from "../Images/corrida.svg";
 import saude from "../Images/saude.svg";
 import moda from "../Images/moda.svg";
-import chevronMarca from "../Images/chevron-marcas.svg";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
+import Modal from "../Components/Modal"
 
 export const PaginaCards = () => {
 
     const [data, setData] = useState([]);
+    const [isModalVisible, setModalVisible] = useState(false)
     const dados = !data ? data : "carregando"
 
     useEffect(() => {
@@ -25,19 +26,20 @@ export const PaginaCards = () => {
             .catch((error) => console.log(error))
     }, [])
 
-    console.log(data)
+
     const listaProdutos = data && data.map((item) => {
-        return <div className="container-carousel" key={item.id}>
-            <div className="box-carousel">
+        return <div className="box-carousel" key={item.id}>
+            <div className="box-informacoes-carousel">
                 <div className="image-carousel">
                     <img src={item.photo} alt={item.productName} />
                 </div>
-                <span className="descricao-produto">{item.descriptionShort}</span>
-                <span className="preco-antigo">R${((item.price * 0.1) + item.price).toFixed(2)}</span>
-                <span className="preco-novo">R${item.price.toFixed(2)}</span>
-                <span className="parcelamento">ou 2x de R$ {item.price / 2} sem juros</span>
-                <span className="frete-gratis">Frete grátis</span>
-                <button className="botao-carousel">COMPRAR</button>
+                <div className="descricao-produto">{item.descriptionShort}</div>
+                <div className="preco-antigo">R${((item.price * 0.1) + item.price).toFixed(2)}</div>
+                <div className="preco-novo">R${item.price.toFixed(2)}</div>
+                <div className="parcelamento">ou 2x de R$ {item.price / 2} sem juros</div>
+                <div className="frete-gratis">Frete grátis</div>
+                <button className="botao-carousel" onClick={()=> setModalVisible(true)}>COMPRAR</button>
+                {isModalVisible? <Modal /> : null}
             </div>
         </div>
     })
@@ -50,32 +52,26 @@ export const PaginaCards = () => {
                     <img className="images-tamanho" src={tecnologia} alt="tecnologia" />
                 </div>
                 <p id="frase-tecnologia">Tecnologia</p>
-
                 <div className="card-supermercado">
                     <img className="images-tamanho" src={supermercado} alt="supermercado" />
                 </div>
                 <p id="frase-supermercado">Supermercado</p>
-
                 <div className="card-bebidas">
                     <img className="images-tamanho" src={bebidas} alt="bebidas" />
                 </div>
                 <p id="frase-bebidas">Bebidas</p>
-
                 <div className="card-ferramentas">
                     <img className="images-tamanho" src={ferramentas} alt="ferramentas" />
                 </div>
                 <p id="frase-ferramentas">Ferramentas</p>
-
                 <div className="card-saude">
                     <img className="images-tamanho" src={saude} alt="saude" />
                 </div>
                 <p id="frase-saude">Saúde</p>
-
                 <div className="card-esporte">
                     <img className="images-tamanho" src={corrida} alt="esporte e fitness" />
                 </div>
                 <p id="frase-esporte">Esporte e Fitness</p>
-
                 <div className="card-moda">
                     <img className="images-tamanho" src={moda} alt="moda" />
                 </div>
@@ -97,7 +93,9 @@ export const PaginaCards = () => {
                 <div className="box-todos">Ver todos</div>
             </div>
 
-            {listaProdutos}
+            <div className="carousel">
+                {listaProdutos}
+            </div>
 
             <div className="container-geral-parceiros">
                 <div className="image-parceiros" id="image-config1">
@@ -119,49 +117,30 @@ export const PaginaCards = () => {
                 <span className="frase-ver-todos">Ver todos</span>
             </div>
 
-
-            {listaProdutos}
+            <div className="carousel2">
+                {listaProdutos}
+            </div>
 
             <span className="container-frase-marcas">Navegue por Marcas</span>
 
             <div className="container-marcas">
                 <div id="marca1">
                     <span className="logo1" />
-                    <span className="container-v" />
-                    <span className="container-t" />
-                    <span className="container-e" />
-                    <span className="container-x" />
                 </div>
                 <div id="marca2">
                     <span className="logo1" />
-                    <span className="container-v" />
-                    <span className="container-t" />
-                    <span className="container-e" />
-                    <span className="container-x" />
                 </div>
                 <div id="marca3">
                     <span className="logo1" />
-                    <span className="container-v" />
-                    <span className="container-t" />
-                    <span className="container-e" />
-                    <span className="container-x" />
                 </div>
                 <div id="marca4">
                     <span className="logo1" />
-                    <span className="container-v" />
-                    <span className="container-t" />
-                    <span className="container-e" />
-                    <span className="container-x" />
                 </div>
                 <div id="marca5">
                     <span className="logo1" />
-                    <span className="container-v" />
-                    <span className="container-t" />
-                    <span className="container-e" />
-                    <span className="container-x" />
                 </div>
                 <div className="botao-chevron">
-                    <image id="chevron" src={chevronMarca} />
+                    <div id="chevron" />
                 </div>
             </div>
 
@@ -172,7 +151,9 @@ export const PaginaCards = () => {
                 <span className="frase-ver-todos">Ver todos</span>
             </div>
 
-            {listaProdutos}
+            <div className="carousel3">
+                {listaProdutos}
+            </div>
 
             <div className="container-geral-produtos">
                 <div className="image-produtos" >
@@ -185,11 +166,8 @@ export const PaginaCards = () => {
                     <span id="frase-lorem-produtos2">Lorem ipsum dolor sit amet, consectetur</span>
                     <button id="botao-produtos2">confira</button>
                 </div>
-
-                {listaProdutos}
-
             </div>
-          
+            <Footer />
         </div >
     )
 };

@@ -307,49 +307,9 @@
     width: 172px;
     left: 27px;
     top: 82px;
-    background-image: url("../Images/logo.png");
+    background-image: url("../Images/vtex-logo-rosa.svg");
     background-repeat: no-repeat;
     position: @absolute;
-}
-
-.container-v {
-    position: @absolute;
-    background-image: url("../Images/v.png");
-    background-repeat: no-repeat;
-    height: 23.38px;
-    width: 26.43px;
-    left: 99px;
-    top: 93.04px;
-}
-
-.container-t {
-    position: @absolute;
-    background-image: url("../Images/t.png");
-    background-repeat: no-repeat;
-    height: 26.19px;
-    width: 19.45px;
-    left: 126px;
-    top: 92.98px;
-}
-
-.container-e {
-    position: @absolute;
-    background-image: url("../Images/e.png");
-    background-repeat: no-repeat;
-    height: 26.9px;
-    width: 16.3px;
-    left: 148px;
-    top: 92.65px;
-}
-
-.container-x {
-    position: @absolute;
-    background-image: url("../Images/x.png");
-    background-repeat: no-repeat;
-    height: 26.2px;
-    width: 22.9px;
-    left: 168px;
-    top: 92.97px;
 }
 
 #marca1 {
@@ -390,10 +350,12 @@
     width: 56px;
     right: 41px;
     top: 81px;
-    
     border-radius: 100px;
     background: #FFFFFF;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.18);
+    background-image: url("../Images/chevron-marcas.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #chevron {
@@ -471,31 +433,51 @@
 
 // ---------------carousel produtos-------------
 
-.container-carousel {
-    position: @absolute;
-    left: 10%;
-    // gap: 62px;
+.info-carousel {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    margin-left: 86px;
     width: 1266px;
-    height: 500px;
-    top: 942px;
-
-}
-
-.box-carousel {
-    position: @absolute;
-    height: 500px;
-    width: 270px;
-    border-radius: 10px;
-    background: #FFFFFF;
-    box-shadow: 0px 2px 4px rgb(219, 217, 217);
-    opacity: 1;
-    border-radius: 10px;
+    max-height: 600px;
     overflow-x: auto;
+    overflow-y: hidden;
     scroll-behavior: smooth;
 }
 
+.carousel {
+    .info-carousel;
+    margin-top: 450px;
+}
+
+.carousel2 {
+    .info-carousel;
+    margin-top: 550px;
+}
+
+.carousel3 {
+    .info-carousel;
+    margin-top: 1070px;
+}
+
+.box-carousel {
+    height: 450px;
+    width: 270px;
+    border-radius: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 20px rgb(219, 217, 217);
+    opacity: 1;
+    border-radius: 10px;
+}
+
+.box-informacoes-carousel {
+    height: 455px;
+    width: 240px;
+    margin-left: 16px;
+    top: 17px;
+}
+
 .image-carousel {
-    position: @absolute;
     height: 228px;
     width: 247px;
     left: 11px;
@@ -504,8 +486,6 @@
 }
 
 .descricao-produto {
-    position: @absolute;
-    position: absolute;
     color: #3F3F40;
     height: 46px;
     width: 245px;
@@ -519,7 +499,6 @@
 }
 
 .preco-antigo {
-    position: @absolute;
     height: 24px;
     width: 67px;
     left: 11px;
@@ -533,7 +512,6 @@
 }
 
 .preco-novo {
-    position: @absolute;
     height: 30px;
     width: 86px;
     left: 11px;
@@ -548,7 +526,6 @@
 }
 
 .parcelamento {
-    position: @absolute;
     height: @six-px * 3;
     width: 166px;
     left: 11px;
@@ -560,7 +537,6 @@
 }
 
 .frete-gratis {
-    position: @absolute;
     height: @six-px * 3;
     width: 68px;
     left: 11px;
@@ -573,11 +549,9 @@
 }
 
 .botao-carousel {
-    position: @absolute;
     height: 44px;
-    width: 245px;
-    left: 11px;
-    top: 440px;
+    width: 220px;
+    margin-top: 40px;
     border-radius: 4px;
     background-color: @color-pink;
     border: transparent;
@@ -585,6 +559,7 @@
     font-weight: 700;
     font-size: 14px;
     color: @color-backgoundWhite;
+    cursor: pointer;
 }
 
 // ------------Grid Parceiros-----------
@@ -709,7 +684,7 @@
     content: "";
     position: @absolute;
     top: 0;
-    left: 761px;
+    left: 760px;
     height: 284px;
     width: 589.73px;
     border-radius: 20px;

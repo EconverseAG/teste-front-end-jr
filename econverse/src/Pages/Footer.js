@@ -14,9 +14,9 @@ export const Footer = () => {
                     </div>
 
                     <div className="container-redes-sociais">
-                        <image id="face" />
-                        <image id="instagram" />
-                        <image id="youtube" />
+                        <span id="face" />
+                        <span id="instagram" />
+                        <span id="youtube" />
                     </div>
                 </div>
 

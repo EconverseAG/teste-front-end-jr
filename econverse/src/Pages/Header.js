@@ -15,26 +15,21 @@ export const Header = () => {
     return (
         <div className="container-geral">
             <div className="container-compras">
-
                 <img className="vetor-shield" src={shield} />
                 <div className="posiciona-frase-shield">
-                    <span className="letras-cinza">Compra </span><span className="letras-rosa"> 100% segura</span>
+                    <span className="letras-cinza">Compra </span> <span className="letras-rosa"> 100% segura</span>
                 </div>
-
                 <img className="vetor-frete" src={frete} />
                 <div className="posiciona-frase-frete">
                     <p className="letras-rosa">Frete grátis <span className="letras-cinza">acima de R$ 200</span></p>
                 </div>
-
                 <img className="vetor-cartao" src={cartao} />
                 <div className="posiciona-frase-cartao">
                     <p className="letras-rosa">Parcele <span className="letras-cinza">suas compras</span></p>
                 </div>
-
             </div>
             <div className="container-input-vetor ">
                 <img className="vetor-vtex " src={logo} />
-
                 <input id="input1" placeholder="O que você está buscando?" />
                 <img className="vetor-caixa" src={caixa} />
                 <img className="vetor-coracao" src={coracao} />
@@ -51,7 +46,7 @@ export const Header = () => {
                     <span className="lancamentos">lançamentos</span>
                     <span className="ofertas-do-dia">ofertas do dia</span>
                     <div className="container-assinatura">
-                        <img id="coroa" src={coroa}/>
+                        <img id="coroa" src={coroa} />
                         <span id="assinatura">assinatura</span>
                     </div>
                 </div>

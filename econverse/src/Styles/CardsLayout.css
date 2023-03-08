@@ -327,45 +327,9 @@
   width: 172px;
   left: 27px;
   top: 82px;
-  background-image: url("../Images/logo.png");
+  background-image: url("../Images/vtex-logo-rosa.svg");
   background-repeat: no-repeat;
   position: absolute;
-}
-.container-v {
-  position: absolute;
-  background-image: url("../Images/v.png");
-  background-repeat: no-repeat;
-  height: 23.38px;
-  width: 26.43px;
-  left: 99px;
-  top: 93.04px;
-}
-.container-t {
-  position: absolute;
-  background-image: url("../Images/t.png");
-  background-repeat: no-repeat;
-  height: 26.19px;
-  width: 19.45px;
-  left: 126px;
-  top: 92.98px;
-}
-.container-e {
-  position: absolute;
-  background-image: url("../Images/e.png");
-  background-repeat: no-repeat;
-  height: 26.9px;
-  width: 16.3px;
-  left: 148px;
-  top: 92.65px;
-}
-.container-x {
-  position: absolute;
-  background-image: url("../Images/x.png");
-  background-repeat: no-repeat;
-  height: 26.2px;
-  width: 22.9px;
-  left: 168px;
-  top: 92.97px;
 }
 #marca1 {
   position: absolute;
@@ -380,7 +344,7 @@
 .logo1 {
   height: 62.66407394px;
   width: 172px;
-  background-image: url("../Images/logo.png");
+  background-image: url("../Images/vtex-logo-rosa.svg");
   background-repeat: no-repeat;
   position: absolute;
   left: 27px;
@@ -435,6 +399,9 @@
   border-radius: 100px;
   background: #FFFFFF;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.18);
+  background-image: url("../Images/chevron-marcas.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 #chevron {
   position: absolute;
@@ -570,26 +537,68 @@
   top: 0px;
   border-radius: 0px;
 }
-.container-carousel {
-  position: absolute;
-  left: 10%;
+.info-carousel {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  margin-left: 86px;
   width: 1266px;
-  height: 500px;
-  top: 942px;
-}
-.box-carousel {
-  position: absolute;
-  height: 500px;
-  width: 270px;
-  background: #FFFFFF;
-  box-shadow: 0px 2px 4px #dbd9d9;
-  opacity: 1;
-  border-radius: 10px;
+  max-height: 600px;
   overflow-x: auto;
+  overflow-y: hidden;
   scroll-behavior: smooth;
 }
+.carousel {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  margin-left: 86px;
+  width: 1266px;
+  max-height: 600px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  margin-top: 450px;
+}
+.carousel2 {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  margin-left: 86px;
+  width: 1266px;
+  max-height: 600px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  margin-top: 550px;
+}
+.carousel3 {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  margin-left: 86px;
+  width: 1266px;
+  max-height: 600px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  margin-top: 1070px;
+}
+.box-carousel {
+  height: 450px;
+  width: 270px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 20px #dbd9d9;
+  opacity: 1;
+  border-radius: 10px;
+}
+.box-informacoes-carousel {
+  height: 455px;
+  width: 240px;
+  margin-left: 16px;
+  top: 17px;
+}
 .image-carousel {
-  position: absolute;
   height: 228px;
   width: 247px;
   left: 11px;
@@ -597,7 +606,6 @@
   border-radius: 0px;
 }
 .descricao-produto {
-  position: absolute;
   color: #3F3F40;
   height: 46px;
   width: 245px;
@@ -611,7 +619,6 @@
   color: #3B3B3B;
 }
 .preco-antigo {
-  position: absolute;
   height: 24px;
   width: 67px;
   left: 11px;
@@ -625,7 +632,6 @@
   text-decoration: line-through;
 }
 .preco-novo {
-  position: absolute;
   height: 30px;
   width: 86px;
   left: 11px;
@@ -638,7 +644,6 @@
   line-height: 30px;
 }
 .parcelamento {
-  position: absolute;
   height: 18px;
   width: 166px;
   left: 11px;
@@ -650,7 +655,6 @@
   line-height: 18px;
 }
 .frete-gratis {
-  position: absolute;
   height: 18px;
   width: 68px;
   left: 11px;
@@ -663,11 +667,9 @@
   color: #F71963;
 }
 .botao-carousel {
-  position: absolute;
   height: 44px;
-  width: 245px;
-  left: 11px;
-  top: 440px;
+  width: 220px;
+  margin-top: 40px;
   border-radius: 4px;
   background-color: #F71963;
   border: transparent;
@@ -676,6 +678,7 @@
   font-weight: 700;
   font-size: 14px;
   color: #FFFFFF;
+  cursor: pointer;
 }
 .container-geral-parceiros {
   position: absolute;
@@ -796,7 +799,7 @@
   content: "";
   position: absolute;
   top: 0;
-  left: 761px;
+  left: 760px;
   height: 284px;
   width: 589.73px;
   border-radius: 20px;
