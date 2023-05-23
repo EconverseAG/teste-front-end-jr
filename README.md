@@ -1,33 +1,56 @@
-# Teste Econverse: Vaga Desenvolvedor Front-End Jr
+&#xa0;
 
-### Vem ser #Econverse!
+<h1 align="center">Teste Front-End Jr</h1>
 
-Segue abaixo as instruções para a execução do teste.
+<p align="center">
+ <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Rodrigodeveloperjr/teste-front-end-jr?color=56BEB8&logo=typescript">
 
-## Instruções
-- Faça um fork desse projeto para a sua conta pessoal do GitHub.
-- Crie um README com as instruções para compilar, testar e rodar o projeto.
-- O link do repositório deverá ser enviado para o e-mail ana.nascimento@econverse.com.br e pedro@econverse.com.br com o título **Teste Vaga FrontEnd Jr**
+  <img alt="GitHub top language" src="https://img.shields.io/badge/react-18.2.0-blue">
+<hr>
 
-## Especificações Técnicas
-- Desenvolver a pagina em html conforme o layout nesse [Link](https://www.figma.com/file/rWnzPeoxgynuNPsJjV0VmV/Teste-Front-End-Jr?node-id=0%3A1). Para conseguir pegar os elementos do Figma, basta copiar o layout para sua conta que terá acesso de edição.
-- Montar a [Vitrine](https://app.econverse.com.br/teste-front-end/junior/tecnologia/layout/vitrine-produtos.png) de produtos consumindo as informações dos produtos em json atraves desse [Link](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json) com uso de React.js.
-- Desenvolver a interação ao clicar em um produto conforme layout. A interação consiste em abrir um modal com as principais informações do produto presente no arquivo [JSON](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json) conforme o produto que clicar.
-- Desenvolver os Htmls semânticos.
-- Utilizar Pré-processador Sass, Less ou Stylus.
-- Respeitar o Layout pixel a pixel, tamanho das fontes, cores e botões.
-- Não Utilizar Frameworks como Bootstrap, Foundation, ou afins.
+<p align="center">
+  <a href="#rocket-Tecnologias">Tecnologias</a> &#xa0; | &#xa0;
+  <a href="#checkered_flag-iniciando-o-projeto">Iniciando o Projeto</a> &#xa0; | &#xa0;
+  <a href="#computer-desenvolvedor">Desenvolvedor</a>
+</p>
 
-## Pontos Extras
-- Utilizar Automatizadores de Tarefas como: (Grunt, Gulp ou outros).
-- Utilizar Boas práticas de SEO.
-- Organização do Projeto.
+<br>
 
-## O que avaliaremos em seu teste
-- Organização do projeto
-- Lógica do código
-- Identação do código
-- Uso de componentização
-- Alcance dos objetivos propostos
+## :dart: Teste
 
-**Boa sorte! ;)**
+Esse teste é criar um layout de um e-commerce do site da VTEX.
+
+Link do projeto: [https://teste-front-end-jr-tau.vercel.app/](https://teste-front-end-jr-tau.vercel.app/)
+
+## :rocket: Tecnologias
+
+Seguintes ferramentas foram utlizadas neste projeto:
+
+- [React](https://pt-br.reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Swiper](https://swiperjs.com/swiper-api/)
+- [Styled-components](https://styled-components.com/)
+- [React-helmet](https://github.com/nfl/react-helmet/)
+
+## :checkered_flag: Iniciando o Projeto
+
+```bash
+# Clonar este projeto
+$ git clone https://github.com/MichaelRodriguesss/teste-front-end-jr.git
+
+# Instalar dependências
+$ npm
+
+# Execute o projeto
+$ npm run dev
+
+# O servidor inicializará no <http://localhost:5173>
+```
+
+## :computer: Desenvolvedor
+
+<div>
+	<a href="https://www.linkedin.com/in/michael-rodrigues12/">
+		<img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white">
+	</a>
+</div>
