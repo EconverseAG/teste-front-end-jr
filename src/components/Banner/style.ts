@@ -3,24 +3,21 @@ import styled from "styled-components";
 const Container = styled.div`
   width: 100%;
   max-width: 1443px;
-
   position: relative;
   margin: 0 auto;
-
   margin-top: -2px;
 
   & > img {
     width: 100%;
     height: 395px;
-
     mix-blend-mode: normal;
     object-fit: cover;
+    opacity: 0.8;
   }
 
   & > div {
     width: 100%;
     height: 100%;
-
     position: absolute;
     top: 0;
 
