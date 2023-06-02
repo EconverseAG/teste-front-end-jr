@@ -1,5 +1,19 @@
 # Teste Econverse: Vaga Desenvolvedor Front-End Jr
 
+## Rodando o projeto
+
+Para rodar ele localmente :
+
+```bash
+$ npm start
+```
+
+Para gerar uma build :
+
+```bash
+$ npm run build
+```
+
 ### Vem ser #Econverse!
 
 Segue abaixo as instruções para a execução do teste.

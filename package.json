@@ -4,7 +4,7 @@
 	"description": "Segue abaixo as instruções para a execução do teste.",
 	"main": "src/index.js",
 	"scripts": {
-		"dev": "parcel index.html --lazy",
+		"start": "parcel index.html --lazy",
 		"build": "parcel build index.html"
 	},
 	"repository": {
