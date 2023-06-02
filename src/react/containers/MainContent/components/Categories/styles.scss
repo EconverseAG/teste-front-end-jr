@@ -1,0 +1,47 @@
+@import '/src/react/globals.scss';
+
+.l-categories {
+	margin-top: 34px;
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		justify-content: space-evenly;
+
+		li {
+			cursor: pointer;
+			text-align: center;
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 24px;
+			letter-spacing: 0em;
+			color: #4E4E4E;
+
+			div {
+				border-radius: 10px;
+				background-color: #F4F4F4;
+				padding: 34px;
+				margin-bottom: 22px;
+				box-shadow: 0px 4px 11px 0px #00000021;
+
+				img {
+					height: 61px;
+					width: 61px;
+				}
+			}
+
+			&:hover {
+				color: $rosa-primario;
+				div {
+					background-color: #fff;
+
+					img {
+						filter: invert(26%) sepia(56%) saturate(7469%) hue-rotate(329deg) brightness(97%) contrast(99%);
+					}
+				}
+			}
+		}
+	}
+}

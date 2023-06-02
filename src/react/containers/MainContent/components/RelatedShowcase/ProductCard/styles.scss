@@ -1,0 +1,138 @@
+@import '/src/react/globals.scss';
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.l-productModal {
+	border: none;
+	height: 300px;
+	width: 769px;
+	border-radius: 0px;
+	text-align: right;
+
+	&__mainContent {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	&__image {
+		margin: 0 56px;
+	}
+
+	&__info {
+		text-align: left;
+		
+		&__product-name {
+			font-family: 'Lato', sans-serif;
+			color: #041E50;
+			font-size: 20px;
+			font-weight: 400;
+			line-height: 20px;
+			letter-spacing: 0.05em;
+			text-align: left;
+
+		}
+
+		&__price {
+			font-family: 'Lato', sans-serif;
+			font-size: 20px;
+			font-weight: 900;
+			line-height: 20px;
+			letter-spacing: 0.05em;
+			text-align: left;
+			color: #041E50;
+		}
+
+		&__description{
+			font-family: 'Lato', sans-serif;
+			font-size: 10px;
+			font-weight: 400;
+			line-height: 15px;
+			letter-spacing: 0.05em;
+			text-align: left;
+			color: #222222;
+		}
+
+		&__link {
+			font-family: 'Lato', sans-serif;
+			font-size: 12px;
+			font-weight: 400;
+			line-height: 12px;
+			letter-spacing: 0.05em;
+			text-align: left;
+			text-decoration: none;
+		}
+	}
+
+	&__close {
+		all: unset;
+		cursor: pointer;
+	}
+}
+
+.l-productCard {
+	height: 500px;
+	width: 270px;
+	border-radius: 10px;
+	margin: 0 8%;
+	box-shadow: 0px 3px 19px 0px #00000038;
+	padding: 12px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&__image {
+		cursor: pointer;
+	}
+	
+	&__info {
+		&__product-name {
+			font-size: 15px;
+			font-weight: 300;
+			line-height: 23px;
+			letter-spacing: 0em;
+			text-align: left;
+			color: #3F3F40;
+		}
+
+		&__stallments {
+			font-size: 12px;
+			font-weight: 400;
+			line-height: 18px;
+			letter-spacing: 0em;
+			text-align: left;
+		}
+
+		&__frete {
+			font-size: 12px;
+			font-weight: 400;
+			line-height: 18px;
+			letter-spacing: 0em;
+			text-align: left;
+			color: $rosa-primario;
+			margin: 12px 0;
+		}
+
+		&__price {
+			font-size: 20px;
+			font-weight: 700;
+			line-height: 30px;
+			letter-spacing: 0em;
+			text-align: left;
+		}
+	}
+
+	&__CTA {
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 21px;
+		letter-spacing: 0em;
+		text-align: center;
+		border: none;
+		color: #fff;
+		background-color: $rosa-primario;
+		height: 44px;
+		width: 245px;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+}

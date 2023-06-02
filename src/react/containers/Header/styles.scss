@@ -1,0 +1,73 @@
+@import '/src/react/globals.scss';
+
+.l-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 90vw;
+	border-top: 1px solid #F0F0F0;
+	border-bottom: 1px solid #F0F0F0;
+	padding: 12px 0;
+
+	&__mainLogo {
+		height: 50px;
+		width: 139px;
+	}
+
+	&__searchBox {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-content: center;
+		height: 48px;
+		width: 657px;
+		border-radius: 10px;
+		background: #F6F5F2;
+		
+		input {
+			all: unset;
+			width: 85%;
+			margin-left: 24px;
+
+			&::placeholder {
+				color: $cinza-texto;
+				font-family: Poppins;
+				font-size: 14px;
+				font-weight: 500;
+				line-height: 21px;
+				letter-spacing: 0em;
+				text-align: left;
+			}
+		}
+
+		svg {
+			height: 28px;
+			width: 28px;
+			border-radius: 0px;
+			margin: 10px;
+		}
+	}
+
+	&__actionButtons {
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			display: flex;
+			align-items: center;
+
+			li {
+				cursor: pointer;
+				margin: 0 32px;
+
+				&:hover {
+					svg {
+						path {
+							stroke: $rosa-primario !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}

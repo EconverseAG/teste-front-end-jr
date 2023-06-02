@@ -1,0 +1,34 @@
+@import '/src/react/globals.scss';
+
+.l-infoHeader {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-evenly;
+	width: 1280px;
+	height: 32px;
+
+	&__infoCard {
+		display: flex;
+		align-items: center;
+		font-family: Poppins;
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 18px;
+		letter-spacing: 0em;
+		text-align: center;
+		color: $cinza-texto;
+
+		svg {
+			height: 20px;
+			width: 20px;
+			border-radius: 0px;
+			margin-right: 9px;
+		}
+
+		strong {
+			color: $rosa-primario;
+			padding: 0 3px;
+		}
+	}
+}

@@ -1,0 +1,70 @@
+@import '/src/react/globals.scss';
+
+.l-relatedShowcase {
+	margin-top: 39px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&__title {
+		width: 80%; 
+		text-align: center; 
+		border-bottom: 1px solid #DEDEDE;
+		line-height: 0.1em;
+		margin: 10px 0 20px; 
+		font-size: 30px;
+		font-weight: 700;
+		letter-spacing: 0em;
+		color: $rosa-primario;
+
+		span {
+			background-color: #fff;
+			padding: 0 34px;
+		}
+	}
+
+	&__see-all {
+		font-size: 15px;
+		font-weight: 700;
+		line-height: 23px;
+		letter-spacing: 0em;
+		text-align: center;
+	}
+
+	&__filters {
+		width: 100%;
+
+		ul {
+			list-style: none;
+			display: flex;
+			justify-content: center;
+			padding: 0;
+			li {
+				width: 211px;
+				cursor: pointer;
+				padding: 12px 56.25px;
+				border: 1px solid #BDBDBD;
+				text-transform: uppercase;
+				color: #3B3B3B;
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 16px;
+				letter-spacing: 0em;
+				text-align: center;
+
+				&:hover {
+					font-weight: 700;
+					color: $rosa-primario;
+				}
+			}
+		}
+	}
+
+	&__carousel {
+		width: 90%;
+
+		.slick-list {
+			padding: 15px 0;
+		}
+	}
+}

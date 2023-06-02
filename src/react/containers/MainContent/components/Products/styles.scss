@@ -1,0 +1,14 @@
+.l-products {
+	display: flex;
+	justify-content: center;
+	margin-top: 69px;
+	&__image {
+		height: 280px;
+		width: 590px;
+		margin: 0 44.5px;
+
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+}

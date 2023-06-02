@@ -1,0 +1,69 @@
+@import '/src/react/globals.scss';
+
+.l-newsletter {
+	height: 260px;
+	width: 380px;
+	border-radius: 10px;
+	background: #FFFFFF;
+	padding: 40px 34px 40px 29px;
+
+	&__title {
+		text-transform: uppercase;
+		color: #3F3F40;
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 26px;
+		letter-spacing: 0em;
+		text-align: left;
+
+		strong {
+			font-size: 21px;
+			font-weight: 700;
+			line-height: 26px;
+			letter-spacing: 0em;
+			text-align: left;
+		}
+	}
+
+	&__details {
+		font-size: 12px;
+		font-weight: 300;
+		line-height: 19px;
+		letter-spacing: 0em;
+		text-align: center;
+		margin-bottom: 31px;
+	}
+
+	&__form {
+		input {
+			height: 45px;
+			width: 230px;
+			border-radius: 4px;
+			padding: 13px 25px;
+			font-size: 12px;
+			font-weight: 400;
+			line-height: 20px;
+			letter-spacing: 0em;
+
+			&::placeholder {
+				color: #C0C0C0;
+			}
+		}
+
+		button {
+			all: unset;
+			color: #FFFFFF;
+			padding: 14px;
+			background-color: $rosa-primario;
+			height: 45px;
+			width: 55px;
+			border-radius: 4px;
+			font-size: 14px;
+			font-weight: 700;
+			line-height: 20px;
+			letter-spacing: 0em;
+			text-align: center;
+			margin-left: 9px;
+		}
+	}
+}

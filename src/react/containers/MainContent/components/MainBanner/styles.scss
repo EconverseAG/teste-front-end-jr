@@ -1,0 +1,38 @@
+@import '/src/react/globals.scss';
+
+.l-mainBanner {
+	background-image: url('/src/assets/MainBanner.png');
+	background-repeat: no-repeat;
+	filter: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 85.04%);
+	background-size: cover;
+	height: 395px;
+	width: 100vw;
+	color: #fff;
+
+	&__text {
+		font-size: 48px;
+		font-weight: 600;
+		line-height: 72px;
+		letter-spacing: 0em;
+		text-align: left;
+		margin-left: 92px;
+		padding-top: 52px;
+		width: 590px;
+	}
+
+	&__button {
+		all: unset;
+		background-color: $rosa-primario;
+		font-size: 18px;
+		font-weight: 600;
+		line-height: 27px;
+		letter-spacing: 0em;
+		text-align: center;
+		height: 60px;
+		width: 227px;
+		border-radius: 5px;
+		margin-left: 90px;
+		margin-top: 35px;
+		cursor: pointer;
+	}
+}

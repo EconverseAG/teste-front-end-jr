@@ -1,0 +1,9 @@
+.l-partners {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 71px;
+	&__image {
+		height: 350px;
+		width: 574px;
+	}
+}

@@ -1,0 +1,89 @@
+.l-institutional {
+	display: flex;
+	width: max-content;
+	margin-left: 93px;
+	color: #fff;
+
+	&__about-us {
+		&__title {
+			font-size: 13px;
+			font-weight: 700;
+			line-height: 20px;
+			letter-spacing: 0em;
+			text-align: left;
+		}
+
+		ul {
+			list-style: none;
+			padding: 0;
+			height: 128px;
+			width: 146px;
+			margin-bottom: 30px;
+
+			li {
+				text-transform: uppercase;
+				font-size: 12px;
+				font-weight: 300;
+				line-height: 32px;
+				letter-spacing: 0em;
+				text-align: left;
+
+			}
+		}
+
+		&__socials {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+
+	&__utils {
+		margin-left: 93px;
+
+		&__title {
+			font-size: 13px;
+			font-weight: 700;
+			line-height: 20px;
+			letter-spacing: 0em;
+			text-align: left;
+			text-transform: uppercase;
+		}
+
+		ul {
+			list-style: none;
+			padding: 0;
+			height: 128px;
+			width: 146px;
+			margin-bottom: 30px;
+
+			li {
+				text-transform: uppercase;
+				font-size: 12px;
+				font-weight: 300;
+				line-height: 32px;
+				letter-spacing: 0em;
+				text-align: left;
+
+			}
+		}
+	}
+
+	&__payment-methods {
+		margin-left: 47px;
+
+		&__title {
+			font-size: 13px;
+			font-weight: 700;
+			line-height: 20px;
+			letter-spacing: 0em;
+			text-align: left;
+			text-transform: uppercase;
+		}
+
+		&__icons {
+			display: grid;
+			grid: repeat(4, 56px) / repeat(3, 56px);
+			gap: 5px 25px;
+		}
+	}
+}

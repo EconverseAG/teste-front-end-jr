@@ -1,0 +1,36 @@
+{
+	"name": "teste-front-end-jr",
+	"version": "1.0.0",
+	"description": "Segue abaixo as instruções para a execução do teste.",
+	"main": "src/index.js",
+	"scripts": {
+		"dev": "parcel index.html --lazy",
+		"build": "parcel build index.html"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Casca0/teste-front-end-jr.git"
+	},
+	"author": "Lucas Borzani",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Casca0/teste-front-end-jr/issues"
+	},
+	"homepage": "https://github.com/Casca0/teste-front-end-jr#readme",
+	"dependencies": {
+		"axios": "^1.4.0",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-slick": "^0.29.0"
+	},
+	"devDependencies": {
+		"@parcel/transformer-sass": "^2.9.1",
+		"@parcel/transformer-svg-react": "^2.9.1",
+		"eslint": "^8.41.0",
+		"eslint-plugin-react": "^7.32.2",
+		"parcel": "^2.9.1",
+		"process": "^0.11.10",
+		"sass": "^1.62.1",
+		"sharp": "^0.31.3"
+	}
+}
