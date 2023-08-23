@@ -1,10 +1,11 @@
+import Modal from 'react-modal';
+import Slider from 'react-slick';
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Header from "../../layouts/header";
-import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import Modal from 'react-modal';
+import Header from "../../layouts/header/header";
+import Footer from "../../layouts/footer/footer";
 
 // Define o elemento raiz do aplicativo para a acessibilidade
 Modal.setAppElement('#root');
@@ -13,9 +14,9 @@ function Home(props) {
     const { list } = props;
     const [visibleItems, setVisibleItems] = useState(4);
 
-    const [selectedProduct, setSelectedProduct] = useState(null); // Produto selecionado para detalhes
-    const [modalIsOpen, setModalIsOpen] = useState(false); // Estado da modal
     const [quantity, setQuantity] = useState(1); // seleciona a quantidade na modal
+    const [modalIsOpen, setModalIsOpen] = useState(false); // Estado da modal
+    const [selectedProduct, setSelectedProduct] = useState(null); // Produto selecionado para detalhes
 
     const partnerList = [
         { id: 1, nome: 'VTEX', description: 'Descrição do Parceiro 1' },
@@ -168,16 +169,6 @@ function Home(props) {
             <div>
                 <h3>Navegue por marcas</h3>
                 <div>
-                    {/* <Slider {...settingsPartners}>
-                        {partnerList.map((partner, index) => {
-                            <div key={index++}>
-                                <p>{partner.nome}</p>
-                                <div>
-                                    <button onClick={() => openModal(partner)}>Ver Detalhes</button>
-                                </div>
-                            </div>
-                        })}
-                    </Slider> */}
                     <Slider {...settingsPartners}>
                         {partnerList.map((partiner, index) => (
                             <div key={index}>
@@ -187,6 +178,7 @@ function Home(props) {
                     </Slider>
                 </div>
             </div>
+            <Footer />
         </div>
     );
 }

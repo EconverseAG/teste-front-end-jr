@@ -1,8 +1,15 @@
-import React from "react";
-import { Link } from "react-router-dom";
 //import './header.scss';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
-function Header() {
+function Header({ onSearch }) {
+    const [searchItem, setSearchItem] = useState('');
+
+    const handleSearch = (event) => {
+        setSearchItem(event.target.value);
+    };
+
+
     return (
         <header className="header-container">
             <div className="d-flex justify-content-around">
@@ -10,9 +17,15 @@ function Header() {
                 <p><strong>Frete grátis</strong> acima de R$ 200</p>
                 <p><strong>Parcele</strong> suas compras</p>
             </div>
+            <hr />
             <div className="d-flex justify-content-around">
                 <h1 className="">vtex</h1>
-                <input type="text" />
+                <input
+                    type="text"
+                    placeholder="O que esta buscando?"
+                    value={searchItem}
+                    onChange={handleSearch}
+                />
                 <div>
                     <button>Produtos</button>
                     <button>Favoritos</button>
