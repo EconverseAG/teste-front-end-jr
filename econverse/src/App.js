@@ -1,9 +1,24 @@
-import React from 'react';
+import Axios from 'axios';
+import React, { useEffect, useState } from 'react';
 
 function App() {
+  const [list, setList] = useState([]);
+
+  useEffect(() => {
+    Axios.get('https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json')
+      .then(response => {
+        setList(response.data.products);
+      })
+      .catch(error => {
+        console.error('Erro ao consultar a API:', error);
+      });
+  }, []);
+
+  console.log('Listagem', list)
   return (
     <div>
-      <h1>Teste</h1>
+      <h1>Lista de Produtos</h1>
+      
     </div>
   );
 }
