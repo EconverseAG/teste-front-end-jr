@@ -1,4 +1,5 @@
 import Axios from 'axios';
+import Home from './pages/home/home';
 import React, { useEffect, useState } from 'react';
 
 function App() {
@@ -16,8 +17,9 @@ function App() {
 
   return (
     <div>
-      <h1>Lista de Produtos</h1>
-      
+      {<Home
+        list={list}
+      />}
     </div>
   );
 }
