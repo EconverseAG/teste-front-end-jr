@@ -14,7 +14,6 @@ function App() {
       });
   }, []);
 
-  console.log('Listagem', list)
   return (
     <div>
       <h1>Lista de Produtos</h1>
