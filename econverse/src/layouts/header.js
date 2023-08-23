@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+//import './header.scss';
 
 function Header() {
     return (
-        <header className="container-fluid">
+        <header className="header-container">
             <div className="d-flex justify-content-around">
                 <p>Compra 100% seguro</p>
                 <p><strong>Frete grátis</strong> acima de R$ 200</p>
