@@ -1,0 +1,30 @@
+
+.div-teste{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.teste {
+    color: var(--color-pink)
+}
+
+.ul-related-products {
+    display: flex;
+}
+
+.li-related-products {
+    border: 1px solid var(--color-grey-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    height: 40px;
+}
+
+.pink-font {
+
+    color: var(--color-pink);
+}
+

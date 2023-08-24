@@ -1,0 +1,41 @@
+
+
+.div-banner {
+    background-image: url(../../assets/header/discount_img.png);
+    height: 390px;
+    display: flex;
+    align-items: center;
+
+ 
+}
+
+.div-shadow {
+    background-image: url(../../assets/header/dark_img.png);
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.div-banner-text {
+    height: 70%;
+    width: 500px;
+    color: white;
+    margin-left:5rem ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+button {
+
+    width: 220px;
+    height: 60px;
+    color: white;
+    background-color: var(--color-pink);
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}

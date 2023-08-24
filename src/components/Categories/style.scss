@@ -1,0 +1,36 @@
+
+.ul-categories {
+    display: flex;
+    justify-content: space-between;
+}
+
+.li-categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.div-categories {
+    height: 128px;
+    width: 128px;
+    border-radius: 0.5rem;
+    background-color: var(--color-grey-2);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-categories-white {
+    height: 128px;
+    width: 128px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -1px 7px 5px 5px rgba(0,0,0,0.16);
+    -webkit-box-shadow: -1px 7px 5px 5px rgba(0,0,0,0.16);
+    -moz-box-shadow: -1px 7px 5px 5px rgba(0,0,0,0.16);
+}

@@ -1,0 +1,61 @@
+
+header {
+    width: 1024px;
+    height: 144px;
+    border-bottom: 1px solid var(--color-grey-1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ul-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    color: var(--color-grey-1);
+}
+
+
+.div-header-middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-search {
+    display: flex;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    width: 600px;
+    justify-content: space-between;
+    background-color: var(--color-grey-2);
+}
+
+input {
+    border: none;
+    width: 100%;
+    background-color: var(--color-grey-2);
+}
+
+.ul-buttons {
+    display: flex;
+    gap: 2rem;
+    cursor: pointer;
+}
+
+.ul-header {
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-grey-1);
+    cursor: pointer;
+}
+
+.li-header {
+    display: flex;
+    gap: 0.3rem;
+}
+
+span {
+    color: var(--color-pink);
+}

@@ -1,0 +1,18 @@
+
+
+
+.li-product {
+    width: 250px;
+    height: 450px;
+    padding: 0.5rem;
+    box-shadow: -1px 7px 5px 5px rgba(0,0,0,0.16);
+    -webkit-box-shadow: -1px 7px 5px 5px rgba(0,0,0,0.16);
+    -moz-box-shadow: -1px 7px 5px 5px rgba(0,0,0,0.16);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel-container {
+    padding: 1rem;
+}
