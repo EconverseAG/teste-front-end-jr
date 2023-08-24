@@ -23,6 +23,7 @@ function BrandNavigation(){
                 <li>
                     <button><img src={VtexLogo} alt="brand logo" /></button>
                 </li>
+                <button className="position-button">&gt;</button>
             </ul>
         </div>
     )

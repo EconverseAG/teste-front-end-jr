@@ -7,7 +7,15 @@ import Modal from "../Modal";
 
 
 function Products(){
-    const {products, openModal, setOpenModal } = useContext(ProductContext)
+    const {products, openModal, setOpenModal, filteredProducts } = useContext(ProductContext)
+
+    const searchProducts = products.filter((product)=>{
+        if(filteredProducts ==""){
+          return true
+        }
+
+        return product.productName.toLowerCase().includes(filteredProducts.toLowerCase())
+    })
 
 
     const responsive = {
@@ -33,7 +41,7 @@ function Products(){
         <div className="container">
             <Carousel responsive={responsive} containerClass="carousel-container">
                 {
-                    products.map((product, index)=>(
+                    searchProducts.map((product, index)=>(
                         <div className="li-product" key={index}>
                             <img src={product.photo} alt={product.descriptionShort}/>
                             <p className="description">{product.descriptionShort}</p>
@@ -41,7 +49,7 @@ function Products(){
                             <p className="price">R$ {product.price}</p>
                             <p className="half-price">ou 2x de R$ {product.price * 0.5} sem juros</p>
                             <span className="freight">Frete grátis</span>
-                            <button onClick={()=>setOpenModal(product)}>Comprar</button>
+                            <button onClick={()=>setOpenModal(product)}>COMPRAR</button>
                         </div>
 
                     ))

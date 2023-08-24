@@ -44,7 +44,7 @@ function Modal(){
                             <p className="p-product-name">{openModal?.productName}</p>
                             <p className="p-product-price">R$ {openModal!.price * count}</p>
                             <p className="p-product-description" >{openModal?.descriptionShort}</p>
-                            <p className="p-product-detail">Veja mais detalhes do produto</p>
+                            <p className="p-product-detail">Veja mais detalhes do produto &gt;</p>
                             <div className="div-counter">
                                 <button onClick={subtractItem}>-</button>
                                 <p>{count}</p>

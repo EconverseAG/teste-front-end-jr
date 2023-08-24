@@ -33,6 +33,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    button {
+        border: none;
+        background-color: var(--color-grey-2);
+    }
 }
 
 .div-search {
@@ -70,4 +75,3 @@ input {
     -moz-box-shadow: -1px 7px 5px 5px rgba(0,0,0,0.16);
 
 }
-

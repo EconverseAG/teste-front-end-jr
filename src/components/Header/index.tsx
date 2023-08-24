@@ -8,10 +8,22 @@ import SearchImg from "../../assets/header/MagnifyingGlass.png"
 import ShieldCheck from "../../assets/header/ShieldCheck.png"
 import TruckImg from "../../assets/header/Truck.png"
 import CardImg from "../../assets/header/CreditCard.png"
+import { useContext} from "react"
+import { ProductContext } from "../../providers/ProductContext"
 
 
 
 function Header(){
+
+    const {setFilteredProducts, filteredProducts } = useContext(ProductContext)
+
+    function handleSubmit(e:any){
+        e.preventDefault()
+
+        setFilteredProducts(filteredProducts)
+
+    }   
+
 
     return (
         <header className="container">
@@ -31,10 +43,10 @@ function Header(){
             </ul>
             <div className="div-header-middle">
                 <img src={VtexLogo} />
-                <div className="div-search">
-                    <input placeholder="O que está buscando" />
-                    <img src={SearchImg}  />
-                </div>
+                <form onSubmit={handleSubmit} className="div-search">
+                    <input value={filteredProducts} onChange={(e)=>setFilteredProducts(e.target.value)} placeholder="O que está buscando" />
+                    <button type="submit"><img src={SearchImg} /></button>
+                </form>
 
                 <ul className="ul-buttons">
                     <li><img src={GoBackImg} /></li>
