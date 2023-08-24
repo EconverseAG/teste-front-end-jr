@@ -1,3 +1,4 @@
+import './home.scss';
 import Modal from 'react-modal';
 import Slider from 'react-slick';
 import React, { useState } from "react";
@@ -136,7 +137,7 @@ function Home(props) {
 
                 </Modal>
             </div>
-            <div>
+            <div className='div-partners'>
                 <div>
                     <h3>Parceiros</h3>
                     <p>Lorem ipsum dolor</p>
@@ -148,12 +149,14 @@ function Home(props) {
                     <button>Confira</button>
                 </div>
             </div>
-            <div>
-                <div>
-                    <h2>Produtos relacionados</h2>
-                    <a href="#">Ver todos</a>
+            <div className='div-related-products'>
+                <div h2 className='div-h2-related-products'>
+                    <h2 className='h2-related-products'>Produtos relacionados</h2>
                 </div>
-                <div>
+                <div className='div-see-all'>
+                    <a href="#" className='see-all'>Ver todos</a>
+                </div>
+                <div className='related-products'>
                     <div>
                         <h3>Produtos</h3>
                         <p>Lorem ipsum dolor</p>
