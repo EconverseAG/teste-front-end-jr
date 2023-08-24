@@ -19,7 +19,7 @@
 }
 .container p {
   margin: 0;
-  padding: 5px 0px;
+  margin-bottom: 7px;
 }
 .container .price_line {
   color: #808080;
@@ -71,4 +71,7 @@
 }
 .container .btn:hover {
   background: var(--rosa-primario, #8f0030);
+}
+.container .modal {
+  margin: 0;
 }/*# sourceMappingURL=ProductCard.module.css.map */

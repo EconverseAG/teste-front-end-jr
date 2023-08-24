@@ -12,6 +12,7 @@ specifiers:
   react: ^18.2.0
   react-dom: ^18.2.0
   react-icons: ^4.10.1
+  react-modal: ^3.16.1
   react-router-dom: ^6.15.0
   sass: ^1.66.1
   vite: ^4.4.5
@@ -21,6 +22,7 @@ dependencies:
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-icons: 4.10.1_react@18.2.0
+  react-modal: 3.16.1_biqbaboplfbrettd7655fr4n2y
   react-router-dom: 6.15.0_biqbaboplfbrettd7655fr4n2y
   sass: 1.66.1
 
@@ -1193,6 +1195,10 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
+  /exenv/1.2.2:
+    resolution: {integrity: sha512-Z+ktTxTwv9ILfgKCk32OX3n/doe+OcLTRtqK9pcL+JsP3J1/VW8Uvl4ZjLlKqeW4rzK4oesDOGMEMRIZqtP4Iw==}
+    dev: false
+
   /fast-deep-equal/3.1.3:
     resolution: {integrity: sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==}
     dev: true
@@ -1747,7 +1753,6 @@ packages:
   /object-assign/4.1.1:
     resolution: {integrity: sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==}
     engines: {node: '>=0.10.0'}
-    dev: true
 
   /object-inspect/1.12.3:
     resolution: {integrity: sha512-geUvdk7c+eizMNUDkRpW1wJwgfOiOeHbxBR/hLXK1aT6zmVSO0jsQcs7fj6MGw89jC/cjGfLcNOrtMYtGqm81g==}
@@ -1888,7 +1893,6 @@ packages:
       loose-envify: 1.4.0
       object-assign: 4.1.1
       react-is: 16.13.1
-    dev: true
 
   /proxy-from-env/1.1.0:
     resolution: {integrity: sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==}
@@ -1923,7 +1927,25 @@ packages:
 
   /react-is/16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
-    dev: true
+
+  /react-lifecycles-compat/3.0.4:
+    resolution: {integrity: sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==}
+    dev: false
+
+  /react-modal/3.16.1_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-VStHgI3BVcGo7OXczvnJN7yT2TWHJPDXZWyI/a0ssFNhGZWsPmB8cF0z33ewDXq4VfYMO1vXgiv/g8Nj9NDyWg==}
+    engines: {node: '>=8'}
+    peerDependencies:
+      react: ^0.14.0 || ^15.0.0 || ^16 || ^17 || ^18
+      react-dom: ^0.14.0 || ^15.0.0 || ^16 || ^17 || ^18
+    dependencies:
+      exenv: 1.2.2
+      prop-types: 15.8.1
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+      react-lifecycles-compat: 3.0.4
+      warning: 4.0.3
+    dev: false
 
   /react-refresh/0.14.0:
     resolution: {integrity: sha512-wViHqhAd8OHeLS/IRMJjTSDHF3U9eWi62F/MledQGPdJGDhodXJ9PBLNGr6WWL7qlH12Mt3TyTpbS+hGXMjCzQ==}
@@ -2284,6 +2306,12 @@ packages:
     optionalDependencies:
       fsevents: 2.3.3
     dev: true
+
+  /warning/4.0.3:
+    resolution: {integrity: sha512-rpJyN222KWIvHJ/F53XSZv0Zl/accqHR8et1kpaMTD/fLCRxtV8iX8czMzY7sVZupTI3zcUTg8eycS2kNF9l6w==}
+    dependencies:
+      loose-envify: 1.4.0
+    dev: false
 
   /which-boxed-primitive/1.0.2:
     resolution: {integrity: sha512-bwZdv0AKLpplFY2KZRX6TvyuN7ojjr7lwkg6ml0roIy9YeuSr7JS372qlNW18UQYzgYK9ziGcerWqZOmEn9VNg==}

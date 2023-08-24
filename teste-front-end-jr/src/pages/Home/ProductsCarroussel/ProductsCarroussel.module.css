@@ -25,4 +25,20 @@
   font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
+}
+.container .main_products {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .main_products .img_arrow {
+  margin: 40px;
+  cursor: pointer;
+}
+.container .main_products .products {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1280px;
 }/*# sourceMappingURL=ProductsCarroussel.module.css.map */

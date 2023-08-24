@@ -12,11 +12,9 @@ export const useFetchData = () => {
 
         const loadData = async () => {
             if (cancelled) return
-            console.log(cancelled)
 
             try {
                 const response = await axios.get(baseUrl)
-                console.log(response)
                 return (response?.status === 200 && setProducts(response?.data?.products)) || null
             } catch (error) {
                 console.log(error)

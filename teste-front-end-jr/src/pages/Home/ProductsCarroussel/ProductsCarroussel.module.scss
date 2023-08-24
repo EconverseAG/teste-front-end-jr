@@ -31,4 +31,26 @@
         line-height: 16px;
         text-transform: uppercase;
     }
+
+    .main_products {
+        margin: 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .img_arrow {
+            margin: 40px;
+            cursor: pointer;
+        }
+
+        .products {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 1280px;
+        }
+
+    }
+
+
 }

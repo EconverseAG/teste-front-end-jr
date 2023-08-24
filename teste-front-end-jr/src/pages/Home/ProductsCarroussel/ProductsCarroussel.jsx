@@ -6,7 +6,6 @@ import ProductCard from '../../../components/ProductCard/ProductCard'
 const ProductsCarroussel = () => {
 
     const { products } = useFetchData()
-    console.log(products)
     const [category, setCategory] = useState('Ver todos')
 
     const items = [
@@ -31,16 +30,16 @@ const ProductsCarroussel = () => {
                     }
                 </ul>
             </nav>
-            <main>
-                {/* <img src="" alt="" /> */}
-                <div>
+            <main className={styles.main_products}>
+                <img className={styles.img_arrow} src="src/assets/carroussel/left.png" alt="" />
+                <div className={styles.products}>
                     {products && products.length > 0 ? products.map((product, index) => (
                         <>
-                            <ProductCard product={product} />
+                            {index < 4 ? <ProductCard product={product} /> : ''}
                         </>
                     )) : ''}
                 </div>
-                {/* <img src="" alt="" /> */}
+                <img className={styles.img_arrow} src="src/assets/carroussel/right.png"  alt="" />
 
             </main>
         </section>

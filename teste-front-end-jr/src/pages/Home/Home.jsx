@@ -9,8 +9,6 @@ const Home = () => {
       <Categories />
       <TitleContent text='Produtos relacionados' />
       <ProductsCarroussel />
-     
-
     </>
 
   )

@@ -20,7 +20,7 @@
 
     p {
         margin: 0;
-        padding: 5px 0px;
+        margin-bottom: 7px;
     }
 
     .price_line {
@@ -58,6 +58,7 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+
     }
 
     .btn {
@@ -78,6 +79,9 @@
 
     .btn:hover {
         background: var(--rosa-primario, #8f0030);
+    }
 
+    .modal {
+        margin: 0;
     }
 }
