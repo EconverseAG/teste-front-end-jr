@@ -1,0 +1,28 @@
+.container nav {
+  margin: 0 auto;
+  padding: 0;
+  width: 1280px;
+  background: #FFF;
+}
+.container ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  width: 100%;
+}
+.container li {
+  padding: 10px;
+  text-align: center;
+  width: 213px;
+  border: 1px solid #BDBDBD;
+  color: #3B3B3B;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+}/*# sourceMappingURL=ProductsCarroussel.module.css.map */
