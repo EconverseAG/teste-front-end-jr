@@ -11,14 +11,19 @@
 }
 
 .container {
-    max-width: 70rem;
+    max-width: 75rem;
     margin: 0 auto;
     width: 100%;
     padding: 0.5rem;
 }
 
 :root {
+    --color-grey-0: #2A2A2A;
     --color-grey-1: #9F9F9F;
     --color-grey-2: #F6F5F2;
     --color-pink: #F71963;
+}
+
+button {
+    cursor: pointer;
 }

@@ -1,0 +1,91 @@
+.modal-background {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+
+.modal-container {
+    width: 700px;
+    height: 300px;
+    background-color: white;
+    border-style: none;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+}
+
+
+
+.modal-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+
+    button {
+        background-color: white;
+        border: none;
+        font-size: 20px;
+        margin-right: 1rem;
+    }
+}
+
+.div-content {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.modal-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.div-counter {
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid;
+
+    button {
+        background-color: white;
+        border: none;
+    }
+}
+
+.button-buy {
+    background-color: var(--color-pink);
+    width: 245px;
+    height: 44px;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.p-product-name {
+    font-size: 20px;
+}
+
+.p-product-price {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.p-product-description {
+    font-size: 10px;
+}
+
+.p-product-detail {
+    font-size: 12px;
+}

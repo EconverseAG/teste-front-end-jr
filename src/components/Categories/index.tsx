@@ -14,31 +14,31 @@ function Categories(){
         <div className="container">
             <ul className="ul-categories">
                 <li className="li-categories">
-                    <div className="div-categories-white"><img src={TechImg} /></div>
+                    <div className="div-categories-white"><img src={TechImg} alt="tech logo" /></div>
                     <span>Tecnologia</span>
                 </li>
                 <li className="li-categories">
-                    <div className="div-categories"><img src={SuperMktImg} /></div>
+                    <div className="div-categories"><img src={SuperMktImg} alt="supermarket logo" /></div>
                     <p>Supermercado</p>
                 </li>
                 <li className="li-categories">
-                    <div className="div-categories"><img src={DrinkImg} /></div>
+                    <div className="div-categories"><img src={DrinkImg} alt="drink logo" /></div>
                     <p>Bebidas</p>
                 </li>
                 <li className="li-categories">
-                    <div className="div-categories"><img src={ToolImg} /></div>
+                    <div className="div-categories"><img src={ToolImg} alt="tool logo" /></div>
                     <p>Ferramentas</p>
                 </li>
                 <li className="li-categories">
-                    <div className="div-categories"><img src={HealthImg} /></div>
+                    <div className="div-categories"><img src={HealthImg} alt="health logo" /></div>
                     <p>Saúde</p>
                 </li >
                 <li className="li-categories">
-                    <div className="div-categories"><img src={FitnessImg} /></div>
+                    <div className="div-categories"><img src={FitnessImg} alt="fitness logo" /></div>
                     <p>Esporte e Fitness</p>
                 </li>
                 <li className="li-categories">
-                    <div className="div-categories"><img src={FashionImg} /></div>
+                    <div className="div-categories"><img src={FashionImg} alt="fashion logo" /></div>
                     <p>Moda</p>
                 </li>
               

@@ -3,20 +3,12 @@ import { ProductContext } from "../../providers/ProductContext"
 import "./styles.scss"
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import Modal from "../Modal";
 
 
 function Products(){
-    const {products } = useContext(ProductContext)
+    const {products, openModal, setOpenModal } = useContext(ProductContext)
 
-    const originalPrice = products.map((product)=>{
-        return product.price * 1.2
-    })
-
-    const halfPrice = products.map((product)=>{
-        return product.price * 0.5
-    })
-
-    console.log(originalPrice)
 
     const responsive = {
         superLargeDesktop: {
@@ -43,18 +35,19 @@ function Products(){
                 {
                     products.map((product, index)=>(
                         <div className="li-product" key={index}>
-                            <img src={product.photo}/>
-                            <p>{product.descriptionShort}</p>
-                            <p>R$ {originalPrice[index]}</p>
-                            <p>R$ {product.price}</p>
-                            <p>ou 2x de R$ {halfPrice[index]} sem juros</p>
-                            <span>Frete grátis</span>
-                            <button>Comprar</button>
+                            <img src={product.photo} alt={product.descriptionShort}/>
+                            <p className="description">{product.descriptionShort}</p>
+                            <p className="original-price">R$ {product.price * 1.2}</p>
+                            <p className="price">R$ {product.price}</p>
+                            <p className="half-price">ou 2x de R$ {product.price * 0.5} sem juros</p>
+                            <span className="freight">Frete grátis</span>
+                            <button onClick={()=>setOpenModal(product)}>Comprar</button>
                         </div>
 
                     ))
                 }
             </Carousel>
+            {openModal && <Modal />}
         </div>
     )
 }

@@ -2,7 +2,7 @@
 
 
 .li-product {
-    width: 250px;
+    width: 270px;
     height: 450px;
     padding: 0.5rem;
     box-shadow: -1px 7px 5px 5px rgba(0,0,0,0.16);
@@ -11,8 +11,47 @@
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
+
+    button {
+        margin-top: 20px;
+        background-color: var(--color-pink);
+        color: white;
+        width: 245px;
+        height: 44px;
+        border: none;
+        border-radius:0.5rem ;
+        cursor: pointer;
+
+    }
 }
 
 .carousel-container {
     padding: 1rem;
+}
+
+.original-price {
+    font-size: 16px;
+    text-decoration: line-through;
+    color: var(--color-grey-1);
+    margin-top: 10px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.half-price {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.freight {
+    font-size: 12px;
+}
+
+.description {
+    font-size: 15px;
+    font-weight: lighter;
+    margin-top: 10px;
 }

@@ -1,15 +1,11 @@
 import "./styles.scss"
-import LineImg from "../../assets/body/grayline.png"
+import CrossedWord from "../CrossedWord"
 
 function RelatedProducts(){
 
     return(
         <div className="container">
-            <div className="div-teste">
-                <img src={LineImg} />
-                <h2 className="teste">Produtos Relacionados</h2>
-                <img src={LineImg} />
-            </div>
+           <CrossedWord />
             <ul className="ul-related-products">
                 <li className="li-related-products pink-font">CELULAR</li>
                 <li className="li-related-products">ACESSÓRIOS</li>

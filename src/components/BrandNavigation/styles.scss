@@ -1,0 +1,29 @@
+
+.div-navigate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    height: 350px;
+
+    h2{
+        color: var(--color-pink);
+    }
+
+    ul{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+
+        button {
+            border: none;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: white;
+            box-shadow: -1px 7px 5px 5px rgba(0,0,0,0.16);
+            -webkit-box-shadow: -1px 7px 5px 5px rgba(0,0,0,0.16);
+            -moz-box-shadow: -1px 7px 5px 5px rgba(0,0,0,0.16);
+        }
+    }
+}

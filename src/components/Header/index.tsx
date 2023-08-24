@@ -16,15 +16,15 @@ function Header(){
     return (
         <header className="container">
             <ul className="ul-info">
-                <li className="li-header">
+                <li>
                     <img src={ShieldCheck} />
                     <p>Compra <span> 100% segura</span></p>
                 </li>
-                <li className="li-header">
+                <li>
                     <img src={TruckImg} />
                     <p><span>Frete grátis</span> acima de R$ 200</p>
                 </li>
-                <li className="li-header">
+                <li>
                     <img src={CardImg} />
                     <p><span>Parcele</span> sua compra</p>
                 </li>
@@ -44,13 +44,13 @@ function Header(){
                 </ul>
             </div>
             <ul className="ul-header">
-                <li className="li-header">TODAS AS CATEGORIAS</li>
-                <li className="li-header">SUPERMERCADO</li>
-                <li className="li-header">LIVROS</li>
-                <li className="li-header">MODA</li>
-                <li className="li-header">LANÇAMENTOS</li>
-                <li className="li-header">OFERTAS DO DIA</li>
-                <li className="li-header">ASSINATURA</li>
+                <li >TODAS AS CATEGORIAS</li>
+                <li >SUPERMERCADO</li>
+                <li >LIVROS</li>
+                <li >MODA</li>
+                <li >LANÇAMENTOS</li>
+                <li >OFERTAS DO DIA</li>
+                <li >ASSINATURA</li>
             </ul>
         </header>
     )

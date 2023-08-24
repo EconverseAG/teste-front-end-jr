@@ -1,14 +1,4 @@
 
-.div-teste{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.teste {
-    color: var(--color-pink)
-}
 
 .ul-related-products {
     display: flex;
@@ -21,6 +11,8 @@
     align-items: center;
     width: 210px;
     height: 40px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 .pink-font {

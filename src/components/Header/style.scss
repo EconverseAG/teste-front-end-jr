@@ -10,10 +10,22 @@ header {
 
 .ul-info {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     gap: 2rem;
     color: var(--color-grey-1);
+
+    li {
+        display: flex;
+        gap: 0.3rem;
+        font-size: 12px;
+    }
+
+    span {
+        color: var(--color-pink);
+        font-weight: 600;
+
+    }
 }
 
 
@@ -49,13 +61,13 @@ input {
     justify-content: space-between;
     color: var(--color-grey-1);
     cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 1rem;
+    margin-bottom: -7px;
+    box-shadow: 1px 7px 5px 5px rgba(0,0,0,0.16);
+    -webkit-box-shadow: -1px 7px 5px 5px rgba(0,0,0,0.16);
+    -moz-box-shadow: -1px 7px 5px 5px rgba(0,0,0,0.16);
+
 }
 
-.li-header {
-    display: flex;
-    gap: 0.3rem;
-}
-
-span {
-    color: var(--color-pink);
-}
