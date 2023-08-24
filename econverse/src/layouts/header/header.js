@@ -1,6 +1,7 @@
-//import './header.scss';
+import './header.scss';
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { HeartOutlined, UserOutlined, ShoppingCartOutlined, CodeSandboxOutlined, CrownOutlined } from '@ant-design/icons';
 
 function Header({ onSearch }) {
     const [searchItem, setSearchItem] = useState('');
@@ -12,35 +13,37 @@ function Header({ onSearch }) {
 
     return (
         <header className="header-container">
-            <div className="d-flex justify-content-around">
-                <p>Compra 100% seguro</p>
-                <p><strong>Frete grátis</strong> acima de R$ 200</p>
-                <p><strong>Parcele</strong> suas compras</p>
+            <div className="text-header">
+                <p>Compra <strong className='strong-text-header'>100% seguro</strong></p>
+                <p><strong className='strong-text-header'>Frete grátis</strong> acima de R$ 200</p>
+                <p><strong className='strong-text-header'>Parcele</strong> suas compras</p>
             </div>
             <hr />
-            <div className="d-flex justify-content-around">
-                <h1 className="">vtex</h1>
+            <div className="header-content">
+                <h1 className="h1-title">vtex</h1>
                 <input
                     type="text"
-                    placeholder="O que esta buscando?"
                     value={searchItem}
                     onChange={handleSearch}
+                    placeholder="O que esta buscando?"
+                    className='search-header'
                 />
-                <div>
-                    <button>Produtos</button>
-                    <button>Favoritos</button>
-                    <button>Perfil</button>
-                    <button>Carrinho</button>
+                <div className='div-icons-header'>
+                    <a href='#' className='icon-link'><CodeSandboxOutlined /></a>
+                    <a href='#' className='icon-link'><HeartOutlined /></a>
+                    <a href='#' className='icon-link'><UserOutlined /></a>
+                    <a href='#' className='icon-link'><ShoppingCartOutlined /></a>
                 </div>
             </div>
-            <div className="d-flex justify-content-around">
-                <Link>Lista de Categorias</Link>
-                <Link>Supermercado</Link>
-                <Link>Livros</Link>
-                <Link>Moda</Link>
-                <Link>Lançamentos</Link>
-                <Link>Ofertas do Dia</Link>
-                <Link>Assinatura</Link>
+            <hr />
+            <div className="div-menu-list">
+                <Link className='link-menu-list'>Lista de Categorias</Link>
+                <Link className='link-menu-list'>Supermercado</Link>
+                <Link className='link-menu-list'>Livros</Link>
+                <Link className='link-menu-list'>Moda</Link>
+                <Link className='link-menu-list'>Lançamentos</Link>
+                <Link className='link-menu-list'>Ofertas do Dia</Link>
+                <Link className='link-menu-list'><CrownOutlined className='crown' />Assinatura</Link>
             </div>
         </header>
     );
