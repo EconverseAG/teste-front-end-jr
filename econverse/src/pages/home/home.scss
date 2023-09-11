@@ -1,0 +1,44 @@
+:root {
+    --black: #000000;
+    --red: #FF0040;
+    --gray: ##585858;
+    --pink: #F71963;
+}
+
+.div-partners {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.div-related-products {
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
+
+    .div-h2-related-products {
+        display: flex;
+        justify-content: center;
+    }
+
+    .div-see-all {
+        display: flex;
+        justify-content: center;
+        .see-all{
+            text-decoration: none;
+            color: var(--black);
+            font-weight: bold;
+        }
+        .see-all:hover{
+            text-decoration: none;
+            color: var(--pink);
+            font-weight: bold;
+
+        }
+    }
+
+    .related-products {
+        display: flex;
+        justify-content: space-around;
+    }
+}
