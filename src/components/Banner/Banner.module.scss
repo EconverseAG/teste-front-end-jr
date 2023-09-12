@@ -1,0 +1,58 @@
+$white: #fff;
+$primaryPink: #f71963;
+
+.banner {
+  background: url("../../assets/banner.png") no-repeat center/cover;
+  padding: 60px 90px;
+  color: $white;
+  position: relative;
+  z-index: 0;
+
+  .container {
+    position: relative;
+    z-index: 3;
+  }
+
+  .bannerTitle {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    max-width: 822px;
+    margin-bottom: 16px;
+    width: 100%;
+  }
+
+  .bannerSubtitle {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 32px;
+    line-height: normal;
+  }
+
+  .bannerButton {
+    background: $primaryPink;
+    border: none;
+    border-radius: 5px;
+    color: $white;
+    cursor: pointer;
+    font-size: 18px;
+    font-style: normal;
+    height: 60px;
+    font-weight: 600;
+    line-height: normal;
+    width: 227px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.25) 30%, rgba(0, 0, 0, 0.7) 85.04%);
+    z-index: 1;
+  }
+}
