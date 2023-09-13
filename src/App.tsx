@@ -1,15 +1,9 @@
-import Menu from "./components/Menu"
 import './App.css'
-import Banner from "./components/Banner"
+import Home from './pages/Home'
 
 function App() {
   return(
-    <>
-      <Menu />
-      <main>
-        <Banner />
-      </main>
-    </>
+    <Home />
   )
 }
 

@@ -10,9 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@splidejs/react-splide": "^0.7.12",
+    "@types/react-modal": "^3.16.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sass": "^1.66.1"
+    "react-modal": "^3.16.1",
+    "sass": "^1.66.1",
+    "swiper": "^10.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

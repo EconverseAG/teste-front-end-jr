@@ -1,0 +1,74 @@
+$primaryPink: #f71963;
+$black: #3b3b3b;
+
+.container {
+  margin: 34px 90px 0px;
+
+  $primaryPink: #f71963;
+
+  .relatedTitle {
+    color: $primaryPink;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 40px;
+      width: 360px;
+      height: 1px;
+      background: url("../../assets/line.svg");
+      z-index: 1;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 40px;
+      width: 360px;
+      height: 1px;
+      background: url("../../assets/line.svg");
+      z-index: 1;
+    }
+  }
+
+  .table {
+    display: flex;
+    margin-top: 4px;
+    .itemTable {
+      border: 1px solid #bdbdbd;
+      background: #fff;
+      height: 16px;
+      width: 300px;
+      padding: 12px 58px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .tableLink {
+        font-size: 16px;
+        font-style: normal;
+        line-height: 16px;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .firstLableLink {
+    color: $primaryPink;
+    font-weight: 700;
+  }
+
+  .otherLinkTable {
+    color: $black;
+    font-weight: 400;
+  }
+}

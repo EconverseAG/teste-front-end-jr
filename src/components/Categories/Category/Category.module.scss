@@ -1,0 +1,50 @@
+$white: #fff;
+$primaryPink: #f71963;
+$black: #4e4e4e;
+$gray: #f4f4f4;
+
+.category {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  justify-content: center;
+  align-items: center;
+  height: 174px;
+
+  .categoryLink {
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.22);
+    display: flex;
+    justify-content: center;
+    height: 128px;
+    width: 128px;
+  }
+
+  .categoryName {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+}
+
+.firtsCategory {
+  .categoryLink {
+    background: $white;
+  }
+
+  .categoryName {
+    color: $primaryPink;
+  }
+}
+
+.otherCategory {
+  .categoryLink {
+    background: $gray;
+  }
+
+  .categoryName {
+    color: $black;
+  }
+}

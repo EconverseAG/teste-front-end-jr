@@ -1,0 +1,79 @@
+$white: #fff;
+$black: #3f3f40;
+$gray: #808080;
+$primaryPink: #f71963;
+
+.card {
+  border-radius: 10px;
+  background: $white;
+  box-shadow: 0px 3px 19px 0px rgba(0, 0, 0, 0.22);
+  height: 480px;
+  max-width: 270px;
+  padding: 32px 12px 0;
+
+  .cardImage {
+    max-height: 228px;
+    max-width: 247px;
+  }
+
+  .cardName {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  .salePrice {
+    color: $gray;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 12px;
+    text-decoration-line: strikethrough;
+    text-decoration: line-through;
+  }
+
+  .fullPrice {
+    color: $black;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .cardPortion {
+    color: $black;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 2px;
+  }
+
+  .cardFreight {
+    color: $primaryPink;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .cardButton {
+    background: $primaryPink;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: $white;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    height: 44px;
+    line-height: normal;
+    margin-top: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 245px;
+  }
+}

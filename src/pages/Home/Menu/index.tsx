@@ -1,16 +1,16 @@
 
 import styles from './Menu.module.scss'
 
-import Logo from '../../assets/logo.svg'
-import Group from '../../assets/group.svg'
-import Heart from '../../assets/heart.svg'
-import ShoppingCart from '../../assets/shoppingCart.svg'
-import User from '../../assets/user.svg'
-import Truck from '../../assets/truck.svg'
-import Search from '../../assets/search.svg'
-import CreditCard from '../../assets/creditCard.svg'
-import Shield from '../../assets/shieldCheck.svg'
-import Crown from '../../assets/crownSimple.svg'
+import Logo from '../../../assets/logo.svg'
+import Group from '../../../assets/group.svg'
+import Heart from '../../../assets/heart.svg'
+import ShoppingCart from '../../../assets/shoppingCart.svg'
+import User from '../../../assets/user.svg'
+import Truck from '../../../assets/truck.svg'
+import Search from '../../../assets/search.svg'
+import CreditCard from '../../../assets/creditCard.svg'
+import Shield from '../../../assets/shieldCheck.svg'
+import Crown from '../../../assets/crownSimple.svg'
 
 export default function Menu() {
   return (
