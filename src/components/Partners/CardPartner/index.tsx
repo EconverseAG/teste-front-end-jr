@@ -1,4 +1,4 @@
-import styles from '@/styles/CardPartner.module.scss'
+import styles from './CardPartner.module.scss'
 
 export default function CardPartner() {
   return (
