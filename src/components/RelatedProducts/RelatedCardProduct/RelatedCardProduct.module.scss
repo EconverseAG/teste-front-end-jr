@@ -1,0 +1,63 @@
+$primaryPink: #f71963;
+$white: #fff;
+
+.card {
+  background: url("../../../assets/partners.png") no-repeat center/cover;
+  border-radius: 20px;
+  color: $white;
+  height: 284px;
+  width: 590px;
+  padding: 48px 40px 0;
+  position: relative;
+
+  .container {
+    position: absolute;
+    z-index: 3;
+
+    .titleCard {
+      color: $white;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin-bottom: 8px;
+    }
+
+    .cardText {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      width: 185px;
+      margin-bottom: 32px;
+    }
+
+    .cardButton {
+      background: $primaryPink;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      color: $white;
+      height: 48px;
+      width: 135px;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+      letter-spacing: 1.28px;
+      text-transform: uppercase;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.25) 30%, rgba(0, 0, 0, 0.7) 85.04%);
+    border-radius: 20px;
+    z-index: 1;
+  }
+}
