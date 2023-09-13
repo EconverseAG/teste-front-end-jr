@@ -1,0 +1,40 @@
+.barNav {
+  box-shadow: 0px 8px 16px 0px rgba(57, 48, 19, 0.12);
+  padding: 12px 56px;
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    li {
+      display: flex;
+      align-items: center;
+
+      a {
+        color: #9F9F9F;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      &:hover {
+        a {
+          color: #F71963;
+        }
+      }
+    }
+
+    .active {
+      a {
+        color: #F71963;
+      }
+    }
+
+    .sign {
+      img {
+        margin-right: 12px;
+      }
+    }
+  }
+}
