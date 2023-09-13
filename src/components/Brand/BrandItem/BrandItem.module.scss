@@ -1,0 +1,13 @@
+.brandItem {
+  width: 211px;
+  height: 211px;
+  border-radius: 50%;
+  box-shadow: 0px 2.5px 7px -1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .brandLogo {
+    width: 172px;
+  }
+}
