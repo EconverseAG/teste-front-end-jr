@@ -1,4 +1,4 @@
-import styles from '@/styles/Categories.module.scss'
+import styles from './Categories.module.scss'
 import Category from "./Category";
 import categories from '../../utils/categoriesUtils';
 
