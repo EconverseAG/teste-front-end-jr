@@ -1,0 +1,42 @@
+.barVtex {
+  padding: 12px 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #F0F0F0;
+  border-left: none;
+  border-right: none;
+
+  .form {
+    position: relative;
+    input {
+      width: 657px;
+      padding: 14px 24px;
+      border-radius: 10px;
+      background-color: #F6F5F2;
+      border: none;
+      font-size: 14px;
+      font-family: "Poppins";
+      font-weight: 500;
+    }
+
+    button {
+      position: absolute;
+      top: 9px;
+      right: 24px;
+      background-color: transparent;
+      border: none;
+    }
+   
+  }
+
+  .icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    a:not(:first-child) {
+      margin-left: 32px;
+    }
+  }
+}
