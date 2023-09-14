@@ -25,7 +25,7 @@ export default function Footer() {
           reprodução, total ou parcial, de qualquer conteúdo sem expressa
           autorização.
         </p>
-        <img src={brand} alt="Logotipo da marca" />
+        <img src={brand} alt="Logotipo da marca" className={styles.brand} />
       </div>
     </footer>
   );

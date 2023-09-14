@@ -10,7 +10,7 @@ export default function PaymentsMethodsFooterList() {
           Informações uteis
         </p>
       </div>
-      <img src={creditCardFlags} alt="Diferentes bandeiras de cartões" />
+      <img src={creditCardFlags} alt="Diferentes bandeiras de cartões" className={styles.creditCardFlags} />
     </div>
-  );
+  )
 }

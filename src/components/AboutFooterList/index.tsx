@@ -22,9 +22,9 @@ export default function AboutFooterList() {
       {aboutList.map(({ title }) => <li className={styles.listItem} key={title}>{title}</li>)}
       <li>
         <ul className={styles.socialMediaList}>
-          <li className={styles.socialMediaItem}><img src={facebook} alt="Icone do facebook da VTex" /></li>
-          <li className={styles.socialMediaItem}><img src={instagram} alt="Icone do instagram da VTex" /></li>
-          <li className={styles.socialMediaItem}><img src={youtube} alt="Icone do youtube da VTex" /></li>
+          <li className={styles.socialMediaItem}><img src={facebook} alt="Icone do facebook da VTex" className={styles.iconSm}/></li>
+          <li className={styles.socialMediaItem}><img src={instagram} alt="Icone do instagram da VTex" className={styles.icon} /></li>
+          <li className={styles.socialMediaItem}><img src={youtube} alt="Icone do youtube da VTex" className={styles.icon} /></li>
         </ul>
       </li>
     </ul>

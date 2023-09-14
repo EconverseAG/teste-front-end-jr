@@ -13,6 +13,11 @@ $secondGray: #f0f0f0;
       justify-content: space-around;
       align-items: center;
       margin: 0.5rem 0;
+
+      .icon {
+        height: 20px;
+        width: 20px;
+      }
     }
 
     .headerAndListOptions {
@@ -23,6 +28,11 @@ $secondGray: #f0f0f0;
       display: flex;
       justify-content: space-around;
       padding: 1rem 0;
+
+      .logo {
+        width: 139px;
+        height: 50.641px;
+      }
 
       .searchInput {
         align-items: center;
@@ -40,14 +50,10 @@ $secondGray: #f0f0f0;
           width: 600px;
           padding: 14px;
           outline: none;
-          
-          &::before {
-            content: "";
-            width: 24px;
-            height: 24px;
-            font-size: 24px;
-            position: absolute;
-            left: 24px;
+
+          .searchIcon {
+            height: 28px;
+            width: 28px; 
           }
 
           &::placeholder {
@@ -64,6 +70,16 @@ $secondGray: #f0f0f0;
         display: flex;
         align-items: center;
         gap: 32px;
+
+        .iconSm {
+          height: 24px;
+          width: 24px;
+        }
+
+        .icon {
+          height: 32px;
+          width: 32px;
+        }
       }
     }
     
@@ -81,6 +97,11 @@ $secondGray: #f0f0f0;
   align-items: center;
   display: flex;
   gap: 12px;
+
+  .icon {
+    height: 20px;
+    width: 20px;
+  }
 }
 
 .font {
