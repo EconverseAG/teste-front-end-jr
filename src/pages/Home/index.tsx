@@ -1,4 +1,5 @@
 import Banner from "./Banner";
+import Footer from "./Footer";
 import Menu from "./Menu";
 import Products from "./Products";
 
@@ -10,6 +11,7 @@ export default function Home() {
         <Banner />
         <Products />
       </main>
+      <Footer />
     </>
   )
 }
