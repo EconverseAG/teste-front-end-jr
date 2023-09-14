@@ -37,7 +37,7 @@ export default function Menu() {
             </h1>
             <div className={`${styles.searchInput}`}>
               <input type="search" placeholder='O que você está buscando?' />
-              <img src={Search} />
+              <img src={Search} alt='Icone de lupa'/>
             </div>
             <ul className={`${styles.userListItens}`}>
               <li>
@@ -85,7 +85,7 @@ export default function Menu() {
               <a className={`${styles.pinkFont} ${styles.font}`} href=".">Ofertas do dia</a>
             </li>
             <li className={`${styles.boxInfoAndIcon}`}>
-              <img src={Crown} />
+              <img src={Crown} alt='Icone coroa'/>
               <a href="." className={`${styles.font} ${styles.colorGray}`}>Assinatura</a>
             </li>
           </ul>

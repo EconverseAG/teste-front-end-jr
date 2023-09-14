@@ -3,21 +3,25 @@ import Modal from "react-modal";
 import styles from "./ModalComponent.module.scss";
 
 import closeModal from "../../../assets/close.svg";
-import iphone from "../../../assets/iphone.png";
 import minus from "../../../assets/minus.svg";
 import plus from "../../../assets/plus.svg";
+import IProduct from "../../../types/IProduct";
 
 interface IModal {
-  modalIsOpen: boolean;
-  onClick: () => void;
-  onRequestClose: () => void;
+  modalIsOpen: boolean
+  onClick: () => void
+  onRequestClose: () => void
+  product: IProduct
 }
 
 export default function ModalComponent({
   modalIsOpen,
   onClick,
   onRequestClose,
+  product
 }: IModal) {
+
+  const convertPrice = product.price.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
 
   return (
     <Modal
@@ -33,13 +37,12 @@ export default function ModalComponent({
           </button>
         </header>
         <div className={styles.modalContent}>
-          <img src={iphone} alt="Image do dispositivo" className={styles.modalContentImage} />
+          <img src={product.photo} alt={product.descriptionShort} className={styles.modalContentImage} />
           <div className={styles.modalContentText}>
-            <h1 className={styles.modalContentPrincipalTitle}>Lorem ipsum dolor sit amet</h1>
-            <h2 className={styles.modalContentPriceText}>R$ 1.499,90</h2>
+            <h1 className={styles.modalContentPrincipalTitle}>{product.productName}</h1>
+            <h2 className={styles.modalContentPriceText}>{convertPrice}</h2>
             <p className={styles.modalContentDescription}>
-              Many desktop publishing packages and web page editors now many
-              desktop publishing
+              {product.descriptionShort}
             </p>
             <h3 className={styles.modalContentMoreDetails}>Veja mais detalhes do produto &gt;</h3>
             <div className={styles.modalButtonQuantity}>
