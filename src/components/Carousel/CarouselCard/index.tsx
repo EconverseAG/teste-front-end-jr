@@ -16,6 +16,11 @@ export default function CardCarousel() {
     console.log('clicou')
   }
 
+  function handleCloseModal() {
+    setModalIsOpen(false)
+    console.log(modalIsOpen)
+  }
+
   return (
     <div className={styles.card}>
       <img src={iphone} alt="Imagem de um Iphone" className={styles.cardImage} />
@@ -29,7 +34,7 @@ export default function CardCarousel() {
       <button className={styles.cardButton} onClick={() => handleOpenModal()}>
         Comprar
       </button> 
-      <ModalComponent modalIsOpen={modalIsOpen} />
+      <ModalComponent modalIsOpen={modalIsOpen} onClick={() => handleCloseModal()} onRequestClose={handleCloseModal} />
     </div>
   )
 }
