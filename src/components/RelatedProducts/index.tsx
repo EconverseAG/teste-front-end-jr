@@ -3,7 +3,7 @@ import RelatedCardProduct from './RelatedCardProduct'
 
 export default function RelatedProducts() {
   return (
-    <article className={styles.relatedBox}>
+    <section className={styles.relatedBox}>
       <div className={styles.relatedBoxTexts}>
       <h3 className={styles.relatedTitle}>Produtos Relacionados</h3>
         <a href='#' className={styles.relatedLink}>Ver mais</a>
@@ -12,6 +12,6 @@ export default function RelatedProducts() {
         <RelatedCardProduct />
         <RelatedCardProduct />
       </div>
-    </article>        
+    </section>        
   )
 }

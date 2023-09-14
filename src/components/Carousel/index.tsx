@@ -31,7 +31,7 @@ export default function Carousel() {
     fetchData();
   }, []);
   return (
-    <div className={styles.container}>
+    <article className={styles.container}>
       <Swiper
         modules={[Navigation, A11y]}
         spaceBetween={30}
@@ -45,6 +45,6 @@ export default function Carousel() {
           </SwiperSlide>
         ))}
       </Swiper>
-    </div>
+    </article>
   );
 }

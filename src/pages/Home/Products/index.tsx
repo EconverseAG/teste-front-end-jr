@@ -4,16 +4,20 @@ import Partners from "../../../components/Partners";
 import ProductType from "../../../components/ProductType";
 import RelatedProducts from "../../../components/RelatedProducts";
 import BrandNavigator from "../../../components/Brand";
+import Banner from "../Banner";
 
 export default function Products() {
   return (
-    <section>
+    <main>
+      <Banner />
       <Categories />
-      <ProductType />
-      <Carousel />
-      <Partners />
+      <section>
+        <ProductType />
+        <Carousel />
+        <Partners />
+      </section>
       <RelatedProducts />
       <BrandNavigator />
-    </section>
+    </main>
   )
 }

@@ -2,8 +2,12 @@
 .container {
     margin-top: 5px;
     max-width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     .swiperBox {
-        padding: 12px 90px 20px;
+        padding: 12px 0 20px;
+        margin: 0 89px;
     }
     margin-bottom: 51px;
 }
