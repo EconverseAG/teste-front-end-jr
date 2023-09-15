@@ -3,7 +3,7 @@ import banner from "../../assets/img/banner.png";
 
 export default function Banner() {
   return (
-    <div>
+    <section>
       <BannerData
         title="Venha conhecer nossas promoções"
         description="50% Off nos produtos"
@@ -11,6 +11,6 @@ export default function Banner() {
         showButton={true}
         textButton="Ver produto"
       />
-    </div>
+    </section>
   );
 }
