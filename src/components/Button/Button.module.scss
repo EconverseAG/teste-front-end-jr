@@ -3,4 +3,8 @@
   border: none;
   color: #fff;
   cursor: pointer;
+
+  &:hover {
+    background-color: #ff2b71;
+  }
 }
