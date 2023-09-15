@@ -18,7 +18,7 @@ export default function RangeData({
   direction,
 }: RangeDataProps) {
   return (
-    <div className={styles.rangeText}>
+    <div className={styles.rangeData}>
       <img src={img} alt={alt} />
       <p style={{ flexDirection: direction }}>
         {text} <span>{emphasis}</span>
