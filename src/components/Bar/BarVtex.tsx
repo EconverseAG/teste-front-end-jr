@@ -1,5 +1,5 @@
 import styles from "./BarVtex.module.scss";
-import logo from "../../assets/svg/logo.svg";
+import logo from "../../assets/svg/Logo.svg";
 import search from "../../assets/svg/MagnifyingGlass.svg";
 import box from "../../assets/svg/Box.svg";
 import heart from "../../assets/svg/Heart.svg";
