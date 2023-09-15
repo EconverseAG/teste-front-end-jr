@@ -3,10 +3,6 @@
 <h1 align="center">Teste Frontend Júnior</h1>
 
 <p align="center">
-  <img alt="GitHub top language" src="https://img.shields.io/badge/react-18.2.0-blue">
-<hr>
-
-<p align="center">
   <a href="#rocket-Tecnologias">Tecnologias</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-iniciando-o-projeto">Iniciando o Projeto</a> &#xa0; | &#xa0;
 </p>
