@@ -8,18 +8,20 @@ interface CategoriasDataProps {
 
 export default function CategoriasData({ ...props }: CategoriasDataProps) {
   return (
-    <div
+    <ul
       className={`${styles.categoriasData} ${
         props.active ? styles.active : ""
       }`}
     >
-      {props.img && (
-        <div className={styles.container}>
-          <img src={props.img} alt={props.title} />
-        </div>
-      )}
+      <li>
+        {props.img && (
+          <button className={styles.container}>
+            <img src={props.img} alt={props.title} />
+          </button>
+        )}
 
-      {props.title && <h2>{props.title}</h2>}
-    </div>
+        {props.title && <h2>{props.title}</h2>}
+      </li>
+    </ul>
   );
 }
