@@ -1,0 +1,29 @@
+.categorias {
+  max-width: 90vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(10, max-content);
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    background-color: #F4F4F4;
+    height: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #F71963;
+    border-radius: 10px;
+  }
+}
+
+.categorias > * {
+  margin: 40px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
