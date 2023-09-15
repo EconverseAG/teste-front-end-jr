@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="#rocket-Tecnologias">Tecnologias</a> &#xa0; | &#xa0;
-  <a href="#checkered_flag-iniciando-o-projeto">Iniciando o Projeto</a> &#xa0; | &#xa0;
+  <a href="#checkered_flag-iniciando-o-projeto">Iniciando o Projeto</a> &#xa0;
 </p>
 
 <br>
@@ -16,7 +16,7 @@ Esse teste é criar um e-commerce do site da VTEX.
 
 ## Tecnologias
 
-Seguintes ferramentas foram usadas neste projeto:
+Ferramentas foram usadas neste projeto:
 
 - [React](https://pt-br.reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
