@@ -1,18 +1,12 @@
 import styles from "./Button.module.scss";
 
 interface ButtonProps {
-  children: string;
-  padding: string;
-  borderRadius: string;
-  fontSize: string;
-  fontWeight?: string;
-  marginTop?: string;
+  textButton?: string;
+  showButton?: boolean;
 }
 
-export function Button({ children, ...props }: ButtonProps) {
-  return (
-    <button className={styles.button} style={{ ...props }}>
-      {children}
-    </button>
-  );
+export function Button({ textButton, showButton }: ButtonProps) {
+  return showButton ? (
+    <button className={styles.button}>{textButton}</button>
+  ) : null;
 }
