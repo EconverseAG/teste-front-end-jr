@@ -1,13 +1,13 @@
 .categorias {
   max-width: 90vw;
-  margin: 0 auto;
+  margin: 0 auto 40px auto;
   display: grid;
   grid-template-columns: repeat(10, max-content);
   overflow-x: auto;
 
   &::-webkit-scrollbar {
     background-color: #F4F4F4;
-    height: 4px;
+    height: 6px;
   }
 
   &::-webkit-scrollbar-thumb {
