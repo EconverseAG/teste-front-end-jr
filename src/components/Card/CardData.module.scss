@@ -1,0 +1,59 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 12px;
+  box-shadow: 0px 3px 19px 0px rgba(0, 0, 0, 0.22);
+  border-radius: 0.625rem;
+
+  .image {
+    display: flex;
+    justify-content: center;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    color: #3F3F40;
+
+    .title {
+      font-size: 0.9375rem;
+      font-weight: 300;
+      margin-bottom: 12px;
+    }
+
+    .price {
+      color: #808080;
+      font-size: 1rem;
+      font-weight: 400;
+      text-decoration:line-through;
+      margin: 12px 0 2px 0;
+    }
+
+    .discountPrice {
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+
+    .installment {
+      font-size: 0.75rem;
+      font-weight: 400;
+      margin: 2px 0 8px 0;
+    }
+
+    .delivery {
+      color: #F71963;
+      font-size: 0.75rem;
+      font-weight: 400;
+    }
+
+    button {
+      height: 2.75rem;
+      border-radius: 0.25rem;
+      color: #FFF;
+      font-size: 0.875rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-top: 12px;
+    }
+  }
+}
