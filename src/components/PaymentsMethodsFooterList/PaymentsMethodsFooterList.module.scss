@@ -1,0 +1,21 @@
+$white: #fff;
+
+.container {
+  .boxTitle {
+    margin-bottom: 24px;
+
+    .listTitle {
+      color: $white;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+
+    .creditCardFlags {
+      height: 148.545px;
+      width: 195px;
+    }
+  }
+}

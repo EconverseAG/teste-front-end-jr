@@ -1,0 +1,123 @@
+$primaryGray: #9f9f9f;
+$primaryPink: #f71963;
+$secondGray: #f0f0f0;
+
+.header {
+  display: flex;
+  flex-direction: column;
+  .container {
+    margin: 0 90px;
+
+    .headerInfoList {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0.5rem 0;
+
+      .icon {
+        height: 20px;
+        width: 20px;
+      }
+    }
+
+    .headerAndListOptions {
+      align-items: center;
+      border-top: 1px solid;
+      border-bottom: 1px solid;
+      border-color: $secondGray;
+      display: flex;
+      justify-content: space-around;
+      padding: 1rem 0;
+
+      .logo {
+        width: 139px;
+        height: 50.641px;
+      }
+
+      .searchInput {
+        align-items: center;
+        display: flex;
+        background: #f6f5f2;
+        border-radius: 10px;
+        justify-content: space-between;
+        width: 620px;
+        padding: 0.5rem;
+        input {
+          background: #f6f5f2;
+          border: none;
+          display: block;
+          height: 15px;
+          width: 600px;
+          padding: 14px;
+          outline: none;
+
+          .searchIcon {
+            height: 28px;
+            width: 28px; 
+          }
+
+          &::placeholder {
+            color: $primaryGray;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+        }
+
+      }
+      .userListItens {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+
+        .iconSm {
+          height: 24px;
+          width: 24px;
+        }
+
+        .icon {
+          height: 32px;
+          width: 32px;
+        }
+      }
+    }
+    
+    .listOptions {
+      align-items: center;
+      box-shadow: 0px 8px 16px 0px rgba(57, 48, 19, 0.12);
+      display: flex;
+      justify-content: space-around;
+      padding: 11px;
+    }
+  }
+}
+
+.boxInfoAndIcon {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+
+  .icon {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+.font {
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.pinkFont {
+  color: $primaryPink;
+}
+
+.colorGray {
+  color: $primaryGray;
+}
+

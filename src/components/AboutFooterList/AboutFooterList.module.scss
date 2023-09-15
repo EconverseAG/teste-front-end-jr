@@ -1,0 +1,41 @@
+$white: #fff;
+
+.list {
+  color: $white;
+
+  .listItem {
+    font-style: normal;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 32px;
+    text-transform: uppercase;
+  }
+  
+  .boxTitle {
+    margin-bottom: 24px;
+
+    .listTitle {
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
+
+  .socialMediaList {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    margin-top: 60px;
+
+    .iconSm {
+      height: 21.46px;
+      width: 21.479px;
+    }
+
+    .icon {
+      height: 22px;
+      width: 22.02px;
+    }
+  }
+}

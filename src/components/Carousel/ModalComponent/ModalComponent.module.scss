@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Poppins:wght@700&display=swap");
+
+$darkBlue: #041e50;
+$black: #222;
+$white: #fff;
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  .modalContainer {
+    background: $white;
+    height: 315px;
+    max-width: 769px;
+    width: 90%;
+
+    .modalHeader {
+      display: flex;
+      justify-content: flex-end;
+
+      .modalHeaderClose {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        margin: 17px 31px 10px;
+      }
+    }
+
+    .modalContent {
+      display: flex;
+      gap: 87px;
+      padding: 0 56px 51px 51px;
+
+      .modalContentImage {
+        max-width: 242px;
+        height: 192px;
+        width: 90%;
+      }
+
+      .modalContentPrincipalTitle {
+        color: $darkBlue;
+        font-family: Lato;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 100%;
+        letter-spacing: 1px;
+        margin-bottom: 21.07px;
+      }
+
+      .modalContentPriceText {
+        color: $darkBlue;
+        font-family: Lato;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 100%;
+        letter-spacing: 1px;
+        margin-bottom: 17.7px;
+      }
+
+      .modalContentDescription {
+        color: $black;
+        font-family: Lato;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150.5%;
+        letter-spacing: 0.5px;
+        margin-bottom: 25.29px;
+      }
+
+      .modalContentMoreDetails {
+        color: $darkBlue;
+        font-family: Lato;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        letter-spacing: 0.6px;
+        margin-bottom: 15.55px;
+      }
+
+      .modalButtonQuantity {
+        background: $white;
+        border-radius: 4px;
+        border: 1px solid $darkBlue;
+        color: $darkBlue;
+        display: flex;
+        gap: 20.31px;
+        height: 36px;
+        justify-content: center;
+        margin-bottom: 16px;
+        padding: 8px 9px;
+        width: 110px;
+
+        .minus,
+        .plus {
+          background: transparent;
+          border: none;
+        }
+      }
+
+      .modalButton {
+        background: var(--rosa-primario, #f71963);
+        border: none;
+        border-radius: 4px;
+        color: $white;
+        height: 44px;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 21.26px;
+        text-align: center;
+        text-transform: uppercase;
+        width: 245px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .modal {
+    margin-top: 200px;
+
+    .modalContainer {
+      height: auto;
+      max-width: auto;
+
+      .modalContent {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .modalContentImage {
+          width: 100%;
+        }
+
+        .modalContentPrincipalTitle {
+          font-size: 35px;
+        }
+
+        .modalContentPriceText {
+          font-size: 25px;
+        }
+
+        .modalContentDescription {
+          font-size: 18px;
+        }
+
+        .modalContentMoreDetails {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .modal {
+    margin-top: 300px;
+    .modalContainer {
+      height: 850px;
+    }
+  }
+}
