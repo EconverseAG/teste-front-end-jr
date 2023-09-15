@@ -1,0 +1,33 @@
+.navData {
+  max-width: 90vw;
+  margin: 5px auto 20px auto;
+
+  .ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    text-align: center;
+
+    .li {
+      padding: 12px 70px;
+      border: 1px solid #BDBDBD;
+
+      a {
+        text-transform: uppercase;
+        color: #3B3B3B;
+        font-size: 16px;
+        font-weight:500;
+
+        &:hover {
+          color: #F71963;
+        }
+      }
+    }
+
+    .active {
+      a {
+        color: #F71963;
+        font-weight: 700;
+      }
+    }
+  }
+}
