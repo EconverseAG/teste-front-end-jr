@@ -1,5 +1,52 @@
+@import "../../../styles/theme.scss";
+
 section {
-  width: 100%;
+  position: relative;
   height: 24.6875rem;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 85.04%);
+  background-image: url("../../../assets/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 3.25rem 5.56rem 3.12rem;
+  color: $white;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 85.04%);
+    opacity: 0.8;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+  }
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    max-width: 822px;
+    margin-bottom: 1rem;
+    line-height: normal;
+  }
+
+  span {
+    font-size: 2.25rem;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 2.19rem;
+    color: $white;
+  }
+
+  button {
+    background-color: $primary;
+    width: 14.1875rem;
+    height: 3.75rem;
+    font-size: 1.125rem;
+    color: $white;
+    font-weight: 600;
+    border: 0;
+    border-radius: 5px;
+  }
 }

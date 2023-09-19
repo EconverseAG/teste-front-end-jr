@@ -1,5 +1,5 @@
 import './styles.scss'
-import { HeaderInfo } from "../HeaderInfo";
+import { HeaderInfo } from "./HeaderInfo";
 
 import credit from '../../../assets/icons/credit.svg'
 import shield from '../../../assets/icons/shield.svg'
@@ -26,7 +26,7 @@ export function Header() {
           imgUrl={truck}
         >
           <strong>Frete grátis</strong> acima de R$ 200
-        </HeaderInfo >
+        </HeaderInfo>
         <HeaderInfo
           imgUrl={credit}
         >
