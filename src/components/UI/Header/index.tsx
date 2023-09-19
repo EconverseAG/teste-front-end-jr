@@ -1,17 +1,14 @@
-import './styles.scss'
 import { HeaderInfo } from "./HeaderInfo";
+import { HeaderOptions } from './HeaderOptions';
+import './styles.scss';
 
-import credit from '../../../assets/icons/credit.svg'
-import shield from '../../../assets/icons/shield.svg'
-import truck from '../../../assets/icons/truck.svg'
-import search from '../../../assets/icons/search.svg'
-import packageIcon from '../../../assets/icons/package.svg'
-import heart from '../../../assets/icons/heart.svg'
-import user from '../../../assets/icons/user.svg'
-import cart from '../../../assets/icons/cart.svg'
-import crown from '../../../assets/icons/crown.svg'
-import logo from '../../../assets/logo.svg'
+import credit from '../../../assets/icons/credit.svg';
+import shield from '../../../assets/icons/shield.svg';
+import truck from '../../../assets/icons/truck.svg';
+import search from '../../../assets/icons/search.svg';
 
+import crown from '../../../assets/icons/crown.svg';
+import logo from '../../../assets/logo.svg';
 
 export function Header() {
   return (
@@ -50,20 +47,7 @@ export function Header() {
           </button>
         </div>
 
-        <div className="header-icons">
-          <button>
-            <img src={packageIcon} alt="" />
-          </button>
-          <button>
-            <img src={heart} alt="" />
-          </button>
-          <button>
-            <img src={user} alt="" />
-          </button>
-          <button>
-            <img src={cart} alt="" />
-          </button>
-        </div>
+        <HeaderOptions />
       </nav>
       <nav className="header-menu">
         <a href="#">Todas as categorias</a>

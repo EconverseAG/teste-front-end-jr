@@ -7,7 +7,7 @@ header {
     background-color: transparent;
     border: 0
   }
-  
+
   .header-info {
     display: flex;
     align-items: center;
@@ -16,7 +16,7 @@ header {
     gap: 7.44rem;
     padding-block: 0.44rem;
   }
-  
+
   .header-search {
     padding-top: 0.75rem;
     display: flex;
@@ -24,7 +24,7 @@ header {
     justify-content: space-between;
     padding-bottom: .9rem;
     border-block: 1px solid #F0F0F0;
-    
+
     .search-container {
       background: #F6F5F2;
       display: flex;
@@ -36,29 +36,30 @@ header {
       padding-inline: 1.5rem;
       gap: .5rem;
       border-radius: 10px;
-      
-      & input {
+
+      & > input {
         height: 100%;
         background-color: transparent;
         border: 0;
         width: 100%;
         outline: none;
+        font-size: 0.875rem;
+        font-style: normal;
         font-weight: 500;
+        line-height: normal;
         color: $gray-100;
 
         &::placeholder {
           font-size: 0.875rem;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          color: $gray-100;
         }
       }
     }
-    
-    .header-icons {
-      display: flex;
-      align-items: center;
-      gap: 2rem;
-    }
   }
-  
+
   .header-menu {
     display: flex;
     align-items: center;

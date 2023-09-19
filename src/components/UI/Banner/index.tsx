@@ -1,3 +1,4 @@
+import { Button } from '../Button';
 import './styles.scss';
 
 export function Banner() {
@@ -7,7 +8,9 @@ export function Banner() {
       <span>50% Off nos produtos </span>
 
       <div className="button-container">
-        <button>Ver produto</button>
+        <Button
+          text='Ver produto'
+        />
       </div>
     </section>
   )
