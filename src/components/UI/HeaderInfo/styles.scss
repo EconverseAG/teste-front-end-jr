@@ -1,0 +1,13 @@
+@import "../../../styles/theme.scss";
+
+span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: $gray-100;
+  font-size: 0.75rem;
+
+  strong {
+    color: $primary;
+  }
+}
