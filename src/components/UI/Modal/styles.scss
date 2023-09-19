@@ -1,0 +1,38 @@
+@import "../../../styles/theme.scss";
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 300vh;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+
+  .modal-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+
+
+    .modal-wrapper {
+      max-width: 48.0625rem;
+      height: 18.70356rem;
+      width: 100%;
+      background: $white;
+      position: relative;
+
+      button.close {
+        position: absolute;
+        top: 1.05rem;
+        right: 1.94rem;
+        border: 0;
+        background: transparent;
+      }
+    }
+  }
+}
+

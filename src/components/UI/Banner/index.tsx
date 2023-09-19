@@ -3,7 +3,7 @@ import './styles.scss';
 
 export function Banner() {
   return (
-    <section>
+    <section className='banner-container'>
       <h1>Venha conhecer nossas promoções</h1>
       <span>50% Off nos produtos </span>
 

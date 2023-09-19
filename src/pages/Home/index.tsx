@@ -3,6 +3,8 @@ import { Banner } from "../../components/UI/Banner";
 import { Category } from "../../components/UI/Category";
 import { Header } from "../../components/UI/Header";
 import { categories } from "../../utils/categories";
+import { RelationalProducts } from '../../components/RelationalProducts';
+import { CartModal } from '../../components/CartModal';
 
 export function Home() {
   return (
@@ -19,6 +21,8 @@ export function Home() {
           />
         ))}
       </div>
+      <RelationalProducts />
+      <CartModal />
     </main>
   )
 }

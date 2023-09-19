@@ -1,0 +1,89 @@
+@import "../../styles/theme.scss";
+
+.modal-content{
+  display: flex;
+  justify-content: center;
+  gap: 5.44rem;
+
+  font-family: "Lato", sans-serif;
+
+  padding: 2.5rem 3.19rem 1.33rem 3.5rem;
+  color: $dark-blue;
+
+  .product-img-modal {
+    width: 15.4375rem;
+    height: 12.01244rem;
+  }
+
+  .product-info-modal {
+    & > h3 {
+      font-size: 1.25rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%;
+      letter-spacing: 0.0625rem;
+      margin-bottom: 1.32rem;
+    }
+
+    & > span:nth-child(2) {
+      font-size: 1.25rem;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 100%;
+      letter-spacing: 0.0625rem;
+      color: $dark-blue;
+      margin-bottom: 1.11rem;
+    }
+
+    & > span:nth-child(3) {
+      color: #222;
+      font-size: 0.625rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150.5%;
+      letter-spacing: 0.03125rem;
+      margin-bottom: .75rem;
+    }
+
+    & > a {
+      color: $dark-blue;
+      font-size: 0.75rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%;
+      letter-spacing: 0.0375rem;
+    }
+  }
+
+  .qtd-product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.27rem;
+    width: 6.875rem;
+    border: 1px solid $dark-blue;
+    border-radius: 4px;
+    padding: 0.5rem 0.58rem 0.52rem;
+    margin-top: 0.97rem;
+    margin-bottom: 1rem;
+
+    & > span {
+      font-family: 'Montserrat', sans-serif;
+      color: $dark-blue;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1rem;
+    }
+
+    & > button {
+      background-color: transparent;
+      border: 0;
+    }
+  }
+
+  .button-container-modal {
+    width: 15.3125rem;
+    height: 2.75rem;
+  }
+}
