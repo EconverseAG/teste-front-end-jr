@@ -1,4 +1,4 @@
-import { Button } from '../Button';
+import { Button } from '..';
 import './styles.scss';
 
 export function Banner() {

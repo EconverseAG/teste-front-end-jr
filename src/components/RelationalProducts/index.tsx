@@ -1,14 +1,16 @@
 import { useContext } from 'react';
 import './styles.scss';
-import { ProductCard } from '../UI/ProductCard';
 import { CartContext } from '../../context/CartContext';
+import { Partner, ProductCard, SectionTitle } from '../UI';
 
 export function RelationalProducts() {
   const { products } = useContext(CartContext);
 
   return (
     <section className='relational-products-container'>
-      <h1>Produtos relacionados</h1>
+      <SectionTitle
+        text='Produtos relacionados'
+      />
 
       <div className="categories-product">
         <button type='button' className='active'>Celular</button>
@@ -29,7 +31,10 @@ export function RelationalProducts() {
           />
         ))}
       </div>
-
+      <div className="partners-container">
+        <Partner />
+        <Partner />
+      </div>
     </section>
   )
 }

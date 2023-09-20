@@ -1,0 +1,29 @@
+@import "../../../styles/theme.scss";
+
+.section-title-container {
+  & > h1 {
+    text-align: center;
+    color: $primary;
+    position: relative;
+    font-style: normal;
+    line-height: normal;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 22.5rem;
+      height: 0.0625rem;
+      background: #DEDEDE;
+      top: 50%;
+    }
+
+    &::before {
+      right: 60%
+    }
+
+    &::after {
+      left: 60%;
+    }
+  }
+}

@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { convertToCurrency } from '../../../utils/convertToCurrency';
-import { Button } from '../Button';
+import { Button } from '..';
 import './styles.scss';
 import { CartContext } from '../../../context/CartContext';
 

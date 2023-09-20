@@ -1,8 +1,7 @@
 import { useContext } from "react";
 import { createPortal } from "react-dom";
 import './styles.scss';
-import { Modal } from "../UI/Modal";
-import { Button } from "../UI/Button";
+import { Button, Modal } from "../UI";
 import { CartContext } from "../../context/CartContext";
 import { convertToCurrency } from "../../utils/convertToCurrency";
 
@@ -10,7 +9,7 @@ import minusIcon from '../../assets/icons/minus.svg';
 import plusIcon from '../../assets/icons/plus.svg';
 
 export function CartModal() {
-  const { getProductData, qtdProduct, addQtdProduct, lessQtdProduct } = useContext(CartContext);
+  const { getProductData, qtdProduct, addQtdProduct, lessQtdProduct, onCloseModal } = useContext(CartContext);
 
   const data = getProductData();
 
@@ -42,7 +41,7 @@ export function CartModal() {
               <div className="button-container-modal">
                 <Button
                   text="Comprar"
-                  onClick={() => { }}
+                  onClick={onCloseModal}
                 />
               </div>
             </div>

@@ -1,34 +1,7 @@
 @import "../../styles/theme.scss";
 
 .relational-products-container {
-  padding: 2.44rem 5.37rem 0;
-
-  h1 {
-    text-align: center;
-    color: $primary;
-    position: relative;
-    font-style: normal;
-    line-height: normal;
-
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      width: 22.5rem;
-      height: 0.0625rem;
-      background: #DEDEDE;
-      ;
-      top: 50%;
-    }
-
-    &::before {
-      right: 60%
-    }
-
-    &::after {
-      left: 60%;
-    }
-  }
+  padding: 2.44rem 5.37rem 2.75rem;
 
   .categories-product {
     padding-top: .25rem;
@@ -63,5 +36,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     row-gap: 2rem;
+  }
+
+  .partners-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6.56rem;
+    width: 100%;
+    padding-top: 4.4rem;
   }
 }
