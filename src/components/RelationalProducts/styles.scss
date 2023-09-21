@@ -7,6 +7,10 @@
   .partners-container,
   .other-relational-products {
     padding-inline: 5.37rem;
+
+    @media screen and (max-width: 1024px) {
+      padding-inline: 2rem;
+    }
   }
 
   .categories-product {
@@ -35,6 +39,13 @@
         font-weight: 700;
       }
     }
+
+    @media screen and (max-width: 1024px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: .75rem;
+      row-gap: .75rem;
+    }
   }
 
   .partners-container {
@@ -44,6 +55,10 @@
     gap: 6.56rem;
     width: 100%;
     padding-top: 2.65rem;
+
+    @media screen and (max-width: 768px) {
+      gap: 2rem;
+    }
   }
 
   .other-relational-products {
@@ -67,6 +82,10 @@
       gap: 6.56rem;
       width: 100%;
       padding-top: 4.4rem;
+
+      @media screen and (max-width: 768px) {
+        gap: 2rem;
+      }
     }
   }
 }

@@ -15,9 +15,6 @@ export function BrandsSection() {
         <Brand />
         <Brand />
         <Brand />
-        <Brand />
-        <Brand />
-        <Brand />
 
         <button className="arrow-button">
           <img src={arrowRightIcon} alt="Icone de seta para direita" />

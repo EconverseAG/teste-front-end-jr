@@ -11,6 +11,10 @@
   color: $white;
   z-index: 1;
 
+  @media screen and (max-width: 768px) {
+    padding-inline: 2rem;
+  }
+
   &::before {
     content: "";
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 85.04%);

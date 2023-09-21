@@ -3,4 +3,8 @@
   align-items: center;
   flex-direction: row;
   gap: 2rem;
+
+  @media screen and (max-width: 1024px) {
+    gap: 1.25rem;
+  }
 }

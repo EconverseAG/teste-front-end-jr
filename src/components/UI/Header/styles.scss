@@ -3,6 +3,14 @@
 header {
   padding-inline: 5.37rem;
 
+  @media screen and (max-width: 1024px) {
+    padding-inline: 2rem;
+
+    .header-search {
+      gap: 2rem;
+    }
+  }
+
   button {
     background-color: transparent;
     border: 0
@@ -15,6 +23,11 @@ header {
     padding-inline: 5.37rem;
     gap: 7.44rem;
     padding-block: 0.44rem;
+
+    @media screen and (max-width: 768px) {
+      padding-inline: 0rem;
+      gap: 2rem;
+    }
   }
 
   .header-search {
@@ -81,6 +94,9 @@ header {
       &.active {
         color: $primary;
       }
+    }
+    @media screen and (max-width: 1024px) {
+      gap: .75rem;
     }
   }
 }

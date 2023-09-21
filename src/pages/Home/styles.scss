@@ -5,5 +5,12 @@ main {
     justify-content: space-between;
     padding-inline: 5.38rem;
     padding-top: 2.13rem;
+
+    @media screen and (max-width: 1024px) {
+      justify-content: center;
+      padding-inline: 2rem;
+      flex-wrap: wrap;
+      gap: 1rem
+    }
   }
 }

@@ -20,14 +20,38 @@
       height: 0.0625rem;
       background: #DEDEDE;
       top: 50%;
+
+      @media screen and (max-width: 1024px) {
+        width: 15rem;
+      }
+      @media screen and (max-width: 768px) {
+        width: 11rem;
+      }
     }
 
+
     &::before {
-      right: 62%
+      right: 62%;
+
+      @media screen and (max-width: 1024px) {
+        right: 70%;
+      }
+
+      @media screen and (max-width: 768px) {
+        right: 75%;
+      }
     }
 
     &::after {
       left: 62%;
+
+      @media screen and (max-width: 1024px) {
+        left: 70%;
+      }
+
+      @media screen and (max-width: 768px) {
+        left: 75%;
+      }
     }
   }
 }

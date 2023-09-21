@@ -3,6 +3,10 @@
 .brands-section-container {
   padding: 6.81rem;
 
+  @media screen and (max-width: 1024px) {
+    padding-inline: 2rem;
+  }
+
   .brands-slider {
     margin-top: 3.75rem;
     display: flex;
