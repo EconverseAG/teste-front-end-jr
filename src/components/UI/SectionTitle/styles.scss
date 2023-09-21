@@ -1,13 +1,17 @@
 @import "../../../styles/theme.scss";
 
 .section-title-container {
+  position: relative;
+
   & > h1 {
     text-align: center;
     color: $primary;
-    position: relative;
     font-style: normal;
     line-height: normal;
+    font-size: 1.875rem;
+  }
 
+  &.with-separator {
     &::before,
     &::after {
       content: "";
@@ -19,11 +23,11 @@
     }
 
     &::before {
-      right: 60%
+      right: 62%
     }
 
     &::after {
-      left: 60%;
+      left: 62%;
     }
   }
 }

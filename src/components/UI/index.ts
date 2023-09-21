@@ -1,6 +1,8 @@
 export { Banner } from "./Banner";
+export { Brand } from "./Brand";
 export { Button } from "./Button";
 export { Category } from "./Category";
+export { Footer } from "./Footer";
 export { Header } from "./Header";
 export { Modal } from "./Modal";
 export { Partner } from "./Partner";

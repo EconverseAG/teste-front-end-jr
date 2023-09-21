@@ -10,7 +10,7 @@
     justify-content: center;
     width: 100%;
 
-    button {
+    & > button {
       background: transparent;
       width: 100%;
       padding: 0.75rem 3.625rem;
@@ -39,6 +39,31 @@
   }
 
   .partners-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6.56rem;
+    width: 100%;
+    padding-top: 4.4rem;
+  }
+
+
+}
+.other-relational-products {
+  text-align: center;
+  margin-top: 3.75rem;
+  margin-bottom: 0.7rem;
+
+  & > button {
+    background-color: transparent;
+    border: 0;
+    color: #3F3F40;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .products-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
