@@ -1,14 +1,20 @@
 @import "../../styles/theme.scss";
 
 .relational-products-container {
-  padding: 2.44rem 5.37rem 2.75rem;
+  padding: 2.44rem 0 2.75rem;
+
+  .categories-product,
+  .partners-container,
+  .other-relational-products {
+    padding-inline: 5.37rem;
+  }
 
   .categories-product {
     padding-top: .25rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    margin: 0 auto;
 
     & > button {
       background: transparent;
@@ -31,44 +37,37 @@
     }
   }
 
-  .cards {
-    padding-top: 1.06rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 2rem;
-  }
-
   .partners-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 6.56rem;
     width: 100%;
-    padding-top: 4.4rem;
+    padding-top: 2.65rem;
   }
 
+  .other-relational-products {
+    text-align: center;
+    margin-top: 3.75rem;
+    margin-bottom: 0.7rem;
 
+    & > button {
+      background-color: transparent;
+      border: 0;
+      color: #3F3F40;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    .products-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 6.56rem;
+      width: 100%;
+      padding-top: 4.4rem;
+    }
+  }
 }
-.other-relational-products {
-  text-align: center;
-  margin-top: 3.75rem;
-  margin-bottom: 0.7rem;
 
-  & > button {
-    background-color: transparent;
-    border: 0;
-    color: #3F3F40;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-
-  .products-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 6.56rem;
-    width: 100%;
-    padding-top: 4.4rem;
-  }
-}

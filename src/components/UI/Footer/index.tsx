@@ -1,17 +1,21 @@
+import { FormEvent } from 'react';
 import './styles.scss';
-
-import econverseLogoIcon from '../../../assets/econverse-logo.svg';
-import vtexLogoIcon from '../../../assets/vtex.svg';
+import { Button } from '..';
 
 import facebookIcon from '../../../assets/icons/facebook.svg';
 import instagramIcon from '../../../assets/icons/instagram.svg';
 import youtubeIcon from '../../../assets/icons/youtube.svg';
 import paymentFlags from '../../../assets/payment-flags.svg';
+import econverseLogoIcon from '../../../assets/econverse-logo.svg';
+import vtexLogoIcon from '../../../assets/vtex.svg';
 
 export function Footer() {
+  function handleSendEmail(event: FormEvent) {
+    event.preventDefault();
+  }
+
   return (
     <footer className="footer-container">
-
       <div className="top">
         <div className="options">
           <nav className="about-us-section">
@@ -57,8 +61,17 @@ export function Footer() {
         </div>
         <div className="email-container">
           <h3>Cadastre-se e Receba nossas <strong>novidades e promoções</strong></h3>
-          <form>
+          <span>Excepteur sint occaecat cudatat non ent, sunt in culpa qui officia lorem ipsum</span>
 
+          <form onSubmit={handleSendEmail}>
+            <input type="email" placeholder="Seu e-mail" />
+
+            <div className="form-button-container">
+              <Button
+                text="Ok"
+                type='submit'
+              />
+            </div>
           </form>
         </div>
       </div>

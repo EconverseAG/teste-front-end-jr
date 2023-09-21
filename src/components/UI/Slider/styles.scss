@@ -1,0 +1,19 @@
+@import "../../../styles/theme.scss";
+
+.slider {
+  padding-top: 1.06rem;
+  padding-left: 0.25rem;
+  padding-bottom: 1.5rem;
+  background-color: $white;
+  border: 0;
+  padding-inline: 5.37rem;
+
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 3.125rem;
+    height: 3.125rem;
+    color: #3F3F40;
+    font-size: 1.25rem;
+  }
+}

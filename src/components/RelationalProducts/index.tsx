@@ -1,7 +1,9 @@
 import { useContext } from 'react';
+import { SwiperSlide } from 'swiper/react';
 import './styles.scss';
 import { CartContext } from '../../context/CartContext';
 import { Partner, Product, ProductCard, SectionTitle } from '../UI';
+import { Slider } from '../UI/Slider';
 
 export function RelationalProducts() {
   const { products } = useContext(CartContext);
@@ -22,16 +24,21 @@ export function RelationalProducts() {
         <button type='button'>Ver todos</button>
       </div>
 
-      <div className="cards">
+      <Slider>
         {products.map(product => (
-          <ProductCard
+          <SwiperSlide
             key={product.productName}
-            title={product.productName}
-            imgUrl={product.photo}
-            price={product.price}
-          />
+            className='swiper-slide'
+          >
+            <ProductCard
+              title={product.productName}
+              imgUrl={product.photo}
+              price={product.price}
+            />
+          </SwiperSlide>
         ))}
-      </div>
+      </Slider>
+
       <div className="partners-container">
         <Partner />
         <Partner />
