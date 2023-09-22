@@ -35,7 +35,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 5.94rem;
     padding-bottom: .9rem;
+    padding-inline: 3.5rem;
     border-block: 1px solid #F0F0F0;
 
     .search-container {
@@ -44,7 +46,7 @@ header {
       align-items: center;
       justify-content: space-between;
       height: 3rem;
-      max-width: 657.6px;
+      max-width: 41.1rem;
       width: 100%;
       padding-inline: 1.5rem;
       gap: .5rem;

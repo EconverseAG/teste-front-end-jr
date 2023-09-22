@@ -1,11 +1,16 @@
 import { Brand, SectionTitle } from "../UI";
 import './styles.scss';
 
-import arrowRightIcon from '../../assets/icons/arrow-right.svg'
+import arrowRightIcon from '../../assets/icons/arrow-right.svg';
+import { RefObject } from "react";
 
-export function BrandsSection() {
+interface BrandsSectionProps {
+  ref: RefObject<HTMLDivElement>;
+}
+
+export function BrandsSection({ ref }: BrandsSectionProps) {
   return (
-    <div className="brands-section-container">
+    <section className="brands-section-container" ref={ref}>
       <SectionTitle
         text="Navegue por marcas"
       />
@@ -20,6 +25,6 @@ export function BrandsSection() {
           <img src={arrowRightIcon} alt="Icone de seta para direita" />
         </button>
       </div>
-    </div>
+    </section>
   )
 }

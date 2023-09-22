@@ -1,4 +1,4 @@
-import { FormEvent } from 'react';
+import { FormEvent, RefObject } from 'react';
 import './styles.scss';
 import { Button } from '..';
 
@@ -9,13 +9,17 @@ import paymentFlags from '../../../assets/payment-flags.svg';
 import econverseLogoIcon from '../../../assets/econverse-logo.svg';
 import vtexLogoIcon from '../../../assets/vtex.svg';
 
-export function Footer() {
+interface FooterProps {
+  ref: RefObject<HTMLDivElement>
+}
+
+export function Footer({ ref }: FooterProps) {
   function handleSendEmail(event: FormEvent) {
     event.preventDefault();
   }
 
   return (
-    <footer className="footer-container">
+    <footer className="footer-container" ref={ref}>
       <div className="top">
         <div className="options">
           <nav className="about-us-section">

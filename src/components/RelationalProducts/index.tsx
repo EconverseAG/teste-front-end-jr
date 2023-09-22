@@ -1,15 +1,19 @@
-import { useContext } from 'react';
+import { RefObject, useContext } from 'react';
 import { SwiperSlide } from 'swiper/react';
 import './styles.scss';
 import { CartContext } from '../../context/CartContext';
 import { Partner, Product, ProductCard, SectionTitle } from '../UI';
 import { Slider } from '../UI/Slider';
 
-export function RelationalProducts() {
+interface RelationalProductsProps {
+  ref: RefObject<HTMLDivElement>;
+}
+
+export function RelationalProducts({ ref }: RelationalProductsProps) {
   const { products } = useContext(CartContext);
 
   return (
-    <section className='relational-products-container'>
+    <section className='relational-products-container' ref={ref}>
       <SectionTitle
         text='Produtos relacionados'
         withSeparator
