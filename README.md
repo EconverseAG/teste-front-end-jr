@@ -1,31 +1,50 @@
-# Teste Econverse: Vaga Desenvolvedor Front-End Jr
+<h1 align="center">
+  <img src=".github/logo.svg" />
+</h1>
 
-### Vem ser #Econverse!
+<p align="center">
+  <img alt="License: MIT" src="https://img.shields.io/github/license/martinsgabriel1956/teste-front-end-jr?style=for-the-badge&labelColor=1f2729&color=F71963" />
+  <img alt="Pull Request: Welcome" src="https://img.shields.io/static/v1?label=PRs&message=welcome&color=F71963&labelColor=1f2729&style=for-the-badge" />
+</p>
 
-Segue abaixo as instruções para a execução do teste.
+# :computer: Tecnologias
 
-## Instruções
-- Faça um fork desse projeto para a sua conta pessoal do GitHub.
-- Desenvolva a página conforme as **Especificações Técnicas** 
-- Crie um README com as instruções para compilar, testar e rodar o projeto.
-- O link do repositório deverá ser enviado para o e-mail ana.nascimento@econverse.com.br, joao.victor@econverse.com.br e eduardo.rodrigues@econverse.com.br com o título **Teste Vaga FrontEnd Jr**
+- [React](https://react.dev/)
+- [Sass](https://sass-lang.com)
+- [Axios](https://axios-http.com/docs/intro)
+- [Swiper](https://swiperjs.com)
 
-## Especificações Técnicas
-- Desenvolver a pagina em React e TypeScript conforme o [layout](https://www.figma.com/file/rWnzPeoxgynuNPsJjV0VmV/Teste-Front-End-Jr?node-id=0%3A1). Para conseguir pegar os elementos do Figma, basta copiar o layout para sua conta que terá acesso de edição.
-- Montar a [vitrine](https://app.econverse.com.br/teste-front-end/junior/tecnologia/layout/vitrine-produtos.png) de produtos consumindo as informações dos produtos em json atraves desse [Link](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json).
-- Desenvolver a interação ao clicar em um produto conforme layout. A interação consiste em abrir um modal com as principais informações do produto presente no arquivo [JSON](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json) conforme o produto que clicar.
-- Utilizar Pré-processador Sass, Less ou Stylus.
-- Respeitar o Layout pixel a pixel, tamanho das fontes, cores e botões.
-- Não Utilizar bibliotecas UI como Bootstrap, Foundation, ou afins.
+<br />
 
-## Pontos Extras
-- Utilizar Boas práticas de SEO
-- Uso de HTML semântico
+<img src=".github/banner.png" />
 
-## O que avaliaremos em seu teste
-- Organização do projeto
-- Lógica do código
-- Componentização
-- Alcance dos objetivos propostos
+<br />
 
-**Boa sorte! ;)**
+# :construction_worker: Executando
+
+```bash
+## Clonar o repositório
+
+git clone git@github.com:martinsgabriel1956/teste-front-end-jr.git
+
+# ou
+
+git clone https://github.com/martinsgabriel1956/teste-front-end-jr.git
+
+## Instale as dependências
+
+npm i/install
+
+# ou
+
+yarn
+
+## Execute o projeto
+
+npm run dev
+
+# ou
+
+yarn dev
+
+```
