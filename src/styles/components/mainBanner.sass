@@ -1,0 +1,29 @@
+@use '../variables'
+@use '../mixins'
+
+$white: #FFF
+
+.main-banner
+    @include mixins.grid()
+    background: linear-gradient(to bottom, transparent, #000 100%), url("../../images/MainBanner/Banner.png") no-repeat center
+    background-size: cover
+    height: 510px
+    @include mixins.displayFlex($align-items: unset, $justify-content: center)
+    flex-direction: column
+
+    h2
+        @include mixins.text($size: 48px, $weight: 600, $color: $white)
+        max-width: 800px
+
+    h4
+        @include mixins.text($size: 36px, $weight: 600, $color: $white)
+        margin: 10px 0 40px
+
+    a
+        max-width: 225px 
+        .banner-button
+            @include mixins.text($size: 18px, $weight: 600, $color: $white)
+            width: 100%
+            padding: 15px 40px
+            cursor: pointer
+            &:hover

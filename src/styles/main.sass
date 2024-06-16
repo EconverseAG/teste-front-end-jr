@@ -1,0 +1,43 @@
+@use 'variables'
+@use 'mixins'
+
+body 
+  font-family: variables.$primary-font
+
+*
+  font-family: variables.$primary-font
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+a
+    text-decoration: none
+    color: variables.$color-gray
+
+li
+    list-style-type: none
+
+button
+    background-color: variables.$color-pink
+    color: #FFF
+    border: none
+    border-radius: 5px
+    &:hover
+        transition: .3s
+        background-color: #c51751
+
+.title-container
+    @include mixins.displayFlex()
+    position: relative
+
+    h3
+        @include mixins.text(30px, $weight: bold, $color: variables.$color-pink)
+        background-color: #FFF 
+        padding: 0 20px
+        z-index: 1
+
+    hr
+        position: absolute
+        width: 100%
+        border: none
+        border-bottom: 1px solid #DEDEDE

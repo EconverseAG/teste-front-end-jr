@@ -1,0 +1,73 @@
+@use '../variables'
+@use '../mixins'
+
+.header
+    @include mixins.grid($top: 0, $bottom: 0)
+
+    .top-bar
+        @include mixins.displayFlex($justify-content: space-evenly)
+        padding: 5px 0
+        flex-wrap: wrap
+
+        .items-top-bar
+            display: flex
+            gap: 5px
+            height: 20px 
+
+            p
+                @include mixins.text($size: 12px, $color: variables.$color-light-gray)
+                
+                span
+                    @include mixins.text($size: 12px, $weight: 600, $color: variables.$color-pink)
+    
+    .main-header
+        @include mixins.displayFlex($justify-content: space-evenly)
+        padding: 10px 0
+        border-top: 1px solid #F0F0F0
+        flex-wrap: wrap
+
+        .header-search
+            display: inline-block
+            position: relative
+            width: 60%
+            
+            .search
+                @include mixins.text($size: 14px, $color: variables.$color-light-gray)
+                width: calc( 100% - 40px )
+                background-color: #F6F5F2
+                border: none
+                border-radius: 10px
+                padding: 15px
+                margin: auto 15px
+                outline: none
+
+            .icon-search
+                position: absolute
+                background-color: #F6F5F2
+                right: 40px
+                top: 50%
+                transform: translateY(-50%)
+                cursor: pointer
+    
+        .icons-profile
+            @include mixins.displayFlex($justify-content: space-around)
+            gap: 25px
+    
+    .navbar
+        box-shadow: 2px 0 16px #39301312, -2px 0 16px #39301312
+
+        ul
+            @include mixins.displayFlex($justify-content: space-around)
+            flex-wrap: wrap
+            padding: 15px 0
+            border-top: 1px solid #F0F0F0
+            gap: 10px
+
+        a
+            @include mixins.displayFlex()
+            @include mixins.text($size: 12px, $weight: 600, $color: variables.$color-light-gray)
+            text-transform: uppercase
+            gap: 5px
+            &:hover
+                transition: .3s
+                color: variables.$color-pink

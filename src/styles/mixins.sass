@@ -1,0 +1,24 @@
+@use './variables'
+
+@mixin mq($width, $type: min)
+    @if $type == max
+        $width: $width - 1px
+    @media only screen and (#{$type}-width: $width)
+        @content
+
+@mixin text($size: 16px, $weight: 500, $color: variables.$color-gray)
+    font-size: $size
+    font-weight: $weight
+    color: $color
+
+@mixin grid($top: 40px, $right: 75px, $bottom: 40px, $left: 75px)
+    @if ($top == 0)
+        padding: ($top) ($right - 50px)
+    padding: ($top - 15px) ($right - 50px) ($bottom - 15px) ($left - 50px)
+    @include mq($width: 769px)
+        padding: $top $right $bottom $left
+
+@mixin displayFlex($display: flex, $align-items: center, $justify-content: center)
+    display: $display
+    align-items: $align-items
+    justify-content: $justify-content
