@@ -1,0 +1,85 @@
+@use '../variables'
+@use '../mixins'
+
+$text-blue: #041E50
+
+.modal-product
+    @include mixins.displayFlex()
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: rgba(0, 0, 0, 0.5)
+    z-index: 10
+
+    .close-button
+        position: absolute
+        top: 0
+        right: 15px
+        background-color: transparent 
+        color: #707070
+        border: none
+        font-size: 40px
+
+    .modal-content
+        @include mixins.displayFlex()
+        border-radius: 8px
+        background-color: #FFF
+        padding: 20px 40px 5px
+        max-width: 770px
+        min-height: 300px
+        width: 100%
+        position: relative
+        text-align: center
+
+        .modal-image
+            width: 40%
+            img
+                width: 100%
+                height: auto
+
+        .about-product
+            width: 60%
+            @include mixins.displayFlex($align-items: start)
+            flex-direction: column
+            gap: 10px
+
+            .title-product
+                @include mixins.text($size: 22px, $weight: 400, $color: $text-blue)
+                font-family: variables.$secondary-font
+                text-transform: uppercase
+
+            .price-product
+                @include mixins.text($size: 22px, $weight: 800, $color: $text-blue)
+                font-family: variables.$secondary-font
+                letter-spacing: 2px
+
+            .description-product
+                @include mixins.text($size: 12px, $weight: 400, $color: #222222)
+                font-family: variables.$secondary-font
+                line-height: 18px
+                text-align: left
+            
+            .details-product
+                @include mixins.text($size: 14, $weight: 400, $color: $text-blue)
+                font-family: variables.$secondary-font
+
+            .count-product
+                @include mixins.displayFlex()
+                @include mixins.text($size: 20px, $color: $text-blue)
+                border: 1px solid $text-blue
+                gap: 15px
+                border-radius: 4px
+
+                button
+                    @include mixins.text($size: 24px, $color: $text-blue)
+                    width: 30px
+                    background-color: transparent
+                
+                p
+                    width: 35px
+
+            .buy-button
+                @include mixins.text($weight: bold, $color: #FFF)
+                padding: 10px 90px

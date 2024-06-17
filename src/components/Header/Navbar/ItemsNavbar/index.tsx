@@ -8,7 +8,7 @@ interface ItemsNavbarProps {
 
 const ItemsNavbar: React.FC<ItemsNavbarProps> = ({ link, children }) => {
     return (
-        <li>
+        <li className='item-footer'>
             <Link to={link}>
                 {children}
             </Link>

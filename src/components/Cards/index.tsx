@@ -12,7 +12,7 @@ import { ReactComponent as ferramentas } from 'images/Cards/Ferramentas.svg'
 import { ReactComponent as moda } from 'images/Cards/Moda.svg'
 import { ReactComponent as supermercado } from 'images/Cards/Supermercado.svg'
 
-const Cards = () => {
+const Cards: React.FC = () => {
     return (
         <section className='cards-services'>
             <Card link='/' svg={tecnologia}>Tecnologia</Card>

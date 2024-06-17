@@ -1,0 +1,43 @@
+@use '../variables'
+@use '../mixins'
+
+$white: #FFF
+
+.container-products
+    text-align: center
+
+    .see-all
+        @include mixins.text($size: 15px, $weight: bold, $color: variables.$color-dark-gray)
+        
+
+    .products
+        @include mixins.grid()
+        @include mixins.displayFlex($justify-content: space-around)
+        flex-wrap: wrap
+        gap: 50px
+
+        .product
+            background-repeat: no-repeat
+            background-size: cover
+            background: center
+            max-width: 590px
+            height: 280px
+            flex-basis: 600px
+            flex-direction: column
+            border-radius: 16px
+            padding: 45px
+            text-align: left
+
+            .title-product
+                @include mixins.text($size: 40px, $weight: bold, $color: $white)
+
+            .text-product
+                @include mixins.text($weight: 400, $color: $white)
+                margin: 15px 0 25px
+                max-width: 180px
+
+            .button-product
+                @include mixins.text($weight: 800, $color: $white)
+                letter-spacing: 2px
+                padding: 10px 20px
+                text-transform: uppercase

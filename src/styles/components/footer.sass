@@ -1,0 +1,88 @@
+@use '../variables'
+@use '../mixins'
+
+$white: #FFF
+
+.footer
+    background-color: #2A2A2A
+
+    .main-footer
+        @include mixins.grid($top: 25px, $bottom: 20px)
+        display: flex
+
+        .nav-footer
+            @include mixins.displayFlex($align-items: start, $justify-content: space-between)
+            width: 70%
+            padding-right: 5%
+            
+            .title
+                @include mixins.text($size: 13px, $weight: bold, $color: $white)
+                height: 50px
+                
+            .about-us, .institutional, .payment
+                margin: 0 25px
+            
+            .payment-images
+                @include mixins.displayFlex($justify-content: space-between)
+                max-width: 195px
+                gap: 15px
+                flex-wrap: wrap
+                img
+
+        .item-footer
+            margin: 5px 0
+            a
+                @include mixins.text($size: 12px, $weight: 300, $color: $white)
+                text-transform: uppercase
+                padding: 5px
+                border-radius: 4px
+                &:hover
+                    background-color: #3d3d3d
+
+        .newsletter
+            width: 30%
+            background-color: $white
+            border-radius: 10px
+            @include mixins.displayFlex()
+            flex-direction: column
+            text-align: center
+            padding: 20px 60px
+            min-height: 260px
+            
+            p
+                @include mixins.text($size: 18px, $weight: 300)
+
+                span.bold
+                    @include mixins.text($size: 21px, $weight: bold)
+                    text-transform: uppercase
+
+                span.light
+                    @include mixins.text($size: 12px, $weight: 300)
+                    text-transform: none
+
+            .input-newsletter
+                width: 100%
+                margin: 15px 0
+                @include mixins.displayFlex($justify-content: space-around)
+                
+                input
+                    width: 70%
+                    height: 45px
+                    padding: 10px
+                    border-radius: 4px
+                    border: 1px solid #2A2A2A
+                    outline: none
+
+                button
+                    width: 62px
+                    height: 45px                
+
+
+    .copyright
+        @include mixins.grid($top: 25px, $bottom: 20px)
+        border-top: 2px solid $white
+        @include mixins.displayFlex($justify-content: space-between)
+        @include mixins.text(10px, $weight: 400, $color: $white)
+        img
+            margin: 0 15px
+            

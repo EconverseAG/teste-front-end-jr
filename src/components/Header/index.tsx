@@ -9,7 +9,7 @@ import shield from 'images/Header/ShieldCheck.png'
 import truck from 'images/Header/Truck.png'
 import card from 'images/Header/CreditCard.png'
 
-const Header = () => {
+const Header: React.FC = () => {
     return (
         <header className='header'>
             <div className='top-bar'>

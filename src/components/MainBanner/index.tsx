@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import 'styles/components/mainBanner.sass'
 
-const MainBanner = () => {
+const MainBanner: React.FC = () => {
     return (
         <section className='main-banner'>
             <h2>Venha conhecer nossas promoções</h2>

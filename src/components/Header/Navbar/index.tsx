@@ -4,7 +4,7 @@ import ItemsNavbar from './ItemsNavbar';
 
 import crown from 'images/Header/CrownSimple.png'
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
     return (  
         <nav className='navbar'>
             <ul>

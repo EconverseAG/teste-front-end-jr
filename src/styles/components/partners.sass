@@ -1,0 +1,35 @@
+@use '../variables'
+@use '../mixins'
+
+$white: #FFF
+
+.partners
+    @include mixins.grid()
+    @include mixins.displayFlex($justify-content: space-around)
+    flex-wrap: wrap
+    gap: 50px
+
+    .partner
+        background-repeat: no-repeat
+        background-size: cover
+        max-width: 575px
+        height: 350px
+        flex-basis: 600px
+        @include mixins.displayFlex($align-items: start)
+        flex-direction: column
+        padding: 45px
+        border-radius: 16px
+
+        .title-partner
+            @include mixins.text($size: 40px, $weight: bold, $color: $white)
+
+        .text-partner
+            @include mixins.text($weight: 400, $color: $white)
+            margin: 15px 0 25px
+            max-width: 180px
+
+        .button-partner
+            @include mixins.text($weight: 800, $color: $white)
+            letter-spacing: 2px
+            padding: 10px 20px
+            text-transform: uppercase

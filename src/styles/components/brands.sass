@@ -1,0 +1,36 @@
+@use '../variables'
+@use '../mixins'
+
+.brands
+    @include mixins.grid()
+    text-align: center
+    
+    .title-brands
+        @include mixins.text($size: 30px, $weight: bold, $color: variables.$color-pink)
+        
+    .carousel-brand
+        width: 100%
+        position: relative
+        overflow: hidden
+
+    .images-brand
+        display: flex
+        transition: transform 0.5s ease-in-out
+        gap: 30px
+
+        img
+            width: 100%
+
+    button
+        top: 50%
+        transform: translateY(-50%)
+        background-color: transparent
+        z-index: 1
+        position: absolute
+        display: inline-flex
+
+    .button-next
+        right: 0
+
+    .button-prev
+        left: 0
