@@ -31,7 +31,9 @@
         display: flex;
         flex-direction: column;
         @include container-center; 
-        
-        
+        z-index: 1;
+      }
+      h1, h2 {
+        color: $white-color;
       }
     }
