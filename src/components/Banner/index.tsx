@@ -4,7 +4,7 @@ function Banner() {
   return (
     <section className={styles.banner}>
       <div className="banner-content">
-        <h1>Venha conhecer nossas promoções</h1>
+        <h1>Venha conhecer nossas <br /> promoções</h1>
         <h2>50% Off nos produtos</h2>
         <Button
           title="Ver produto"

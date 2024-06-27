@@ -33,7 +33,22 @@
         @include container-center; 
         z-index: 1;
       }
+      h1{
+        font-size: 3rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+      h2{
+        font-size: 2.25rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
       h1, h2 {
         color: $white-color;
+      }
+      button {
+        margin-top: 2.19rem;
       }
     }
