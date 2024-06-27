@@ -1,0 +1,41 @@
+@import '../../styles/variables';
+
+.container {
+    background-color: $highlight-color; 
+    color: $white-color;
+    border: none;
+    cursor: pointer;
+  
+    &.small {
+      width: 8.1875rem;
+      height: 3rem;
+      text-align: center;
+      font-weight: 900;
+      font-size: 1rem;
+      line-height: normal;
+      letter-spacing: 0.08rem;
+      text-transform: uppercase;
+      border-radius: 0.625rem;
+    }
+  
+    &.medium {
+      width: 14.1875rem;
+      height: 3.75rem;
+      font-weight: 600;
+      font-size: 1.125rem;
+      border-radius: 0.3125rem;
+    }
+  
+    &.large {
+      width: 15.3125rem;
+      height: 2.75rem;
+      display: flex;
+      justify-content: center;
+      font-size: 0.875rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+      border-radius: 0.25rem;
+    }
+  }
