@@ -1,0 +1,37 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.banner {
+    position: relative; // Necessário para o posicionamento do pseudo-elemento
+    width: 100%;
+    height: 24.6875rem;
+    display: flex;
+    align-items: center;
+    background-image: url('/public/img/banner.png'); // Substitua pelo caminho da sua imagem
+    background-size: cover;  // Faz com que a imagem cubra toda a área do banner
+    background-position: center;  // Centraliza a imagem
+    background-repeat: no-repeat;  // Impede que a imagem se repita
+  
+    // Pseudo-elemento para o gradiente
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+      opacity: 0.8;
+      z-index: 1; // Coloca o gradiente sobre a imagem
+      
+    }
+  
+    div{
+        color: $highlight-color;
+        display: flex;
+        flex-direction: column;
+        @include container-center; 
+        
+        
+      }
+    }
