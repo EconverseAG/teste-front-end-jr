@@ -1,4 +1,5 @@
 import Header from './components/Header';
+import Banner from './components/Banner';
 import './styles/global.scss';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
       <Header />
 
       <main>
+      <Banner />
       </main>
 
     </>
