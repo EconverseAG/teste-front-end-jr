@@ -2,11 +2,15 @@
 
 .nav {
     width: 100%;
+    display: flex;
+/*     padding-right: 1.69rem;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem; */
+    justify-content: space-evenly;
 
     ul {
         display: flex;
-        justify-content: space-evenly;
-
+        gap: 5.68rem;
         list-style: none;
         font-size: 12px;
         font-weight: 700;

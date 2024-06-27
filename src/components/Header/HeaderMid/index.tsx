@@ -6,7 +6,7 @@ function HeaderMid() {
             <div className={styles.container}>
                 <img src='/icons/vtex.svg' alt='Logo da VTEX'/>
 
-                <div className={styles.containerWrapper}>
+                <div>
                     <div className={styles.inputContaniner} >
                     <input type='text' placeholder='O que você está buscando?'/>
                     <img className={styles.searchIcon} src="/icons/search.svg" alt="icone de uma lupa para busca" />
