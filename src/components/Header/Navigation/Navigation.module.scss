@@ -1,0 +1,33 @@
+@import '../../../styles/variables.scss';
+
+.nav {
+    width: 100%;
+
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+
+        list-style: none;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 12px 0;
+
+        li {
+            a {
+                text-decoration: none;
+                color: $header-text-secondary;
+            }
+
+            &:nth-last-child(2) {
+                a { color: $highlight-color; }
+            }
+
+            &:last-child {
+                display: flex;
+                align-items: center;
+                gap: 6px;
+            }
+        }
+    }
+}

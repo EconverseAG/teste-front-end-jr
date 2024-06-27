@@ -3,9 +3,9 @@
 .headerTop {
     display: flex;
     justify-content: space-between;
-    max-width: 764rem;
+    height: 2rem;
     margin: auto;
-    gap: 9.25rem;
+    gap: 7.44rem;
     padding: {
         top: 0.44rem;
         bottom: 0.44rem;}
@@ -17,7 +17,7 @@
             font-size: 0.75rem;
         }
         p {
-            color: $text-color;
+            color: $header-text-secondary;
             strong: {color: $highlight-color;}
         }
 

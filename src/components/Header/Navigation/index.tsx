@@ -23,7 +23,7 @@ function Navigation() {
                     <a href="#">Ofertas do dia</a>
                 </li>
                 <li>
-                    <img src="/img/CrownSimple.svg" alt="Ícone de coroa"/>
+                    <img src="/icons/crownsimple.svg" alt="Ícone de coroa"/>
                     <a href="#">Assinatura</a>
                 </li>
             </ul>
