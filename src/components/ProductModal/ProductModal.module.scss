@@ -1,0 +1,60 @@
+@import '../../styles/variables';
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .modalContent {
+    position: relative;
+    background-color: $white-color;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    z-index: 1001;
+    width: 90%;
+    max-width: 500px;
+
+    .closeButton {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    img {
+      max-width: 100%;
+      border-bottom: 1px solid $text-color;
+      margin-bottom: 1rem;
+    }
+
+    .info {
+      h2 {
+        margin-top: 0;
+      }
+
+      .price {
+        color: $text-color;
+        font-weight: bold;
+        margin: 1rem 0;
+      }
+    }
+  }
+}

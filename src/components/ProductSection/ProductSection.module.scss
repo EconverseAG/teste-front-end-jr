@@ -1,0 +1,39 @@
+@import '../../styles/variables';
+
+.productSection {
+  padding: 2rem;
+  background-color: $white-color;
+
+  h2 {
+    font-size: 1.5rem;
+    color: $text-color;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+    button {
+      background: none;
+      border: none;
+      font-size: 1rem;
+      color: $text-color;
+      cursor: pointer;
+      padding: 0.5rem 1rem;
+
+      &.active {
+        color: $text-color;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .carousel {
+    display: flex;
+    overflow-x: scroll;
+    gap: 1rem;
+  }
+}
