@@ -27,8 +27,11 @@
 }
 .carousel {
   display: flex;
-  justify-content: space-between;
+  overflow: visible;
+  padding-top: 1.06rem;
+  justify-content: center;
   align-items: center;
+  gap: 3.88rem;
 }
 
 .carouselButton {
@@ -40,16 +43,30 @@
 .navbar {
   display: flex;
   justify-content: center;
-  gap: 20px;
 }
 
 .navbar button {
-  background: none;
-  border: none;
+  display: flex;
+  height: 2.5rem;
+  padding: 0.75rem 3.625rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  flex: 1 0 0;
+  background: #FFF;
+  font-size: 1rem;
   cursor: pointer;
-  padding: 10px 20px;
-}
+  padding: 0.5rem 1rem;
+  border: 1px solid #BDBDBD;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: $product-navigation;
 
-.navbar .active {
-  border-bottom: 2px solid #FF0099;
+  &:hover{
+    color: $highlight-color;
+  }
+  &.active {
+    color: $highlight-color;
+    font-weight: bold;
+}
 }
