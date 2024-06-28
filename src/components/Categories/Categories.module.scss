@@ -1,8 +1,10 @@
 @import '../../styles/variables';
+@import '../../styles/mixins';
 
 .container {
     background-color: #fff;
-    padding: 1rem 0;
+    @include container-center; 
+    margin: 0 auto;
   }
   
   .list {
@@ -11,5 +13,5 @@
     padding: 0;
     margin: 0;
     gap: 2rem;
-    justify-content: center; /* Center the items horizontally */
+    justify-content: space-between; 
   }
