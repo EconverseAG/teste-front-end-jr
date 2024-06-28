@@ -11,7 +11,9 @@ interface CategoryItemProps {
 const CategoryItem: React.FC<CategoryItemProps> = ({ category, isActive, onClick }) => {
   return (
     <li className={`${styles.categoryItem} ${isActive ? styles.active : ''}`} onClick={onClick}>
-      <img src={category.icon} alt={category.alt} className={styles.categoryIcon} />
+      <div className={styles.categoryContainer}>
+        <img src={category.icon} alt={category.alt} className={styles.categoryIcon} />
+      </div>
       <span className={styles.categoryName}>{category.name}</span>
     </li>
   );

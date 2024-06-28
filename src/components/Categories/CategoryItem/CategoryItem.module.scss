@@ -1,4 +1,3 @@
-/* src/components/Categories/CategoryItem/CategoryItem.module.scss */
 @import '../../../styles/variables';
 
 .categoryItem {
@@ -8,34 +7,43 @@
   text-align: center;
   cursor: pointer;
   transition: all 0.2s ease;
-  background-color: $categories-background;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
+
+  .categoryContainer {
+    width: 8rem;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $categories-background;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .categoryIcon {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .categoryName {
+    font-size: 0.875rem;
+    color: $text-color;
+  }
 
   &.active {
-    background-color: $white-color;
+    .categoryContainer {
+      background-color: $white-color;
+    }
 
-    img,
-    span {
+    .categoryIcon,
+    .categoryName {
       color: $highlight-color;
     }
   }
 
   &:hover {
-    img,
-    span {
+    .categoryIcon,
+    .categoryName {
       color: $highlight-color;
     }
   }
-}
-
-.categoryIcon {
-  width: 2rem;
-  height: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-.categoryName {
-  font-size: 0.875rem;
-  color: $text-color;
 }
