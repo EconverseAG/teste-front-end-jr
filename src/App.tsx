@@ -1,20 +1,24 @@
+// App.jsx
 import Header from './components/Header';
 import Banner from './components/Banner';
 import Categories from './components/Categories';
 import { ProductSection } from './components/ProductSection';
 import './styles/global.scss';
+import styles from './App.module.scss'; // Import styles
 
 function App() {
   return (
     <>
-      <Header />
-
-      <main>
+      <div className={styles.container}>
+        <Header />
+      </div>
       <Banner />
-      <Categories />
-      <ProductSection />
-      </main>
-
+      <div className={styles.container}>
+        <main>
+          <Categories />
+          <ProductSection />
+        </main>
+      </div>
     </>
   );
 }

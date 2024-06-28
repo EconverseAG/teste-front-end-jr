@@ -26,13 +26,14 @@
       z-index: 1; // Coloca o gradiente sobre a imagem
       
     }
-  
+    
     div{
         color: $highlight-color;
         display: flex;
         flex-direction: column;
         @include container-center; 
         z-index: 1;
+        margin-left: 5.125rem ;
       }
       h1{
         font-size: 3rem;
@@ -53,3 +54,5 @@
         margin-top: 2.19rem;
       }
     }
+
+    

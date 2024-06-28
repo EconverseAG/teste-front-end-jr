@@ -2,7 +2,8 @@
 @import '../../styles/mixins';
 
 .productSection {
-  padding: 2rem;
+  width: 100%; 
+  padding: 2rem 0;
   background-color: $white-color;
 
   h2 {
@@ -20,57 +21,35 @@
         width: 22.5rem; /* Largura da linha */
         height: 0.0625rem; /* Altura da linha */
         background-color: #DEDEDE; /* Cor da linha */
-        margin: 0 2.12rem; // Adiciona uma margem lateral para separar as linhas do texto
+        margin: 0 1.12rem; // Adiciona uma margem lateral para separar as linhas do texto
       }
   }
+}
+.carousel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .navbar {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1rem;
-    @include container-center; 
-    margin: 0 auto; 
+.carouselButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 
-    button {
-      display: flex;
-      height: 2.5rem;
-      padding: 0.75rem 3.625rem;
-      justify-content: center;
-      align-items: center;
-      gap: 0.625rem;
-      flex: 1 0 0;
-      background: #FFF;
-      font-size: 1rem;
-      cursor: pointer;
-      padding: 0.5rem 1rem;
-      border: 1px solid #BDBDBD;
-      font-size: 1rem;
-      line-height: 1rem;
-      color: $product-navigation;
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
 
-      &:hover{
-        color: $highlight-color;
-      }
-      &.active {
-        color: $highlight-color;
-        font-weight: bold;
-      }
-    }
-  }
+.navbar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+}
 
-  .carousel {
-    display: flex;
-    overflow-x: scroll;
-    overflow: hidden;
-    padding-top: 1.06rem;
-    justify-content: center;
-    gap: 3.88rem;
-
-    .carouselButton{
-        background: transparent;
-        border: none;
-        cursor: pointer;
-    }
-  }
-
+.navbar .active {
+  border-bottom: 2px solid #FF0099;
 }
