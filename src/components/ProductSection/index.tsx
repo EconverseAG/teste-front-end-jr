@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import styles from './ProductSection.module.scss';
 import { ProductCard } from '../ProductCard';
 import { ProductModal } from '../ProductModal';

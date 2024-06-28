@@ -1,5 +1,3 @@
-// src/components/ProductCard/index.tsx
-import React from 'react';
 import { IProduct } from '../../types/IProduct';
 import { calculatePriceDivided, installment, calculatePriceWithMarkup } from '../../utils/priceUtils';
 import styles from './ProductCard.module.scss';
