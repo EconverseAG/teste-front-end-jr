@@ -7,13 +7,16 @@ import { IProduct } from '../../types/IProduct';
 export function ProductSection() {
   const [products, setProducts] = useState<IProduct[]>([]);
   const [selectedProduct, setSelectedProduct] = useState<IProduct | null>(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch('/data/Products.json');
+        const response = await fetch('/data/products.json');
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
         const data = await response.json();
-        console.log(data);
         if (data.success) {
           setProducts(data.products);
         } else {
@@ -25,7 +28,7 @@ export function ProductSection() {
     };
 
     fetchProducts();
-  }, []); // O array vazio faz com que o efeito seja executado apenas uma vez ao montar o componente.
+  }, []);
 
   const handleProductClick = (product: IProduct) => {
     setSelectedProduct(product);
@@ -34,6 +37,30 @@ export function ProductSection() {
   const handleCloseModal = () => {
     setSelectedProduct(null);
   };
+
+  const goToPrevious = () => {
+    setCurrentIndex((prevIndex) => {
+      const newIndex = prevIndex === 0 ? products.length - 1 : prevIndex - 1;
+      return newIndex;
+    });
+  };
+
+  const goToNext = () => {
+    setCurrentIndex((prevIndex) => {
+      const newIndex = prevIndex === products.length - 1 ? 0 : prevIndex + 1;
+      return newIndex;
+    });
+  };
+
+  // Determina os produtos a serem exibidos no carousel (sempre 4 itens)
+  const displayedProducts = products.length >= 4
+    ? [
+        products[(currentIndex) % products.length],
+        products[(currentIndex + 1) % products.length],
+        products[(currentIndex + 2) % products.length],
+        products[(currentIndex + 3) % products.length],
+      ]
+    : [];
 
   return (
     <section className={styles.productSection}>
@@ -47,13 +74,27 @@ export function ProductSection() {
         <button>Ver Todos</button>
       </nav>
       <div className={styles.carousel}>
-        {products.map((product) => (
+        <button
+          className={styles.carouselButton}
+          onClick={goToPrevious}
+          disabled={products.length <= 4} // Desativa o botão se houver menos de 4 produtos
+        >
+          <img src="/icons/vectorleft.svg" alt="Seta para a esquerda" />
+        </button>
+        {displayedProducts.map((product) => (
           <ProductCard
             key={product.productName}
             product={product}
             onClick={() => handleProductClick(product)}
           />
         ))}
+        <button
+          className={styles.carouselButton}
+          onClick={goToNext}
+          disabled={products.length <= 4} // Desativa o botão se houver menos de 4 produtos
+        >
+          <img src="/icons/vectorright.svg" alt="Seta para a direita" />
+        </button>
       </div>
       {selectedProduct && (
         <ProductModal product={selectedProduct} onClose={handleCloseModal} />
