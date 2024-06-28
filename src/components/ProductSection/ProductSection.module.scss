@@ -1,31 +1,58 @@
 @import '../../styles/variables';
+@import '../../styles/mixins';
 
 .productSection {
   padding: 2rem;
   background-color: $white-color;
 
   h2 {
-    font-size: 1.5rem;
-    color: $text-color;
+    font-size: 1.875rem;
+    font-weight: 700;
     text-align: center;
     margin-bottom: 1rem;
+    color: $highlight-color;
+    display: flex;
+    justify-content: center;
+
+    &::before, &::after { // Estilos para as linhas
+        content: '';
+        display: block;
+        width: 22.5rem; /* Largura da linha */
+        height: 0.0625rem; /* Altura da linha */
+        background-color: #DEDEDE; /* Cor da linha */
+        margin: 0 2.12rem; // Adiciona uma margem lateral para separar as linhas do texto
+      }
   }
 
   .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 1rem;
+    @include container-center; 
+    margin: 0 auto; 
 
     button {
-      background: none;
-      border: none;
+      display: flex;
+      height: 2.5rem;
+      padding: 0.75rem 3.625rem;
+      justify-content: center;
+      align-items: center;
+      gap: 0.625rem;
+      flex: 1 0 0;
+      background: #FFF;
       font-size: 1rem;
-      color: $text-color;
       cursor: pointer;
       padding: 0.5rem 1rem;
+      border: 1px solid #BDBDBD;
+      font-size: 1rem;
+      line-height: 1rem;
+      color: $product-navigation;
 
+      &:hover{
+        color: $highlight-color;
+      }
       &.active {
-        color: $text-color;
+        color: $highlight-color;
         font-weight: bold;
       }
     }
@@ -34,6 +61,16 @@
   .carousel {
     display: flex;
     overflow-x: scroll;
-    gap: 1rem;
+    overflow: hidden;
+    padding-top: 1.06rem;
+    justify-content: center;
+    gap: 3.88rem;
+
+    .carouselButton{
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
   }
+
 }

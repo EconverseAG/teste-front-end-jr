@@ -16,9 +16,8 @@
             gap: 0.56rem;
             font-size: 0.75rem;
         }
-        p {
-            color: $header-text-secondary;
-            strong: {color: $highlight-color;}
-        }
+        .highlighted {
+            color: $highlight-color; 
+          }
 
 } 

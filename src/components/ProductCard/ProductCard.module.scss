@@ -1,41 +1,62 @@
 @import '../../styles/variables';
 
 .productCard {
-  background-color: $white-color;
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 1rem;
-  text-align: center;
-  cursor: pointer;
-  transition: transform 0.2s;
-
-  &:hover {
-    transform: translateY(-0.5rem);
-  }
-
-  img {
-    max-width: 100%;
-    border-bottom: 1px solid $text-color;
-    margin-bottom: 1rem;
-  }
-
-  .info {
-    p {
-      margin: 0.5rem 0;
+    background-color: $white-color;
+    border-radius: 0.625rem;
+    width: 16.875rem;
+    height: 31.25rem;
+    box-shadow: 0px 3px 19px 0px rgba(0, 0, 0, 0.22);
+    padding: 1rem;
+    text-align: start;
+    cursor: pointer;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+  
+    &:hover {
+      transform: translateY(-0.4rem);
     }
-
-    .price {
-      color: $text-color;
-      font-weight: bold;
+  
+    img {
+      max-width: 100%;
     }
-
-    button {
-      background-color: $text-color;
-      border: none;
-      border-radius: 0.5rem;
-      color: $white-color;
-      padding: 0.5rem 1rem;
-      cursor: pointer;
+  
+    .info {
+      p {
+        margin: 0.5rem 0;
+        font-size: 0.9375rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+      }
+      
+      .description {
+        color: $text-color;
+      }
+      
+      .oldPriceStriked {
+        color: $product-old-color;
+        text-decoration: line-through;
+      }
+      
+      .newPriceHighlighted {
+        color: $text-color;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      
+      strong {
+        color: $highlight-color;
+      }
+  
+      /* Ajuste para posicionar o botão no final do card */
+      margin-top: auto;
+  
+      button {
+        margin-top: auto;
+      }
     }
   }
-}

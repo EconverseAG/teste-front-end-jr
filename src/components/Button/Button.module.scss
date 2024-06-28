@@ -31,11 +31,13 @@
       height: 2.75rem;
       display: flex;
       justify-content: center;
+      align-items: center;
       font-size: 0.875rem;
       font-style: normal;
       font-weight: 700;
       line-height: normal;
       text-transform: uppercase;
       border-radius: 0.25rem;
+      background: $highlight-color;
     }
   }
