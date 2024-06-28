@@ -1,0 +1,53 @@
+@import '../../styles/variables';
+
+.categories {
+    background-color: #fff;
+    padding: 1rem 0;
+  }
+  
+  .categoryList {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 2rem;
+  }
+  
+  .categoryItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease; // Transição para todos os estilos
+    background-color: $categories-background; // Cor de fundo padrão
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    width: 8rem;
+    height: 8rem;
+  
+    &.active { // Estilos para o item ativo
+      background-color: $white-color;
+      
+      img, span { // Ícone e nome em highlight-color quando ativo
+        color: $highlight-color;
+      }
+    }
+  
+    &:hover { // Estilos para o hover
+      img, span { // Ícone e nome em highlight-color no hover
+        color: $highlight-color;
+      }
+    }
+  }
+  
+  .categoryIcon {
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .categoryName {
+    font-size: 0.875rem;
+    color: $text-color;
+  }
