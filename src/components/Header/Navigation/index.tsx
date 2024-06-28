@@ -1,34 +1,34 @@
+import React, { useState } from 'react';
 import styles from './Navigation.module.scss';
 
 function Navigation() {
+    // Inicialize o estado com o índice do item "Ofertas do dia"
+    const [activeIndex, setActiveIndex] = useState(5);
+  
+    const navItems = [
+      { label: 'Todas categorias', href: '#' },
+      { label: 'Supermercado', href: '#' },
+      { label: 'Livros', href: '#' },
+      { label: 'Moda', href: '#' },
+      { label: 'Lançamentos', href: '#' },
+      { label: 'Ofertas do dia', href: '#' },
+      { label: 'Assinatura', href: '#', icon: '/icons/crownsimple.svg' }
+    ];
+  
     return (
-        <nav className={styles.nav}>
-            <ul>
-                <li>
-                    <a href="#">Todas categorias</a>
-                </li>
-                <li>
-                    <a href="#">Supermercado</a>
-                </li>
-                <li>
-                    <a href="#">Livros</a>
-                </li>
-                <li>
-                    <a href="#">Moda</a>
-                </li>
-                <li>
-                    <a href="#">Lançamentos</a>
-                </li>
-                <li>
-                    <a href="#">Ofertas do dia</a>
-                </li>
-                <li>
-                    <img src="/icons/crownsimple.svg" alt="Ícone de coroa"/>
-                    <a href="#">Assinatura</a>
-                </li>
-            </ul>
-        </nav>
+      <nav className={styles.nav}>
+        <ul>
+          {navItems.map((item, index) => (
+            <li key={index} onClick={() => setActiveIndex(index)}>
+              {item.icon && <img src={item.icon} alt={`Ícone de ${item.label.toLowerCase()}`} />}
+              <a href={item.href} className={activeIndex === index ? styles.active : ''}>
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
     );
-}
-
-export default Navigation;
+  }
+  
+  export default Navigation;

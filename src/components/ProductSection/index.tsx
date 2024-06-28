@@ -8,6 +8,7 @@ export function ProductSection() {
   const [products, setProducts] = useState<IProduct[]>([]);
   const [selectedProduct, setSelectedProduct] = useState<IProduct | null>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [activeButton, setActiveButton] = useState('Celular'); // Estado para rastrear o botão ativo
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -62,16 +63,24 @@ export function ProductSection() {
       ]
     : [];
 
+  // Manipulador de clique para atualizar o botão ativo
+  const handleButtonClick = (label) => {
+    setActiveButton(label);
+  };
+
   return (
     <section className={styles.productSection}>
       <h2>Produtos relacionados</h2>
       <nav className={styles.navbar}>
-        <button className={styles.active}>Celular</button>
-        <button>Acessórios</button>
-        <button>Tablets</button>
-        <button>Notebooks</button>
-        <button>TVs</button>
-        <button>Ver Todos</button>
+        {['Celular', 'Acessórios', 'Tablets', 'Notebooks', 'TVs', 'Ver Todos'].map((label) => (
+          <button
+            key={label}
+            className={activeButton === label ? styles.active : ''}
+            onClick={() => handleButtonClick(label)}
+          >
+            {label}
+          </button>
+        ))}
       </nav>
       <div className={styles.carousel}>
         <button
