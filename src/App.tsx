@@ -7,8 +7,10 @@ import styles from './App.module.scss'; // Import styles
 import Partners from './components/Partners';
 import ProductRelated from './components/ProductRelated';
 import Brands from './components/Brands';
+import Footer from './components/Footer';
 
 import './styles/global.scss';
+
 
 
 function App() {
@@ -27,6 +29,7 @@ function App() {
           <Brands />
         </main>
       </div>
+      <Footer />
     </>
   );
 }
