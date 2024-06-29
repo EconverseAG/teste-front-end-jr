@@ -8,7 +8,7 @@ export function ProductSection() {
   const [products, setProducts] = useState<IProduct[]>([]);
   const [selectedProduct, setSelectedProduct] = useState<IProduct | null>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [activeButton, setActiveButton] = useState('Celular'); // Estado para rastrear o botão ativo
+  const [activeButton, setActiveButton] = useState('Celular'); 
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -63,10 +63,11 @@ export function ProductSection() {
       ]
     : [];
 
-  // Manipulador de clique para atualizar o botão ativo
-  const handleButtonClick = (label) => {
+
+  const handleButtonClick = (label: string) => {
     setActiveButton(label);
   };
+  
 
   return (
     <section className={styles.productSection}>
