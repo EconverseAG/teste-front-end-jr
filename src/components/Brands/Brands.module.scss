@@ -1,0 +1,39 @@
+@import '../../styles/variables';
+
+.brandsSection {
+  padding: 2rem 0;
+  text-align: center;
+
+  .title {
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 700;
+    color: $highlight-color;
+    margin-bottom: 1rem;
+  }
+
+  .carousel {
+    display: flex;
+    align-items: center;
+    overflow-x: visible;
+    scroll-snap-type: x mandatory; 
+    justify-content: center;
+
+    &::-webkit-scrollbar {
+      display: none; 
+    }
+
+    .carouselItems {
+      display: flex;
+      gap: 1rem;
+    }
+  }
+
+  .navButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 1rem; 
+  }
+}
+
