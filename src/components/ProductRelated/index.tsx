@@ -4,29 +4,30 @@ import { Button } from '../Button';
 function RelatedProductsSection() {
   return (
     <section className={styles.relatedProducts}>
-      <div className="container-center">
-        <h2 className={styles.sectionTitle}>Produtos relacionados</h2>
+      <div className={styles.related}>
+      <h2 className={styles.sectionTitle}>Produtos relacionados</h2>
+      <a href="#">Ver todos</a>
+      </div>
         <div className={styles.productsContainer}>
           <div className={styles.productItem}>
             <div className={styles.textContainer}>
-              <h4 className={styles.productTitle}>Produto 1</h4>
+              <h4 className={styles.productTitle}>Produtos</h4>
               <p className={styles.productDescription}>
-                Descrição curta do produto 1
+              Lorem ipsum dolor sit amet, consectetur
               </p>
-              <Button title="Comprar" variant="small" />
+              <Button title="Confira" variant="small" />
             </div>
           </div>
           <div className={styles.productItem}>
             <div className={styles.textContainer}>
-              <h4 className={styles.productTitle}>Produto 2</h4>
+              <h4 className={styles.productTitle}>Produtos</h4>
               <p className={styles.productDescription}>
-                Descrição curta do produto 2
+              Lorem ipsum dolor sit amet, consectetur
               </p>
-              <Button title="Comprar" variant="small" />
+              <Button title="Confira" variant="small" />
             </div>
           </div>
         </div>
-      </div>
     </section>
   );
 }

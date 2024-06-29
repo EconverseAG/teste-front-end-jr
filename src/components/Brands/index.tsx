@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styles from './Brands.module.scss';
 import BrandItem from './BrandItem/BrandItem';
-import brands from './brands.json';
+import brands from '../../../public/data/brands.json';
 
 function Brands() {
   const [currentIndex, setCurrentIndex] = useState(0);

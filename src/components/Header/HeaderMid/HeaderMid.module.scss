@@ -48,7 +48,15 @@
             display: flex;
             align-items: center;
             gap: 24px;
-            img { cursor: pointer; }
+            img { cursor: pointer; 
+                &:hover {
+                    transform: translateY(-10%) scale(1.20); // Aumenta o tamanho ao passar o mouse
+                    transition: transform 0.12s ease; // Adiciona uma transição suave
+                }
+            }
+
+            
+
         }
     }
 }
