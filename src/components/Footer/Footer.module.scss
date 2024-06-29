@@ -1,0 +1,55 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.footer {
+  background-color: $footer-background; 
+  padding: 2.5rem 0; 
+  margin-top: 2.5rem;
+ 
+
+  .footerContent {
+    display: flex;
+    justify-content: space-between; // Distribui as colunas e o formulário
+    gap: 2rem; // Espaçamento entre as colunas e o formulário
+    @include container-center;
+    margin: 0 auto; 
+  }
+
+  .footerColumns {
+    display: flex;
+    gap: 2.94rem; // Espaçamento entre as colunas
+  }
+
+  .footerBorder {
+    border-top: 0.06rem solid rgba(255, 255, 255, 0.1); 
+  }
+
+  .footerBottom {
+    margin-top: 2.5rem; // Espaçamento entre o conteúdo principal e o rodapé
+    padding-top: 1.25rem; // Espaçamento interno superior do rodapé
+
+    @include container-center;
+    margin: 0 auto; 
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .copyright {
+        font-size: 0.625rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 0.8125rem; /* 130% */
+        text-transform: uppercase;
+        color: $white-color;
+        width: 43.625rem;
+        height: 1.625rem;
+    }
+
+    .logos {
+        width: 14.13025rem;
+        height: 2rem;
+        flex-shrink: 0;
+    }
+  }
+}

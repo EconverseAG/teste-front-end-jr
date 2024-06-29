@@ -1,0 +1,17 @@
+@import '../../../styles/variables';
+
+.paymentIcons {
+    width: 12.1875rem;
+    height: 9.28406rem;
+    flex-shrink: 0;
+
+    h4 {
+        font-size: 0.8125rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        color: $white-color;
+        margin-bottom: 1.5rem;
+    }
+  }
+  
