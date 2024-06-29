@@ -30,10 +30,10 @@ const footerColumns = [
                   key={index} 
                   title={column.title} 
                   links={column.links} 
-                  icons={column.icons} // Certifique-se de que a propriedade `icons` está sendo passada
+                  icons={column.icons} 
                 />
               ))}
-              <PaymentIcons /> {/* Adiciona o componente de ícones de pagamento */}
+              <PaymentIcons /> 
             </div>
             <NewsletterForm />
           </div>

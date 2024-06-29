@@ -11,7 +11,7 @@ const FooterColumn: React.FC<FooterColumnProps> = ({ title, links, icons }) => (
   <div className={styles.footerColumn}>
     <h4>{title}</h4>
     {links ? (
-      <ul>
+      <ul >
         {links.map((link, index) => (
           <li key={index}>
             <a href="#">{link}</a>

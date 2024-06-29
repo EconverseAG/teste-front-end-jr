@@ -2,15 +2,15 @@
 @import '../../styles/mixins';
 
 .banner {
-    position: relative; // Necessário para o posicionamento do pseudo-elemento
+    position: relative; 
     width: 100%;
     height: 24.6875rem;
     display: flex;
     align-items: center;
-    background-image: url('/public/img/banner.png'); // Substitua pelo caminho da sua imagem
-    background-size: cover;  // Faz com que a imagem cubra toda a área do banner
-    background-position: center;  // Centraliza a imagem
-    background-repeat: no-repeat;  // Impede que a imagem se repita
+    background-image: url('/public/img/banner.png'); 
+    background-size: cover;  
+    background-position: center;  
+    background-repeat: no-repeat;  
     margin-bottom: 2.13rem;
   
     // Pseudo-elemento para o gradiente
@@ -23,7 +23,7 @@
       height: 100%;
       background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
       opacity: 0.8;
-      z-index: 1; // Coloca o gradiente sobre a imagem
+      z-index: 1; 
       
     }
     

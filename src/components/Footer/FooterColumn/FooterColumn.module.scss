@@ -39,16 +39,16 @@
   }
   .socialIcons {
     display: flex;
-    justify-content: flex-start; /* Alinha os ícones à esquerda */
+    justify-content: flex-start; 
     margin: 2.69rem 0;
 
   
     a {
       display: inline-block;
-      margin-right: 1rem; // Espaçamento entre os ícones
+      margin-right: 1rem; 
   
       img {
-        width: 1.5rem; // Tamanho dos ícones
+        width: 1.5rem;
         height: 1.5rem;
       }
     }

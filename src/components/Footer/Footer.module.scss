@@ -9,15 +9,15 @@
 
   .footerContent {
     display: flex;
-    justify-content: space-between; // Distribui as colunas e o formulário
-    gap: 2rem; // Espaçamento entre as colunas e o formulário
+    justify-content: space-between; 
+    gap: 2rem; 
     @include container-center;
     margin: 0 auto; 
   }
 
   .footerColumns {
     display: flex;
-    gap: 2.94rem; // Espaçamento entre as colunas
+    gap: 2.94rem; 
   }
 
   .footerBorder {
@@ -25,8 +25,8 @@
   }
 
   .footerBottom {
-    margin-top: 2.5rem; // Espaçamento entre o conteúdo principal e o rodapé
-    padding-top: 1.25rem; // Espaçamento interno superior do rodapé
+    margin-top: 2.5rem; 
+    padding-top: 1.25rem; 
 
     @include container-center;
     margin: 0 auto; 
@@ -39,7 +39,7 @@
         font-size: 0.625rem;
         font-style: normal;
         font-weight: 400;
-        line-height: 0.8125rem; /* 130% */
+        line-height: 0.8125rem; 
         text-transform: uppercase;
         color: $white-color;
         width: 43.625rem;
