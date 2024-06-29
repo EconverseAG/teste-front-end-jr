@@ -5,6 +5,7 @@ import Categories from './components/Categories';
 import { ProductSection } from './components/ProductSection';
 import './styles/global.scss';
 import styles from './App.module.scss'; // Import styles
+import Partners from './components/Partners';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <main>
           <Categories />
           <ProductSection />
+          <Partners />
         </main>
       </div>
     </>
