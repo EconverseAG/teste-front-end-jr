@@ -18,10 +18,10 @@
     &::before, &::after { // Estilos para as linhas
         content: '';
         display: block;
-        width: 22.5rem; /* Largura da linha */
-        height: 0.0625rem; /* Altura da linha */
-        background-color: #DEDEDE; /* Cor da linha */
-        margin: 0 1.12rem; // Adiciona uma margem lateral para separar as linhas do texto
+        width: 22.5rem; 
+        height: 0.0625rem; 
+        background-color: #DEDEDE; 
+        margin: 0 1.12rem; 
       }
   }
 }
