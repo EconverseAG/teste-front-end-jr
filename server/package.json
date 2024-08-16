@@ -6,7 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon ./src/index.ts",
     "start": "node ./build/index.js",
-    "build": "tsc -p ."
+    "build": "tsc -p .",
+    "import-products": "ts-node src/scripts/importProducts.ts"
   },
   "keywords": [],
   "author": "",
