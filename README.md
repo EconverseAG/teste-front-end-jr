@@ -36,7 +36,7 @@ Se você não tem o Node.js e npm instalados:
 Clone este repositório para a sua máquina local usando o comando:
 
 ```bash
-git clone https://github.com/usuario/nome-do-projeto.git
+git clone https://github.com/IsaiasSorriso/nome-do-projeto.git
 ```
 
 ### 3. Instalar as Dependências
