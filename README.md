@@ -37,5 +37,31 @@ Clone este repositório para a sua máquina local usando o comando:
 
 ```bash
 git clone https://github.com/usuario/nome-do-projeto.git
+```
 
-### E
+### 3. Instalar as Dependências
+
+```bash
+cd nome-do-projeto
+npm install
+```
+
+### 4. Compilar o Projeto
+
+```bash
+npm run build
+```
+
+### 5. Rodar o Projeto
+
+```bash
+npm start
+```
+
+### 6. Testar o Projeto
+
+```bash
+npm test
+```
+
+
