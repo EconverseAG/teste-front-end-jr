@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import ProductModal from './productModal/productModal'; // Importe o componente Modal
+import ProductModal from './productModal'; // Importe o componente Modal
 import '../styles/styles.scss';
 import imgNext from '../imgs/categorias/buttonNext.png';
 import imgBefore from '../imgs/categorias/buttonBefore.png';
@@ -17,7 +17,7 @@ interface Product {
 //   products: Product[];
 // }
 
-const ListPhone: React.FC = ({}) => {
+const ListPhone: React.FC = ({ }) => {
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
@@ -72,7 +72,7 @@ const ListPhone: React.FC = ({}) => {
   return (
     <section className="phone">
       <button className="carousel__button prev" onClick={prevSlide} disabled={currentIndex === 0}>
-      <img src={imgBefore} alt="" />
+        <img src={imgBefore} alt="" />
       </button>
       <div className="carousel__track-container">
         <div
@@ -87,7 +87,7 @@ const ListPhone: React.FC = ({}) => {
               <div className="product-info">
                 <h2 className="product-title">{product.descriptionShort}</h2>
                 <div className="product-pricing">
-                  <p className='original-price'>R$ {(product.price + ( 0.05 * product.price)).toFixed(2)}</p>
+                  <p className='original-price'>R$ {(product.price + (0.05 * product.price)).toFixed(2)}</p>
                   <p className="current-price">R$ {product.price.toFixed(2)}</p>
                   <p className="installments">ou 2x de R$ {(product.price / 2).toFixed(2)} sem juros</p>
                 </div>
@@ -99,7 +99,7 @@ const ListPhone: React.FC = ({}) => {
         </div>
       </div>
       <button className="carousel__button next" onClick={nextSlide} disabled={currentIndex >= products.length - 1}>
-      <img src={imgNext} alt="" />
+        <img src={imgNext} alt="" />
       </button>
 
       {/* Renderiza o modal se um produto for selecionado */}

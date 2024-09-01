@@ -22,7 +22,7 @@ const Partners: React.FC = () => {
             <a href="#" className="btn">Confira</a>
           </div>
         </div>
-        </div>
+      </div>
     </section>
   );
 };
