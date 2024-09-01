@@ -12,7 +12,6 @@ const Sepatarion: React.FC = () => {
                 </div>
                 <div className="linha"></div>
             </div>
-
         </section>
     )
 }

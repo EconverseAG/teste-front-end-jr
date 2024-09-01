@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import ProductCard from './components/productCard/productCard';
-import ProductModal from './components/productModal/productModal';
 import Header from './components/header.tsx';
 import Banner from './components/banner';
 import Categories from './components/categories';
@@ -18,7 +16,7 @@ import '../src/Product.js';
 
 
 const App: React.FC = () => {
-  
+
   return (
 
     <div>

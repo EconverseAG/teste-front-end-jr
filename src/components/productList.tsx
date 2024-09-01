@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/styles.scss'  ;
+import '../styles/styles.scss';
 import img_fundo from '../imgs/fundo/produtos.png';
 
 const ProductList: React.FC = () => {
@@ -22,7 +22,7 @@ const ProductList: React.FC = () => {
             <a href="#" className="btn">Confira</a>
           </div>
         </div>
-        </div>
+      </div>
     </section>
   );
 };

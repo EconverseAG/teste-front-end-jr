@@ -1,50 +1,68 @@
-# React + TypeScript + Vite
+# Teste Econverse: Vaga Desenvolvedor Front-End Jr
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descrição
+ Desenvolver uma página em React e TypeScript seguindo o layout especificado no Figma. 
+ Consumir as informações dos produtos a partir de um arquivo JSON.
+ Implementar uma interação que permita ao usuário clicar em um produto.
+  Ao clicar em um produto, um modal deve ser aberto, exibindo as principais informações do produto presente no arquivo JSON, correspondente ao item selecionado.
+## Requisitos
 
-Currently, two official plugins are available:
+Antes de começar, certifique-se de ter as seguintes ferramentas instaladas:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Node.js** (v14 ou superior)
+- **npm** (v6 ou superior)
 
-## Expanding the ESLint configuration
+## Passo a Passo para Instalação
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### 1. Instalando Node.js e npm
 
-- Configure the top-level `parserOptions` property like this:
+Se você não tem o Node.js e npm instalados:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+1. **Baixe e instale o Node.js**:
+   - Acesse o [site oficial do Node.js](https://nodejs.org/)
+   - Baixe a versão LTS recomendada.
+   - Siga as instruções de instalação para o seu sistema operacional.
+
+2. **Verifique se a instalação foi bem-sucedida**:
+   - Abra um terminal e execute:
+     ```bash
+     node -v
+     npm -v
+     ```
+   - Se os comandos retornarem versões, a instalação foi concluída com sucesso.
+
+### 2. Clonar o Repositório
+
+Clone este repositório para a sua máquina local usando o comando:
+
+```bash
+git https://github.com/IsaiasSorriso/teste-front-end-jr.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### 3. Instalar as Dependências
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+cd nome-do-projeto
+npm install
+sass install
 ```
+
+### 4. Compilar o Projeto
+
+```bash
+npm run build
+```
+
+### 5. Rodar o Projeto
+
+```bash
+npm start
+```
+
+### 6. Testar o Projeto
+
+```bash
+npm test
+```
+
+
