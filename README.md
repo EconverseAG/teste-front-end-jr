@@ -44,6 +44,7 @@ git https://github.com/IsaiasSorriso/teste-front-end-jr.git
 ```bash
 cd nome-do-projeto
 npm install
+sass install
 ```
 
 ### 4. Compilar o Projeto
