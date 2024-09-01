@@ -110,7 +110,7 @@ const Footer: React.FC = () => {
           <h2>NOVIDADES E PROMOÇÕES</h2>
           <p>Excepteur sint occaecat cudatat non ent, sunt in culpa qui officia lorem ipsum</p>
           <form className="newsletter-form">
-            <input type="email" placeholder="Seu e-mail" required></input>
+            <input type="email" placeholder="SEU E-MAIL" required></input>
             <button type="submit">OK</button>
           </form>
         </div>
