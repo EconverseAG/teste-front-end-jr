@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Logo from '../../assets/images/header/Logo.png';
 import Lupa from '../../assets/images/header/MagnifyingGlass.png';
 import Heart from '../../assets/images/header/Heart.png';
