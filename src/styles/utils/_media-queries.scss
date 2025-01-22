@@ -1,0 +1,23 @@
+$mobile-res-min-width: 320px;
+$tablet-res-min-width: 768px;
+$desktop-res-min-width: 1024px;
+
+@mixin forScreenSizesMin($deviceType){
+    @if $deviceType == phone {
+        @media only screen and (min-width: $mobile-res-min-width) {
+            @content;
+        }
+    }
+    @if $deviceType == tablet {
+        @media only screen and (min-width: $tablet-res-min-width) {
+            @content;
+        }
+    }
+    @if $deviceType == desktop {
+        @media only screen and (min-width: $desktop-res-min-width) {
+            @content;
+        }
+    }   
+    
+}
+
