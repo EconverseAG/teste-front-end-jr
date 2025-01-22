@@ -1,4 +1,5 @@
 @import "../styles/utils/fonts";
+@import "../styles/utils/variables";
 
 * {
   margin: 0;
@@ -7,7 +8,4 @@
   font-family: $font-primary;
 }
 
-body {
-    font-family: $font-primary;
-}
 
