@@ -10,6 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center; 
+  height: 32px;
   gap: 119px;
   padding: 6px; 
 }
@@ -25,6 +26,7 @@
   display: flex;
   align-items: center;
   gap: 9px;
+  font-size: 12px;
   p {
     color: $color-gray-secondary;
     font-weight: 500;
@@ -115,14 +117,15 @@
 }
 
 .navbarList {
-  display: flex; // Arrange items horizontally
-  list-style: none; // Remove default bullet points
-  margin: 0; // Reset default margin
-  padding: 0; // Reset default padding
+  display: flex;
+  list-style: none; 
+  margin: 0;
+  padding: 0; 
   gap: 91px;
 
   li {
     font-size: 12px;
+    line-height: 18px;
     font-weight: 600;
     cursor: pointer;
     color: $color-gray-secondary;
