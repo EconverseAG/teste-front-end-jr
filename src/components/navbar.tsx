@@ -60,17 +60,21 @@ export function Navbar() {
             <hr className="separator" />
             <div className="navbarSections">
                 <ul className="navbarList">
-                    <li>Todas Categorias</li>
-                    <li>Supermercado</li>
-                    <li>Livros</li>
-                    <li>Moda</li>
-                    <li>Lançamentos</li>
+                    <li><a href="#">Todas Categorias</a></li>
+                    <li><a href="#">Supermercado</a></li>
+                    <li><a href="#">Livros</a></li>
+                    <li><a href="#">Moda</a></li>
+                    <li><a href="#">Lançamentos</a></li>
                     <li>
-                    <span className="navSpan">Ofertas do dia</span>
+                        <a href="#">
+                            <span className="navSpan">Ofertas do dia</span>
+                        </a>
                     </li>
-                    <li>
-                    <img src={CrownSimple} alt="Ícone de Coroa" />
-                    Assinatura
+                    <li>  
+                        <a href="#">
+                            <img src={CrownSimple} alt="Ícone de Coroa" />
+                            Assinatura
+                        </a>
                     </li>
                 </ul>
             </div>

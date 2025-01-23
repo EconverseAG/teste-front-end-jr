@@ -1,9 +1,9 @@
 @import "../utils/variables";
 
 .navbar {
-    width: 1280px;
-    height: 144px;
-    margin: 0 auto;
+  width: 1280px;
+  height: 144px;
+  margin: 0 auto;
 };
 
 .navbarIcons {
@@ -34,11 +34,11 @@
 }
 
 .separator {
-    width: 100%;
-    height: 1px;
-    background-color: $color-separator;
-    border: none;
-    margin: 0;
+  width: 100%;
+  height: 1px;
+  background-color: $color-separator;
+  border: none;
+  margin: 0;
 }
 
 .navbarContent {
@@ -122,22 +122,34 @@
   margin: 0;
   padding: 0; 
   gap: 91px;
+  text-transform: uppercase;
 
   li {
     font-size: 12px;
     line-height: 18px;
     font-weight: 600;
     cursor: pointer;
-    color: $color-gray-secondary;
-
-    &:hover {
-      color: $color-blue;
-    }
   }
 
   li:last-child {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+    a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    
   }
+
+  a{
+    text-decoration-line: none;
+    color: $color-gray-secondary;
+
+    &:hover {
+      color: $color-purple;
+    }
+  }
+
+  a:active {
+    color: $color-purple;
+  } 
 }
