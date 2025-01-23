@@ -9,6 +9,7 @@ import Group from "../assets/icons/Group.svg"
 import Heart from "../assets/icons/Heart.svg"
 import UserCircle from "../assets/icons/UserCircle.svg"
 import ShoppingCart from "../assets/icons/ShoppingCart.svg"
+import CrownSimple from "../assets/icons/CrownSimple.svg"
 
 
 export function Navbar() {
@@ -55,6 +56,23 @@ export function Navbar() {
                         <img src={ShoppingCart} alt="Ícone de carrinho de compras" />
                     </button>
                 </div>
+            </div>
+            <hr className="separator" />
+            <div className="navbarSections">
+                <ul className="navbarList">
+                    <li>Todas Categorias</li>
+                    <li>Supermercado</li>
+                    <li>Livros</li>
+                    <li>Moda</li>
+                    <li>Lançamentos</li>
+                    <li>
+                    <span className="navSpan">Ofertas do dia</span>
+                    </li>
+                    <li>
+                    <img src={CrownSimple} alt="Ícone de Coroa" />
+                    Assinatura
+                    </li>
+                </ul>
             </div>
         </div>
     )
