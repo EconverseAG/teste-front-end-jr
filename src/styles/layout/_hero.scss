@@ -1,0 +1,155 @@
+@import "../utils/variables";
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%; 
+  height: auto;
+}
+
+.heroOffer {
+  position: relative;
+  width: 1440px;
+  height: 390px;
+}
+
+.heroOfferImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.heroOfferContent {
+  position: absolute;
+  top: 0; 
+  left: 0;
+  height: 390px;
+  width: 966px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px;
+  background: linear-gradient(
+    -90deg, 
+    rgba(0, 0, 0, 0) 0%, 
+    rgba(0, 0, 0, 0.8) 85.04%
+  );
+}
+
+.heroOfferContent h1 {
+  font-size: 48px;
+  font-weight: 600;
+  color: $color-white;
+  margin-bottom: 3px;
+  margin-left: 3px;
+}
+
+.heroOfferContent h2 {
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 700;
+  color: $color-yellow;
+
+  span {
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 400;
+    color: $color-white;
+  }
+}
+
+.heroOfferButton {
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+  width: 206px;
+  height: 50px;
+  margin-top: 41px;
+  margin-left: 9px;
+  background-color: $color-yellow;
+  color: $color-black;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.heroOfferButton:hover {
+    background-color: $color-purple-dark;
+    color: $color-white;
+    transition: all 0.3s;
+}
+
+.heroSection {
+  display: flex;
+  justify-content: center;
+  width: 1160px;
+  height: 171px;
+  margin-top: 39px;
+
+  .heroSectionCards {
+    .heroCard {
+      display: flex;
+      flex-direction: row; 
+      justify-content: space-between; 
+      align-items: center; 
+      gap: 42px; 
+      padding: 0;
+      margin: 0;
+      list-style: none; 
+    }
+
+  .heroCard li {
+    list-style: none;
+  
+    a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: $color-gray-primary;
+      transition: all 0.3s ease;
+
+      .card {
+        background-color: $color-white-smoke;
+        width: 128px;
+        height: 128px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 11px 0px #00000021;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.3s ease;
+      }
+
+      p {
+        margin-top: 22px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        color: $color-gray-primary;
+        transition: color 0.3s ease;
+      }
+
+      &:hover {
+        .card {
+          background-color: $color-white;
+        }
+        p {
+          color: $color-purple;
+        }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
