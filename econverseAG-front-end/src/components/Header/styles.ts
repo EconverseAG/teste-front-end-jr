@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import { cores } from "../../styles"
 
+
 export const HeaderBar = styled.header`
     height: 144px;
     max-height: 100%;
@@ -8,7 +9,8 @@ export const HeaderBar = styled.header`
 
 export const HeaderShip = styled.div`
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 120px;
     padding: 6px 0 6px 0;
     border-bottom: 1px solid ${cores.brancoLinha};
 
@@ -35,6 +37,96 @@ export const HeaderShip = styled.div`
 export const HeaderLogo = styled.div`
     display: flex;
     justify-content: space-between;
-    margin-top: 12px;
-    
+    padding: 16px 0;
+
+    > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    > div > div:nth-child(1) {
+        /* Div da logo */
+        display: block;
+        align-items: center;
+    }
+
+    > div > div:nth-child(2) {
+        /* Div do input */
+        position: relative;
+
+        input {
+        width: 630px;
+        border: none;
+        height: 48px;
+        padding: 8px 12px;
+        background-color: ${cores.corInput};
+        border-radius: 10px;
+        font-size: 14px;
+        font-family: Poppins;
+        font-weight: 500;
+        
+        &::placeholder {
+            color: ${cores.cinzaClaro}
+            }
+        }
+        
+        img {
+            position: absolute;
+            top: 50%;
+            right: 24px;
+            transform: translateY(-50%);
+            width: 28px;
+            height: 28px;
+        }
+    }
+
+    > div > div:nth-child(3) {
+        /* Div dos ícones */
+        display: flex;
+        justify-content: flex-end;
+        gap: 32px; /* Espaçamento entre os ícones */
+        left: 0;
+
+        img {
+            width: 32px;
+            height: 32px;
+        }
+    }
+`
+
+export const HeaderMenu = styled.div`
+    padding: 16px 0;
+
+    div {
+        max-width: 1140px; /* Limita a largura máxima */
+        width: 100%;
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    ul {
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+        list-style: none; 
+        gap: 91px;
+        flex: 1;
+    }
+
+    li {
+        font-size: 12px; 
+        font-weight: 500; 
+        font-family: Poppins, sans-serif;
+        color: ${cores.cinzaClaro};
+        cursor: pointer; 
+        text-align: center;
+    }
+
+    li:hover {
+        color: ${cores.roxoEscuro};
+        font-weight: 600;
+    }
 `
