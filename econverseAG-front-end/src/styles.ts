@@ -1,12 +1,15 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 export const cores = {
     branco: '#FFFFFF',
     amarelo: '#F7CA11',
+    roxoEscuro: '#3019B2',
     roxo: '#3442B5',
     cinza: '#3F3F40',
-    roxoEscuro: '#271C47',
+    cinzaClaro: '#9F9F9F',
+    roxoMedio: '#271C47',
     pretoClaro: '#222222B5',
+    brancoLinha: '#F0F0F0',
 }
 
 export const GlobalCss = createGlobalStyle`
@@ -20,5 +23,11 @@ export const GlobalCss = createGlobalStyle`
     body {
         background-color: ${cores.branco};
     }
+`
+
+export const Container = styled.div`
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
 `
 
