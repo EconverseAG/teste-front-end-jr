@@ -10,7 +10,8 @@ export const cores = {
     roxoMedio: '#271C47',
     pretoClaro: '#222222B5',
     brancoLinha: '#F0F0F0',
-    corInput: '#F6F5F2'
+    corInput: '#F6F5F2',
+    boxShadow: '#3930131F',
 }
 
 export const GlobalCss = createGlobalStyle`
