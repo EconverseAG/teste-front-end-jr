@@ -3,8 +3,8 @@ import { cores } from "../../styles"
 
 
 export const HeaderBar = styled.header`
-    height: 144px;
-    max-height: 100%;
+    margin: 0 auto;
+    z-index: 10; /* Mantém o Header acima de outros elementos */
 `
 
 export const HeaderShip = styled.div`
@@ -22,7 +22,7 @@ export const HeaderShip = styled.div`
 
     p {
         font-size: 12px;
-        font-family: Poppins;
+        font-family: Poppins, sans-serif;
         font-weight: 500;
         line-height: 18px;
         color: ${cores.cinzaClaro};
@@ -31,7 +31,7 @@ export const HeaderShip = styled.div`
     span {
         color: ${cores.roxoEscuro};
         font-weight: 600;
-        }
+    }
 `
 
 export const HeaderLogo = styled.div`
@@ -65,7 +65,7 @@ export const HeaderLogo = styled.div`
         background-color: ${cores.corInput};
         border-radius: 10px;
         font-size: 14px;
-        font-family: Poppins;
+        font-family: Poppins, sans-serif;
         font-weight: 500;
         
         &::placeholder {
@@ -88,7 +88,6 @@ export const HeaderLogo = styled.div`
         display: flex;
         justify-content: flex-end;
         gap: 32px; /* Espaçamento entre os ícones */
-        left: 0;
 
         img {
             width: 32px;
@@ -100,6 +99,8 @@ export const HeaderLogo = styled.div`
 export const HeaderMenu = styled.div`
     padding: 16px 0;
     box-shadow: 10px 8px 16px #3930131F; /* Sombra com os valores da imagem */
+    position: relative; /* Garante que o Hero comece após o HeaderMenu */
+    z-index: 10; /* Mantém o HeaderMenu acima do Hero */
 
     div {
         max-width: 1140px; /* Limita a largura máxima */
