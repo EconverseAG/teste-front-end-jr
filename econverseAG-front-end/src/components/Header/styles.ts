@@ -38,6 +38,7 @@ export const HeaderLogo = styled.div`
     display: flex;
     justify-content: space-between;
     padding: 16px 0;
+    border-bottom: 1px solid ${cores.brancoLinha};
 
     > div {
         display: flex;
